@@ -1,0 +1,47 @@
+.header {
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: ". . . . . ."". . . . . ."". header_title header_title header_title . ."". header_title header_title header_title . ."". header_title header_title header_title . ."". header_button header_button . . ."". . . . . .";
+
+	&_title {
+		grid-area: header_title;
+	}
+
+	&_button {
+		grid-area: header_button;
+	}
+
+}
+
+.about {
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: ". about_title about_title about_title about_title ."". about_title about_title about_title about_title ."". about_item-1 about_item-1 about_item-1 about_item-1 ."". about_item-1 about_item-1 about_item-1 about_item-1 ."". about_item-1 about_item-1 about_item-1 about_item-1 ."". about_item-1 about_item-1 about_item-1 about_item-1 ."". about_item-1 about_item-1 about_item-1 about_item-1 .";
+
+	&_title {
+		grid-area: about_title;
+	}
+
+	&_item-1 {
+		grid-area: about_item-1;
+	}
+}
+
+
+
+.section-book {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "book__form .";
+
+	.book__form {
+		grid-area: book__form;
+	}
+}
