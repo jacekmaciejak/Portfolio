@@ -390,6 +390,7 @@ p {
   .about_2-card img {
     object-fit: cover;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%; }
   .about .about_1-h1 {
@@ -400,7 +401,9 @@ p {
   .about .about_1-card_1 {
     margin-top: -100px; }
   .about .about_1-card_2 {
-    margin-top: 50px; }
+    margin-top: 50px;
+    -webkit-box-shadow: 14px 16px 42px -4px rgba(0, 0, 0, 0.68);
+    box-shadow: 14px 16px 42px -4px rgba(0, 0, 0, 0.68); }
   .about .about_1-card_3 {
     margin-top: -100px; }
   .about .about_2 {
