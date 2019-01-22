@@ -17,21 +17,70 @@
 }
 
 .about {
-	width: 100%;
-	height: 100vh;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-areas: ". about_title about_title about_title about_title ."". about_title about_title about_title about_title ."". about_item-1 about_item-1 about_item-1 about_item-1 ."". about_item-1 about_item-1 about_item-1 about_item-1 ."". about_item-1 about_item-1 about_item-1 about_item-1 ."". about_item-1 about_item-1 about_item-1 about_item-1 ."". about_item-1 about_item-1 about_item-1 about_item-1 .";
 
-	&_title {
-		grid-area: about_title;
+	.about_1 {
+		width: 100%;
+		height: 100vh;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: ". . . . . . . . . . . . ."". . about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 . ."". . about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 . ."". . . . . . . . . . . . ."". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ."". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ."". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ."". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ."". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ."". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ."". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ."". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ."". . . . . . . . . . . . .";
+
+		&-h1 {
+			grid-area: about_1-h1;
+		}
+
+		&-h2 {
+			grid-area: about_1-h2;
+		}
+
+		&-card_1 {
+			grid-area: about_1-card_1;
+		}
+
+		&-card_2 {
+			grid-area: about_1-card_2;
+		}
+
+		&-card_3 {
+			grid-area: about_1-card_3;
+		}
+
 	}
 
-	&_item-1 {
-		grid-area: about_item-1;
+	.about_2 {
+		width: 100%;
+		height: 100vh;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: ". . . . . . . . . . . . ."". . about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 . ."". . about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 . ."". . . . . . . . . . . . ."". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ."". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ."". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ."". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ."". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ."". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ."". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ."". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ."". . . . . . . . . . . . .";
+
+		&-h1 {
+			grid-area: about_2-h1;
+		}
+
+		&-h2 {
+			grid-area: about_2-h2;
+		}
+
+		&-card_4 {
+			grid-area: about_2-card_4;
+		}
+
+		&-card_5 {
+			grid-area: about_2-card_5;
+		}
+
+		&-card_6 {
+			grid-area: about_2-card_6;
+		}
+
 	}
 }
+
+
+
 
 
 
