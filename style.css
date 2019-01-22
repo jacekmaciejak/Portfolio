@@ -417,46 +417,30 @@ p {
     transition: .5s;
     -webkit-box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7);
     box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7); }
-    .about .about_1-card_1:hover {
-      -webkit-box-shadow: 19px 18px 34px -15px rgba(249, 196, 217, 0.47);
-      box-shadow: 19px 18px 34px -15px rgba(249, 196, 217, 0.47);
-      transition: .5s; }
   .about .about_1-card_2 {
     margin-top: 50px;
     transition: .5s;
-    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.7);
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.7); }
-    .about .about_1-card_2:hover {
-      -webkit-box-shadow: 19px 18px 34px -15px rgba(251, 125, 38, 0.47);
-      box-shadow: 19px 18px 34px -15px rgba(251, 125, 38, 0.47);
-      transition: .5s; }
+    -webkit-box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7);
+    box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7); }
   .about .about_1-card_3 {
     margin-top: -100px;
-    transition: .5s; }
-    .about .about_1-card_3:hover {
-      -webkit-box-shadow: 19px 18px 34px -15px rgba(234, 13, 217, 0.47);
-      box-shadow: 19px 18px 34px -15px rgba(234, 13, 217, 0.47);
-      transition: .5s; }
+    transition: .5s;
+    -webkit-box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7);
+    box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7); }
   .about .about_2 {
     margin-top: -200px; }
     .about .about_2-card_4 {
       margin-top: -100px;
-      transition: .5s; }
-      .about .about_2-card_4:hover {
-        -webkit-box-shadow: 19px 18px 34px -15px rgba(234, 13, 217, 0.47);
-        box-shadow: 19px 18px 34px -15px rgba(234, 13, 217, 0.47);
-        transition: .5s; }
+      transition: .5s;
+      -webkit-box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7);
+      box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7); }
     .about .about_2-card_5 {
       margin-top: 50px;
-      transition: .5s; }
-      .about .about_2-card_5:hover {
-        -webkit-box-shadow: 19px 18px 34px -15px rgba(249, 196, 217, 0.47);
-        box-shadow: 19px 18px 34px -15px rgba(249, 196, 217, 0.47);
-        transition: .5s; }
+      transition: .5s;
+      -webkit-box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7);
+      box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7); }
     .about .about_2-card_6 {
       margin-top: -100px;
-      transition: .5s; }
-      .about .about_2-card_6:hover {
-        -webkit-box-shadow: 19px 18px 34px -15px rgba(251, 125, 38, 0.47);
-        box-shadow: 19px 18px 34px -15px rgba(251, 125, 38, 0.47);
-        transition: .5s; }
+      transition: .5s;
+      -webkit-box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7);
+      box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7); }
