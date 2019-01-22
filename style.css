@@ -51,7 +51,14 @@ p {
   color: #b1b1b1;
   position: relative;
   background-image: url(../../img/img1.jpg);
-  background-size: cover; }
+  background-size: cover;
+  transition: .5s;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1); }
+  .header:hover {
+    transition: .5s;
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0); }
   .header_title h1,
   .header p {
     position: relative;
@@ -392,25 +399,64 @@ p {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    transition: .5s;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1); }
+  .about_1-card img:hover,
+  .about_2-card img:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    transition: .5s; }
   .about .about_1-h1 {
-    opacity: .1;
-    font-size: 8rem; }
+    opacity: .1; }
   .about .about_1-h2 {
-    font-size: 4rem; }
+    margin-top: -80px; }
   .about .about_1-card_1 {
-    margin-top: -100px; }
+    margin-top: -100px;
+    transition: .5s;
+    -webkit-box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7);
+    box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7); }
+    .about .about_1-card_1:hover {
+      -webkit-box-shadow: 19px 18px 34px -15px rgba(249, 196, 217, 0.47);
+      box-shadow: 19px 18px 34px -15px rgba(249, 196, 217, 0.47);
+      transition: .5s; }
   .about .about_1-card_2 {
     margin-top: 50px;
-    -webkit-box-shadow: 14px 16px 42px -4px rgba(0, 0, 0, 0.68);
-    box-shadow: 14px 16px 42px -4px rgba(0, 0, 0, 0.68); }
+    transition: .5s;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.7); }
+    .about .about_1-card_2:hover {
+      -webkit-box-shadow: 19px 18px 34px -15px rgba(251, 125, 38, 0.47);
+      box-shadow: 19px 18px 34px -15px rgba(251, 125, 38, 0.47);
+      transition: .5s; }
   .about .about_1-card_3 {
-    margin-top: -100px; }
+    margin-top: -100px;
+    transition: .5s; }
+    .about .about_1-card_3:hover {
+      -webkit-box-shadow: 19px 18px 34px -15px rgba(234, 13, 217, 0.47);
+      box-shadow: 19px 18px 34px -15px rgba(234, 13, 217, 0.47);
+      transition: .5s; }
   .about .about_2 {
     margin-top: -200px; }
     .about .about_2-card_4 {
-      margin-top: -100px; }
+      margin-top: -100px;
+      transition: .5s; }
+      .about .about_2-card_4:hover {
+        -webkit-box-shadow: 19px 18px 34px -15px rgba(234, 13, 217, 0.47);
+        box-shadow: 19px 18px 34px -15px rgba(234, 13, 217, 0.47);
+        transition: .5s; }
     .about .about_2-card_5 {
-      margin-top: 50px; }
+      margin-top: 50px;
+      transition: .5s; }
+      .about .about_2-card_5:hover {
+        -webkit-box-shadow: 19px 18px 34px -15px rgba(249, 196, 217, 0.47);
+        box-shadow: 19px 18px 34px -15px rgba(249, 196, 217, 0.47);
+        transition: .5s; }
     .about .about_2-card_6 {
-      margin-top: -100px; }
+      margin-top: -100px;
+      transition: .5s; }
+      .about .about_2-card_6:hover {
+        -webkit-box-shadow: 19px 18px 34px -15px rgba(251, 125, 38, 0.47);
+        box-shadow: 19px 18px 34px -15px rgba(251, 125, 38, 0.47);
+        transition: .5s; }
