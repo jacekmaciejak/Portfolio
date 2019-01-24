@@ -6,6 +6,7 @@
 	transition: .5s;
 	filter: grayscale(1);
 	-webkit-filter: grayscale(1);
+	z-index: 999;
 
 	&:hover {
 		transition: .5s;

@@ -1,5 +1,20 @@
 .about {
 	background: radial-gradient(#fff, #C9C9C9);
+	color: #b1b1b1;
+
+	.background {
+
+		h1 {
+			width: 100%;
+			font-size: 10rem;
+			position: fixed;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 0;
+			opacity: .2;
+			text-align: center;
+		}
+	}
 
 	&_1,
 	&_2 {
