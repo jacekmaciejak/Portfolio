@@ -410,8 +410,8 @@ p {
     justify-items: center;
     align-items: center; }
   .about_1-card, .about_2-card {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     -webkit-box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7);
     box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7);
     transition: .5s;
