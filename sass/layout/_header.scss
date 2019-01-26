@@ -3,10 +3,13 @@
 	position: relative;
 	background-image: url(../../img/img1.jpg);
 	background-size: cover;
+	object-fit: cover;
 	transition: .5s;
 	filter: grayscale(1);
 	-webkit-filter: grayscale(1);
 	z-index: 999;
+
+	@include gridCenter;
 
 	&:hover {
 		transition: .5s;
@@ -21,7 +24,6 @@
 	}
 
 	&_panel {
-		//background-image: linear-gradient(to right, #f4abc2, #d7b3f0, #8ac6ff, #00d6fc, #10dcc1, );
 		width: 900px;
 		height: 600px;
 		position: fixed;

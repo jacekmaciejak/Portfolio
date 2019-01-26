@@ -1,16 +1,14 @@
 footer {
 	background: radial-gradient(#fff, #C9C9C9);
 	color: #b1b1b1;
+	padding-bottom: 3rem;
 
-	h2 {}
 
 	&_button {
 		width: 50%;
 		border: 1px solid #000;
 		cursor: pointer;
-		display: grid;
-		justify-items: center;
-		align-items: center;
+		@include gridCenter;
 
 		p {
 

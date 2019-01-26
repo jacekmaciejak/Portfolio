@@ -1,26 +1,12 @@
 .about {
 	background: radial-gradient(#fff, #C9C9C9);
 	color: #b1b1b1;
+	padding-bottom: 2rem;
 
-	.background {
-
-		h1 {
-			width: 100%;
-			font-size: 10rem;
-			position: fixed;
-			top: 50%;
-			transform: translateY(-50%);
-			z-index: 0;
-			opacity: .2;
-			text-align: center;
-		}
-	}
 
 	&_1,
 	&_2 {
-		display: grid;
-		justify-items: center;
-		align-items: center;
+		@include gridCenter;
 	}
 
 	&_1-card,
@@ -138,25 +124,6 @@
 		}
 	}
 
-	/*
-	&_1-card img,
-	&_2-card img {
-		object-fit: cover;
-		background-size: cover;
-		background-position: center;
-		width: 100%;
-		height: 100%;
-		transition: .5s;
-		filter: grayscale(1);
-		-webkit-filter: grayscale(1);
-
-		&:hover {
-			filter: grayscale(0) saturate(2);
-			-webkit-filter: grayscale(0) saturate(2);
-			transition: .5s;
-		}
-	}
-*/
 	.about_1 {
 
 		&-h1 {
@@ -195,116 +162,4 @@
 			margin-top: -100px;
 		}
 	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/*------------BACKGROUND--------------------*/
-
-
-.back {
-	position: fixed;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 0;
-	width: 100%;
-	height: 100%;
-	background: radial-gradient(#fff, #757575);
-	overflow: hidden;
-	opacity: .2;
-
-	&:before {
-		content: '';
-		position: absolute;
-		top: 50%;
-		left: 0;
-		transform: translateY(-50%);
-		width: 100%;
-		height: 5px;
-		background: #000;
-	}
-
-	&:after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 5px;
-		height: 100%;
-		background: #000;
-	}
-
-	.niddle {
-		position: absolute;
-		top: calc(50% - 2px);
-		left: 50%;
-		height: 4px;
-		width: 1200px;
-		background: #000;
-		animation: animate 7s linear infinite;
-		transform-origin: left;
-	}
-
-	.number {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-
-		div {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			font-size: 25em;
-			font-weight: bold;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			opacity: 0;
-			animation: animateNumber 3s linear infinite;
-
-			&:nth-child(1) {
-				animation-delay: 1s;
-			}
-
-			&:nth-child(2) {
-				animation-delay: 2s;
-			}
-
-			&:nth-child(3) {
-				animation-delay: 3s;
-			}
-		}
-	}
-
-	.circle {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 500px;
-		height: 500px;
-		border: 5px solid #fff;
-		border-radius: 50%;
-	}
-
-	.circle2 {
-		width: 600px;
-		height: 600px;
-		position: relative;
-	}
-
 }

@@ -14,6 +14,11 @@
 		grid-area: header_button;
 	}
 
+	@include respond-phone {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: "header_title""header_button"
+	}
 }
 
 .about {
@@ -44,6 +49,14 @@
 
 		&-card_3 {
 			grid-area: about_1-card_3;
+		}
+
+		@include respond-phone {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			grid-template-areas: "about_1-card_1""habout_1-card_2""about_1-card_3";
+
 		}
 
 	}
