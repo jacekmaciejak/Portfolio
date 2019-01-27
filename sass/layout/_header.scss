@@ -2,8 +2,11 @@
 	color: #b1b1b1;
 	position: relative;
 	background-image: url(../../img/img1.jpg);
-	background-size: cover;
 	object-fit: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	transition: .5s;
 	filter: grayscale(1);
 	-webkit-filter: grayscale(1);
