@@ -3,9 +3,12 @@ footer {
 	color: #b1b1b1;
 	padding-bottom: 3rem;
 
-
 	h2 {
 		text-align: center;
+
+		@include respond(phone) {
+			font-size: 2rem;
+		}
 	}
 
 	&_button {

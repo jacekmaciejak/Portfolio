@@ -14,7 +14,7 @@
 
 h1 {
   font-size: 4rem;
-  line-height: 1.2; }
+  line-height: 2; }
 
 h2 {
   font-size: 3.5rem; }
@@ -128,7 +128,12 @@ p {
   border: 1px solid #b1b1b1;
   text-align: center;
   cursor: pointer; }
-  .header_button > p {
+  @media (max-width: 600px) {
+    .header_button {
+      width: auto;
+      height: auto;
+      padding: 10px; } }
+  .header_button p {
     align-self: center;
     font-size: 24px;
     font-weight: 300;
@@ -152,19 +157,32 @@ p {
   z-index: 999;
   display: grid;
   justify-items: center;
-  align-items: center; }
+  align-items: center;
+  /*
+	&_title h1,
+	p {
+		position: relative;
+		z-index: 1000;
+	}
+*/ }
+  @media (max-width: 600px) {
+    .header {
+      background-position: calc(100% + 200px); } }
   .header:hover {
     transition: .5s;
     filter: grayscale(0);
     -webkit-filter: grayscale(0); }
-  @media (max-width: 600px) {
-    .header_title h1,
-    .header_title h2 {
-      font-size: 2rem; } }
-  .header_title h1,
-  .header p {
-    position: relative;
-    z-index: 1000; }
+  .header_title {
+    margin-top: 6rem; }
+    @media (max-width: 600px) {
+      .header_title h1,
+      .header_title h2 {
+        font-size: 2rem;
+        text-align: center; } }
+    .header_title p {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1rem; }
   .header_panel {
     width: 900px;
     height: 600px;
@@ -615,13 +633,15 @@ footer {
     opacity: .3; }
     @media (max-width: 600px) {
       .about_1-h1 {
-        margin-top: 30px; } }
+        margin-top: 30px;
+        font-size: 2rem; } }
   .about_1-h2 {
     margin-top: -80px; }
     @media (max-width: 600px) {
       .about_1-h2 {
         margin-top: -50px;
-        margin-bottom: 30px; } }
+        margin-bottom: 30px;
+        font-size: 1.3rem; } }
   .about_1-card_1 {
     margin-top: -100px; }
     @media (max-width: 600px) {
@@ -664,6 +684,9 @@ footer {
   padding-bottom: 3rem; }
   footer h2 {
     text-align: center; }
+    @media (max-width: 600px) {
+      footer h2 {
+        font-size: 2rem; } }
   footer_button {
     width: 50%;
     border: 1px solid #000;

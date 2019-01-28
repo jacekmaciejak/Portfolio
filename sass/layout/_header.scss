@@ -14,6 +14,11 @@
 
 	@include gridCenter;
 
+	@include respond(phone) {
+		background-position: calc(100% + 200px);
+
+	}
+
 	&:hover {
 		transition: .5s;
 		filter: grayscale(0);
@@ -21,21 +26,30 @@
 	}
 
 	&_title {
+		margin-top: 6rem;
 
 		h1,
 		h2 {
 			@include respond(phone) {
 				font-size: 2rem;
+				text-align: center;
 			}
+		}
+
+		p {
+			text-align: center;
+			margin-top: 3rem;
+			padding: 1rem;
 		}
 	}
 
+	/*
 	&_title h1,
 	p {
 		position: relative;
 		z-index: 1000;
 	}
-
+*/
 	&_panel {
 		width: 900px;
 		height: 600px;
