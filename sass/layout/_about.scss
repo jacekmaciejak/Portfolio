@@ -18,6 +18,10 @@
 		transition: .5s;
 		position: relative;
 
+		@include respond(phone) {
+			height: 300px;
+		}
+
 		&:before {
 			content: '';
 			position: absolute;
@@ -124,42 +128,79 @@
 		}
 	}
 
-	.about_1 {
+	&_1 {
 
 		&-h1 {
-			opacity: .1;
+			opacity: .3;
+
+			@include respond(phone) {
+				margin-top: 30px;
+			}
 		}
 
 		&-h2 {
 			margin-top: -80px;
+
+			@include respond(phone) {
+				margin-top: -50px;
+				margin-bottom: 30px;
+			}
 		}
 
 		&-card_1 {
 			margin-top: -100px;
+
+			@include respond(phone) {
+				margin-top: 0;
+			}
 		}
 
 		&-card_2 {
 			margin-top: 50px;
+
+			@include respond(phone) {
+				margin-top: 0;
+			}
 		}
 
 		&-card_3 {
 			margin-top: -100px;
+
+			@include respond(phone) {
+				margin-top: 0;
+			}
 		}
 	}
 
-	.about_2 {
+	&_2 {
 		margin-top: -200px;
+
+		@include respond(phone) {
+			margin-top: 0;
+		}
 
 		&-card_4 {
 			margin-top: -100px;
+
+			@include respond(phone) {
+				margin-top: 0;
+			}
 		}
 
 		&-card_5 {
 			margin-top: 50px;
+
+			@include respond(phone) {
+				margin-top: 0;
+			}
 		}
 
 		&-card_6 {
 			margin-top: -100px;
+
+			@include respond(phone) {
+				margin-top: 0;
+			}
 		}
 	}
 }

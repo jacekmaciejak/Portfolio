@@ -20,6 +20,16 @@
 		-webkit-filter: grayscale(0);
 	}
 
+	&_title {
+
+		h1,
+		h2 {
+			@include respond(phone) {
+				font-size: 2rem;
+			}
+		}
+	}
+
 	&_title h1,
 	p {
 		position: relative;
