@@ -16,7 +16,6 @@
 
 	@include respond(phone) {
 		background-position: calc(100% + 200px);
-
 	}
 
 	&:hover {
@@ -26,7 +25,7 @@
 	}
 
 	&_title {
-		margin-top: 6rem;
+
 
 		h1,
 		h2 {
@@ -38,8 +37,11 @@
 
 		p {
 			text-align: center;
-			margin-top: 3rem;
-			padding: 1rem;
+
+			@include respond(phone) {
+				margin-top: 3rem;
+				padding: 1rem;
+			}
 		}
 	}
 

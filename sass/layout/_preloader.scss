@@ -60,6 +60,11 @@
 			opacity: 0;
 			animation: animateNumber 3s linear infinite;
 
+			@include respond(phone) {
+
+				font-size: 15rem;
+			}
+
 			&:nth-child(1) {
 				animation-delay: 1s;
 			}
@@ -83,12 +88,22 @@
 		height: 500px;
 		border: 5px solid #fff;
 		border-radius: 50%;
+
+		@include respond(phone) {
+			width: 330px;
+			height: 330px;
+		}
 	}
 
 	.circle2 {
 		width: 600px;
 		height: 600px;
 		position: relative;
+
+		@include respond(phone) {
+			width: 450px;
+			height: 450px;
+		}
 	}
 
 }
