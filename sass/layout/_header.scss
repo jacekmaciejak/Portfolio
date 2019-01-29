@@ -18,6 +18,10 @@
 		background-position: calc(100% + 200px);
 	}
 
+	@include respond(tab-port) {
+		background-position: calc(100% + 200px);
+	}
+
 	&:hover {
 		transition: .5s;
 		filter: grayscale(0);
@@ -26,11 +30,13 @@
 
 	&_title {
 
-
 		h1,
 		h2 {
 			@include respond(phone) {
-				font-size: 2rem;
+				text-align: center;
+			}
+
+			@include respond(tab-port) {
 				text-align: center;
 			}
 		}

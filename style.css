@@ -15,15 +15,30 @@
 h1 {
   font-size: 4rem;
   line-height: 2; }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2rem; } }
+  @media (max-width: 900px) {
+    h1 {
+      font-size: 3rem; } }
 
 h2 {
   font-size: 3.5rem; }
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 1.3rem; } }
+  @media (max-width: 900px) {
+    h2 {
+      font-size: 2rem; } }
 
 h3 {
   font-size: 2rem; }
 
 p {
   line-height: 1.8; }
+  @media (max-width: 600px) {
+    p {
+      font-size: 1rem; } }
 
 /*------------BACKGROUND--------------------*/
 .back {
@@ -133,6 +148,11 @@ p {
       width: auto;
       height: auto;
       padding: 10px; } }
+  @media (max-width: 900px) {
+    .header_button {
+      width: auto;
+      height: auto;
+      padding: 20px; } }
   .header_button p {
     align-self: center;
     font-size: 24px;
@@ -168,6 +188,9 @@ p {
   @media (max-width: 600px) {
     .header {
       background-position: calc(100% + 200px); } }
+  @media (max-width: 900px) {
+    .header {
+      background-position: calc(100% + 200px); } }
   .header:hover {
     transition: .5s;
     filter: grayscale(0);
@@ -175,7 +198,10 @@ p {
   @media (max-width: 600px) {
     .header_title h1,
     .header_title h2 {
-      font-size: 2rem;
+      text-align: center; } }
+  @media (max-width: 900px) {
+    .header_title h1,
+    .header_title h2 {
       text-align: center; } }
   .header_title p {
     text-align: center; }
@@ -329,17 +355,25 @@ p {
       grid-template-columns: 1fr;
       grid-template-rows: 2fr 1fr;
       grid-template-areas: "header_title" "header_button"; } }
+  @media (max-width: 900px) {
+    .header {
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr 1fr;
+      grid-template-areas: "header_title" "header_button"; } }
   .header_title {
     grid-area: header_title; }
   .header_button {
     grid-area: header_button; }
 
-.about .about_1 {
+.about .about_1,
+.about .about_2 {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+
+.about .about_1 {
   grid-template-areas: ". . . . . . . . . . . . ." ". . about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 . ." ". . about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 . ." ". . . . . . . . . . . . ." ". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ." ". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ." ". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ." ". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ." ". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ." ". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ." ". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ." ". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ." ". . . . . . . . . . . . ."; }
   @media (max-width: 600px) {
     .about .about_1 {
@@ -359,11 +393,6 @@ p {
     grid-area: about_1-card_3; }
 
 .about .about_2 {
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: ". . . . . . . . . . . . ." ". . about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 . ." ". . about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 . ." ". . . . . . . . . . . . ." ". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ." ". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ." ". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ." ". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ." ". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ." ". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ." ". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ." ". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ." ". . . . . . . . . . . . ."; }
   @media (max-width: 600px) {
     .about .about_2 {
@@ -561,7 +590,8 @@ footer {
     @media (max-width: 600px) {
       .about_1-card, .about_2-card {
         height: 300px;
-        width: 90%; } }
+        width: 90%;
+        margin: 30px 0; } }
     .about_1-card:before, .about_2-card:before {
       content: '';
       position: absolute;
@@ -644,18 +674,10 @@ footer {
       visibility: visible;
       transition-delay: .2s;
       transform: translateY(0px); }
-  .about_1-h1 {
-    opacity: .3; }
-    @media (max-width: 600px) {
-      .about_1-h1 {
-        font-size: 2rem; } }
+  .about_1-h1 h1 {
+    opacity: .4; }
   .about_1-h2 {
     margin-top: -80px; }
-    @media (max-width: 600px) {
-      .about_1-h2 {
-        margin-top: -50px;
-        margin-bottom: 30px;
-        font-size: 1.3rem; } }
   .about_1-card_1 {
     margin-top: -100px; }
     @media (max-width: 600px) {
@@ -697,21 +719,10 @@ footer {
   color: #b1b1b1;
   padding-bottom: 3rem; }
   footer h2 {
-    text-align: center; }
-    @media (max-width: 600px) {
-      footer h2 {
-        font-size: 2rem; } }
+    text-align: center;
+    border: 2px solid #ccc;
+    padding: 15px; }
   footer_button {
-    width: 50%;
-    border: 1px solid #000;
-    cursor: pointer;
     display: grid;
     justify-items: center;
     align-items: center; }
-    footer_button p {
-      font-size: 24px;
-      font-weight: 300;
-      color: #b1b1b1; }
-    footer_button:hover {
-      border: 1px solid red;
-      transition: .5s; }

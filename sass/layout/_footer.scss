@@ -5,32 +5,12 @@ footer {
 
 	h2 {
 		text-align: center;
-
-		@include respond(phone) {
-			font-size: 2rem;
-		}
+		border: 2px solid #ccc;
+		padding: 15px;
 	}
 
 	&_button {
-		width: 50%;
-		border: 1px solid #000;
-		cursor: pointer;
+
 		@include gridCenter;
-
-		p {
-
-			font: {
-				size: 24px;
-				weight: 300;
-			}
-
-			color: #b1b1b1;
-
-		}
-
-		&:hover {
-			border: 1px solid red;
-			transition: .5s;
-		}
 	}
 }

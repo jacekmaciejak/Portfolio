@@ -21,6 +21,7 @@
 		@include respond(phone) {
 			height: 300px;
 			width: 90%;
+			margin: 30px 0;
 		}
 
 		&:before {
@@ -132,21 +133,14 @@
 	&_1 {
 
 		&-h1 {
-			opacity: .3;
-
-			@include respond(phone) {
-				font-size: 2rem;
+			h1 {
+				opacity: .4;
 			}
+
 		}
 
 		&-h2 {
 			margin-top: -80px;
-
-			@include respond(phone) {
-				margin-top: -50px;
-				margin-bottom: 30px;
-				font-size: 1.3rem;
-			}
 		}
 
 		&-card_1 {
