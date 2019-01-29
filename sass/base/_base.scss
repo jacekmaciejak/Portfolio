@@ -61,9 +61,7 @@ p {
 	overflow: hidden;
 	opacity: .2;
 
-	@include respond(phone) {
-		display: none;
-	}
+
 
 
 	&:before {
@@ -143,12 +141,22 @@ p {
 		height: 500px;
 		border: 5px solid #fff;
 		border-radius: 50%;
+
+		@include respond(phone) {
+			width: 400px;
+			height: 400px;
+		}
 	}
 
 	.circle2 {
 		width: 600px;
 		height: 600px;
 		position: relative;
+
+		@include respond(phone) {
+			width: 500px;
+			height: 500px;
+		}
 	}
 
 }

@@ -48,6 +48,11 @@
 				margin-top: 3rem;
 				padding: 1rem;
 			}
+
+			@include respond(tab-port) {
+				margin-top: 3rem;
+				padding: 2rem;
+			}
 		}
 	}
 
