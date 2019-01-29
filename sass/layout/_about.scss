@@ -3,7 +3,6 @@
 	color: #b1b1b1;
 	padding-bottom: 2rem;
 
-
 	&_1,
 	&_2 {
 		@include gridCenter;
@@ -18,14 +17,20 @@
 		transition: .5s;
 		position: relative;
 
-		@include respond(phone) {
-			height: 300px;
+		@include respond(tab-land) {
+			height: 400px;
 			width: 90%;
 			margin: 30px 0;
 		}
 
 		@include respond(tab-port) {
 			height: 400px;
+			width: 90%;
+			margin: 30px 0;
+		}
+
+		@include respond(phone) {
+			height: 300px;
 			width: 90%;
 			margin: 30px 0;
 		}
@@ -159,7 +164,7 @@
 		&-card_1 {
 			margin-top: -100px;
 
-			@include respond(phone) {
+			@include respond(tab-land) {
 				margin-top: 0;
 			}
 
@@ -167,16 +172,23 @@
 				margin-top: 0;
 			}
 
+			@include respond(phone) {
+				margin-top: 0;
+			}
 		}
 
 		&-card_2 {
 			margin-top: 50px;
 
-			@include respond(phone) {
+			@include respond(tab-land) {
 				margin-top: 0;
 			}
 
 			@include respond(tab-port) {
+				margin-top: 0;
+			}
+
+			@include respond(phone) {
 				margin-top: 0;
 			}
 		}
@@ -184,11 +196,17 @@
 		&-card_3 {
 			margin-top: -100px;
 
-			@include respond(phone) {
+
+			@include respond(tab-land) {
 				margin-top: 0;
+				width: 95%;
 			}
 
 			@include respond(tab-port) {
+				margin-top: 0;
+			}
+
+			@include respond(phone) {
 				margin-top: 0;
 			}
 		}
@@ -197,7 +215,7 @@
 	&_2 {
 		margin-top: -200px;
 
-		@include respond(phone) {
+		@include respond(tab-land) {
 			margin-top: 0;
 		}
 
@@ -205,14 +223,22 @@
 			margin-top: 0;
 		}
 
+		@include respond(phone) {
+			margin-top: 0;
+		}
+
 		&-card_4 {
 			margin-top: -100px;
 
-			@include respond(phone) {
+			@include respond(tab-land) {
 				margin-top: 0;
 			}
 
 			@include respond(tab-port) {
+				margin-top: 0;
+			}
+
+			@include respond(phone) {
 				margin-top: 0;
 			}
 		}
@@ -220,11 +246,15 @@
 		&-card_5 {
 			margin-top: 50px;
 
-			@include respond(phone) {
+			@include respond(tab-land) {
 				margin-top: 0;
 			}
 
 			@include respond(tab-port) {
+				margin-top: 0;
+			}
+
+			@include respond(phone) {
 				margin-top: 0;
 			}
 		}
@@ -232,11 +262,16 @@
 		&-card_6 {
 			margin-top: -100px;
 
-			@include respond(phone) {
+			@include respond(tab-land) {
 				margin-top: 0;
+				width: 95%;
 			}
 
 			@include respond(tab-port) {
+				margin-top: 0;
+			}
+
+			@include respond(phone) {
 				margin-top: 0;
 			}
 		}

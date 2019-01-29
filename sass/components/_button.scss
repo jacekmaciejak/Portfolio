@@ -19,6 +19,12 @@
 			padding: 20px;
 		}
 
+		@include respond(tab-land) {
+			width: auto;
+			height: auto;
+			padding: 30px;
+		}
+
 		p {
 			align-self: center;
 

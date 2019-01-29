@@ -158,6 +158,11 @@ p {
       width: auto;
       height: auto;
       padding: 20px; } }
+  @media (max-width: 1200px) {
+    .header_button {
+      width: auto;
+      height: auto;
+      padding: 30px; } }
   .header_button p {
     align-self: center;
     font-size: 24px;
@@ -190,34 +195,40 @@ p {
 		z-index: 1000;
 	}
 */ }
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     .header {
       background-position: calc(100% + 200px); } }
-  @media (max-width: 900px) {
+  @media (max-width: 600px) {
     .header {
       background-position: calc(100% + 200px); } }
   .header:hover {
     transition: .5s;
     filter: grayscale(0);
     -webkit-filter: grayscale(0); }
-  @media (max-width: 600px) {
+  @media (max-width: 1200px) {
+    .header_title {
+      padding: 3rem; } }
+  @media (max-width: 900px) {
     .header_title h1,
     .header_title h2 {
       text-align: center; } }
-  @media (max-width: 900px) {
+  @media (max-width: 600px) {
     .header_title h1,
     .header_title h2 {
       text-align: center; } }
   .header_title p {
     text-align: center; }
-    @media (max-width: 600px) {
+    @media (max-width: 1200px) {
       .header_title p {
-        margin-top: 3rem;
-        padding: 1rem; } }
+        margin-top: 6rem; } }
     @media (max-width: 900px) {
       .header_title p {
         margin-top: 3rem;
         padding: 2rem; } }
+    @media (max-width: 600px) {
+      .header_title p {
+        margin-top: 3rem;
+        padding: 1rem; } }
   .header_panel {
     width: 900px;
     height: 600px;
@@ -359,12 +370,17 @@ p {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: ". . . . . ." ". . . . . ." ". header_title header_title header_title . ." ". header_title header_title header_title . ." ". header_title header_title header_title . ." ". header_button header_button . . ." ". . . . . ."; }
-  @media (max-width: 600px) {
+  @media (max-width: 1200px) {
     .header {
       grid-template-columns: 1fr;
       grid-template-rows: 2fr 1fr;
       grid-template-areas: "header_title" "header_button"; } }
   @media (max-width: 900px) {
+    .header {
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr 1fr;
+      grid-template-areas: "header_title" "header_button"; } }
+  @media (max-width: 600px) {
     .header {
       grid-template-columns: 1fr;
       grid-template-rows: 2fr 1fr;
@@ -384,13 +400,19 @@ p {
 
 .about .about_1 {
   grid-template-areas: ". . . . . . . . . . . . ." ". . about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 . ." ". . about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 . ." ". . . . . . . . . . . . ." ". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ." ". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ." ". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ." ". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ." ". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ." ". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ." ". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ." ". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ." ". . . . . . . . . . . . ."; }
-  @media (max-width: 600px) {
+  @media (max-width: 1200px) {
+    .about .about_1 {
+      height: auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: .1fr .1fr 1fr 1fr;
+      grid-template-areas: "about_1-h1 about_1-h1" "about_1-h2 about_1-h2" "about_1-card_1 about_1-card_2" "about_1-card_3 about_1-card_3"; } }
+  @media (max-width: 900px) {
     .about .about_1 {
       height: auto;
       grid-template-columns: 1fr;
       grid-template-rows: .1fr .1fr 1fr 1fr 1fr;
       grid-template-areas: "about_1-h1" "about_1-h2" "about_1-card_1" "about_1-card_2" "about_1-card_3"; } }
-  @media (max-width: 900px) {
+  @media (max-width: 600px) {
     .about .about_1 {
       height: auto;
       grid-template-columns: 1fr;
@@ -409,13 +431,19 @@ p {
 
 .about .about_2 {
   grid-template-areas: ". . . . . . . . . . . . ." ". . about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 . ." ". . about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 . ." ". . . . . . . . . . . . ." ". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ." ". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ." ". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ." ". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ." ". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ." ". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ." ". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ." ". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ." ". . . . . . . . . . . . ."; }
-  @media (max-width: 600px) {
+  @media (max-width: 1200px) {
+    .about .about_2 {
+      height: auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "about_2-card_4 about_2-card_5" "about_2-card_6 about_2-card_6"; } }
+  @media (max-width: 900px) {
     .about .about_2 {
       height: auto;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas: "about_2-card_4" "about_2-card_5" "about_2-card_6"; } }
-  @media (max-width: 900px) {
+  @media (max-width: 600px) {
     .about .about_2 {
       height: auto;
       grid-template-columns: 1fr;
@@ -562,6 +590,9 @@ footer {
       align-items: center;
       opacity: 0;
       animation: animateNumber 3s linear infinite; }
+      @media (max-width: 900px) {
+        .box .number div {
+          font-size: 20rem; } }
       @media (max-width: 600px) {
         .box .number div {
           font-size: 15rem; } }
@@ -608,14 +639,19 @@ footer {
     box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7);
     transition: .5s;
     position: relative; }
-    @media (max-width: 600px) {
+    @media (max-width: 1200px) {
       .about_1-card, .about_2-card {
-        height: 300px;
+        height: 400px;
         width: 90%;
         margin: 30px 0; } }
     @media (max-width: 900px) {
       .about_1-card, .about_2-card {
         height: 400px;
+        width: 90%;
+        margin: 30px 0; } }
+    @media (max-width: 600px) {
+      .about_1-card, .about_2-card {
+        height: 300px;
         width: 90%;
         margin: 30px 0; } }
     .about_1-card:before, .about_2-card:before {
@@ -712,58 +748,81 @@ footer {
         margin-bottom: 2rem; } }
   .about_1-card_1 {
     margin-top: -100px; }
-    @media (max-width: 600px) {
+    @media (max-width: 1200px) {
       .about_1-card_1 {
         margin-top: 0; } }
     @media (max-width: 900px) {
+      .about_1-card_1 {
+        margin-top: 0; } }
+    @media (max-width: 600px) {
       .about_1-card_1 {
         margin-top: 0; } }
   .about_1-card_2 {
     margin-top: 50px; }
-    @media (max-width: 600px) {
+    @media (max-width: 1200px) {
       .about_1-card_2 {
         margin-top: 0; } }
     @media (max-width: 900px) {
+      .about_1-card_2 {
+        margin-top: 0; } }
+    @media (max-width: 600px) {
       .about_1-card_2 {
         margin-top: 0; } }
   .about_1-card_3 {
     margin-top: -100px; }
-    @media (max-width: 600px) {
+    @media (max-width: 1200px) {
+      .about_1-card_3 {
+        margin-top: 0;
+        width: 95%; } }
+    @media (max-width: 900px) {
       .about_1-card_3 {
         margin-top: 0; } }
-    @media (max-width: 900px) {
+    @media (max-width: 600px) {
       .about_1-card_3 {
         margin-top: 0; } }
   .about_2 {
     margin-top: -200px; }
-    @media (max-width: 600px) {
+    @media (max-width: 1200px) {
       .about_2 {
         margin-top: 0; } }
     @media (max-width: 900px) {
       .about_2 {
         margin-top: 0; } }
+    @media (max-width: 600px) {
+      .about_2 {
+        margin-top: 0; } }
     .about_2-card_4 {
       margin-top: -100px; }
-      @media (max-width: 600px) {
+      @media (max-width: 1200px) {
         .about_2-card_4 {
           margin-top: 0; } }
       @media (max-width: 900px) {
+        .about_2-card_4 {
+          margin-top: 0; } }
+      @media (max-width: 600px) {
         .about_2-card_4 {
           margin-top: 0; } }
     .about_2-card_5 {
       margin-top: 50px; }
-      @media (max-width: 600px) {
+      @media (max-width: 1200px) {
         .about_2-card_5 {
           margin-top: 0; } }
       @media (max-width: 900px) {
+        .about_2-card_5 {
+          margin-top: 0; } }
+      @media (max-width: 600px) {
         .about_2-card_5 {
           margin-top: 0; } }
     .about_2-card_6 {
       margin-top: -100px; }
-      @media (max-width: 600px) {
+      @media (max-width: 1200px) {
+        .about_2-card_6 {
+          margin-top: 0;
+          width: 95%; } }
+      @media (max-width: 900px) {
         .about_2-card_6 {
           margin-top: 0; } }
-      @media (max-width: 900px) {
+      @media (max-width: 600px) {
         .about_2-card_6 {
           margin-top: 0; } }
 

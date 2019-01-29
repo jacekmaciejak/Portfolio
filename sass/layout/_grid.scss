@@ -6,7 +6,7 @@
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-areas: ". . . . . ."". . . . . ."". header_title header_title header_title . ."". header_title header_title header_title . ."". header_title header_title header_title . ."". header_button header_button . . ."". . . . . .";
 
-	@include respond(phone) {
+	@include respond(tab-land) {
 		grid-template-columns: 1fr;
 		grid-template-rows: 2fr 1fr;
 		grid-template-areas: "header_title""header_button"
@@ -18,6 +18,11 @@
 		grid-template-areas: "header_title""header_button"
 	}
 
+	@include respond(phone) {
+		grid-template-columns: 1fr;
+		grid-template-rows: 2fr 1fr;
+		grid-template-areas: "header_title""header_button"
+	}
 
 	&_title {
 		grid-area: header_title;
@@ -44,14 +49,21 @@
 
 		grid-template-areas: ". . . . . . . . . . . . ."". . about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 about_1-h1 . ."". . about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 about_1-h2 . ."". . . . . . . . . . . . ."". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ."". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ."". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ."". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ."". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ."". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ."". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ."". about_1-card_1 about_1-card_1 about_1-card_1 . about_1-card_2 about_1-card_2 about_1-card_2 . about_1-card_3 about_1-card_3 about_1-card_3 ."". . . . . . . . . . . . .";
 
-		@include respond(phone) {
+		@include respond(tab-land) {
+			height: auto;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: .1fr .1fr 1fr 1fr;
+			grid-template-areas: "about_1-h1 about_1-h1""about_1-h2 about_1-h2""about_1-card_1 about_1-card_2""about_1-card_3 about_1-card_3";
+		}
+
+		@include respond(tab-port) {
 			height: auto;
 			grid-template-columns: 1fr;
 			grid-template-rows: .1fr .1fr 1fr 1fr 1fr;
 			grid-template-areas: "about_1-h1""about_1-h2""about_1-card_1""about_1-card_2""about_1-card_3";
 		}
 
-		@include respond(tab-port) {
+		@include respond(phone) {
 			height: auto;
 			grid-template-columns: 1fr;
 			grid-template-rows: .1fr .1fr 1fr 1fr 1fr;
@@ -83,14 +95,21 @@
 
 		grid-template-areas: ". . . . . . . . . . . . ."". . about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 about_2-h1 . ."". . about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 about_2-h2 . ."". . . . . . . . . . . . ."". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ."". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ."". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ."". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ."". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ."". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ."". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ."". about_2-card_4 about_2-card_4 about_2-card_4 . about_2-card_5 about_2-card_5 about_2-card_5 . about_2-card_6 about_2-card_6 about_2-card_6 ."". . . . . . . . . . . . .";
 
-		@include respond(phone) {
+		@include respond(tab-land) {
+			height: auto;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			grid-template-areas: "about_2-card_4 about_2-card_5""about_2-card_6 about_2-card_6";
+		}
+
+		@include respond(tab-port) {
 			height: auto;
 			grid-template-columns: 1fr;
 			grid-template-rows: 1fr 1fr 1fr;
 			grid-template-areas: "about_2-card_4""about_2-card_5""about_2-card_6";
 		}
 
-		@include respond(tab-port) {
+		@include respond(phone) {
 			height: auto;
 			grid-template-columns: 1fr;
 			grid-template-rows: 1fr 1fr 1fr;

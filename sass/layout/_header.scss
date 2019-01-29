@@ -14,13 +14,15 @@
 
 	@include gridCenter;
 
+	@include respond(tab-port) {
+		background-position: calc(100% + 200px);
+	}
+
 	@include respond(phone) {
 		background-position: calc(100% + 200px);
 	}
 
-	@include respond(tab-port) {
-		background-position: calc(100% + 200px);
-	}
+
 
 	&:hover {
 		transition: .5s;
@@ -30,13 +32,17 @@
 
 	&_title {
 
+		@include respond(tab-land) {
+			padding: 3rem;
+		}
+
 		h1,
 		h2 {
-			@include respond(phone) {
+			@include respond(tab-port) {
 				text-align: center;
 			}
 
-			@include respond(tab-port) {
+			@include respond(phone) {
 				text-align: center;
 			}
 		}
@@ -44,14 +50,18 @@
 		p {
 			text-align: center;
 
-			@include respond(phone) {
-				margin-top: 3rem;
-				padding: 1rem;
+			@include respond(tab-land) {
+				margin-top: 6rem;
 			}
 
 			@include respond(tab-port) {
 				margin-top: 3rem;
 				padding: 2rem;
+			}
+
+			@include respond(phone) {
+				margin-top: 3rem;
+				padding: 1rem;
 			}
 		}
 	}
