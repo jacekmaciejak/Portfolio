@@ -203,10 +203,12 @@
 
 			@include respond(tab-port) {
 				margin-top: 0;
+				width: 90%;
 			}
 
 			@include respond(phone) {
 				margin-top: 0;
+				width: 90%;
 			}
 		}
 	}
@@ -268,10 +270,12 @@
 
 			@include respond(tab-port) {
 				margin-top: 0;
+				width: 90%;
 			}
 
 			@include respond(phone) {
 				margin-top: 0;
+				width: 90%;
 			}
 		}
 	}

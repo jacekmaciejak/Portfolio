@@ -216,14 +216,20 @@ p {
     -webkit-filter: grayscale(0); }
   @media (max-width: 1200px) {
     .header_title {
-      padding: 3rem; } }
+      padding: 3rem;
+      margin-top: 6rem; } }
+  @media (max-width: 900px) {
+    .header_title {
+      margin-top: 5rem; } }
   @media (max-width: 600px) {
     .header_title {
       margin-top: 6rem; } }
   @media (max-width: 900px) {
     .header_title h1,
     .header_title h2 {
-      text-align: center; } }
+      text-align: center;
+      line-height: 1;
+      padding: 1rem; } }
   @media (max-width: 600px) {
     .header_title h1,
     .header_title h2 {
@@ -239,7 +245,7 @@ p {
     @media (max-width: 900px) {
       .header_title p {
         margin-top: 3rem;
-        padding: 2rem; } }
+        text-align: justify; } }
     @media (max-width: 600px) {
       .header_title p {
         margin-top: 3rem;
@@ -790,10 +796,12 @@ footer {
         width: 95%; } }
     @media (max-width: 900px) {
       .about_1-card_3 {
-        margin-top: 0; } }
+        margin-top: 0;
+        width: 90%; } }
     @media (max-width: 600px) {
       .about_1-card_3 {
-        margin-top: 0; } }
+        margin-top: 0;
+        width: 90%; } }
   .about_2 {
     margin-top: -200px; }
     @media (max-width: 1200px) {
@@ -835,10 +843,12 @@ footer {
           width: 95%; } }
       @media (max-width: 900px) {
         .about_2-card_6 {
-          margin-top: 0; } }
+          margin-top: 0;
+          width: 90%; } }
       @media (max-width: 600px) {
         .about_2-card_6 {
-          margin-top: 0; } }
+          margin-top: 0;
+          width: 90%; } }
 
 footer {
   background: radial-gradient(#fff, #C9C9C9);
