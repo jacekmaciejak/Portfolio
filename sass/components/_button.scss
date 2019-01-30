@@ -1,5 +1,8 @@
 .header {
 	&_button {
+
+		@include animBackButton;
+
 		display: grid;
 		width: auto;
 		height: auto;
@@ -8,10 +11,10 @@
 		cursor: pointer;
 		padding: 30px;
 
-		@include respond(phone) {
+		@include respond(tab-land) {
 			width: auto;
 			height: auto;
-			padding: 10px;
+			padding: 30px;
 		}
 
 		@include respond(tab-port) {
@@ -20,10 +23,10 @@
 			padding: 20px;
 		}
 
-		@include respond(tab-land) {
+		@include respond(phone) {
 			width: auto;
 			height: auto;
-			padding: 30px;
+			padding: 10px;
 		}
 
 		p {

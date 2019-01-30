@@ -11,7 +11,17 @@
 	align-items: center;
 }
 
-@mixin animText {
+@mixin animTextHeader {
+	letter-spacing: 4px;
+	background: linear-gradient(90deg, #000, #fff, #000);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+	animation: animateText 6s linear 3.5s infinite;
+}
+
+@mixin animTextFooter {
 	letter-spacing: 4px;
 	background: linear-gradient(90deg, #C9C9C9, #000, #C9C9C9);
 	background-repeat: no-repeat;
@@ -20,6 +30,31 @@
 	-webkit-text-fill-color: rgba(255, 255, 255, 0);
 	animation: animateText 7s linear 3.5s infinite;
 }
+
+@mixin animBackButton {
+	background: linear-gradient(-45deg, #fff, #fff, #fff);
+	background-repeat: no-repeat;
+	background-size: 10%;
+	-webkit-background-clip: padding-box;
+	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+	animation: animateText 1s linear 3.5s infinite;
+	opacity: .5;
+}
+
+
+
+/*
+
+background: linear-gradient(45deg, #fff, #fff, #fff);
+background-repeat: no-repeat;
+background-size: 80%;
+-webkit-background-clip: border-box;
+-webkit-text-fill-color: rgba(255, 255, 255, 0);
+animation: animateText 1s linear 3.5s infinite;
+
+*/
+
+
 
 
 

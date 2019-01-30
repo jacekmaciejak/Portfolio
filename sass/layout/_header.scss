@@ -48,7 +48,7 @@
 		h1,
 		h2 {
 
-			@include animText;
+			@include animTextHeader;
 
 			@include respond(tab-port) {
 				text-align: center;
