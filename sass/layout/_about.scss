@@ -1,5 +1,6 @@
 .about {
-	background: radial-gradient(#fff, #C9C9C9);
+	//background: radial-gradient(#fff, #C9C9C9);
+	background: #c9c9c9;
 	padding-bottom: 2rem;
 
 	&_1,
@@ -10,7 +11,7 @@
 	&_1-card,
 	&_2-card {
 		width: 110%;
-		height: 90%;
+		height: 100%;
 		-webkit-box-shadow: $about_card-shadow;
 		box-shadow: $about_card-shadow;
 		transition: .5s;
@@ -144,7 +145,7 @@
 
 		&-h1 {
 			h1 {
-				opacity: .3;
+				opacity: .5;
 			}
 
 			@include respond(tab-port) {
@@ -153,7 +154,15 @@
 		}
 
 		&-h2 {
-			margin-top: -40px;
+			margin-top: -150px;
+
+			letter-spacing: 4px;
+			background: linear-gradient(90deg, #C9C9C9, #000, #C9C9C9);
+			background-repeat: no-repeat;
+			background-size: 80%;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: rgba(255, 255, 255, 0);
+			animation: animateText 3s linear infinite;
 
 			@include respond(tab-port) {
 				margin-bottom: 2rem;
@@ -230,6 +239,7 @@
 
 		&-card_4 {
 			margin-top: -100px;
+			height: 95%;
 
 			@include respond(tab-land) {
 				margin-top: 0;
@@ -246,6 +256,7 @@
 
 		&-card_5 {
 			margin-top: 50px;
+			height: 95%;
 
 			@include respond(tab-land) {
 				margin-top: 0;
@@ -262,6 +273,7 @@
 
 		&-card_6 {
 			margin-top: -100px;
+			height: 95%;
 
 			@include respond(tab-land) {
 				margin-top: 0;

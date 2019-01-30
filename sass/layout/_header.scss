@@ -47,6 +47,9 @@
 
 		h1,
 		h2 {
+
+			@include animText;
+
 			@include respond(tab-port) {
 				text-align: center;
 				line-height: 1;

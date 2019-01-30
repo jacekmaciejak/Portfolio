@@ -11,6 +11,18 @@
 	align-items: center;
 }
 
+@mixin animText {
+	letter-spacing: 4px;
+	background: linear-gradient(90deg, #C9C9C9, #000, #C9C9C9);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(255, 255, 255, 0);
+	animation: animateText 7s linear 3.5s infinite;
+}
+
+
+
 
 //MEDIA QUERY MANAGER
 /*
