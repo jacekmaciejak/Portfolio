@@ -1,11 +1,12 @@
 .header {
 	&_button {
 		display: grid;
-		width: 70%;
-		height: 70%;
+		width: auto;
+		height: auto;
 		border: 1px solid #b1b1b1;
 		text-align: center;
 		cursor: pointer;
+		padding: 30px;
 
 		@include respond(phone) {
 			width: auto;

@@ -4,11 +4,14 @@
 	box-sizing: border-box;
 	font-family: 'Work Sans', sans-serif;
 	font-size: 20px;
+}
 
+body {
+	color: #b1b1b1;
 }
 
 h1 {
-	font-size: 4rem;
+	font-size: 3.2rem;
 	line-height: 2;
 
 	@include respond(tab-land) {
@@ -25,7 +28,7 @@ h1 {
 }
 
 h2 {
-	font-size: 3.5rem;
+	font-size: 3rem;
 
 	@include respond(tab-land) {
 		font-size: 2rem;

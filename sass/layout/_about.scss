@@ -1,6 +1,5 @@
 .about {
 	background: radial-gradient(#fff, #C9C9C9);
-	color: #b1b1b1;
 	padding-bottom: 2rem;
 
 	&_1,
@@ -10,7 +9,7 @@
 
 	&_1-card,
 	&_2-card {
-		width: 100%;
+		width: 110%;
 		height: 90%;
 		-webkit-box-shadow: $about_card-shadow;
 		box-shadow: $about_card-shadow;
@@ -145,7 +144,7 @@
 
 		&-h1 {
 			h1 {
-				opacity: .4;
+				opacity: .3;
 			}
 
 			@include respond(tab-port) {
@@ -154,7 +153,7 @@
 		}
 
 		&-h2 {
-			margin-top: -80px;
+			margin-top: -40px;
 
 			@include respond(tab-port) {
 				margin-bottom: 2rem;

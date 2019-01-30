@@ -1,5 +1,5 @@
 .header {
-	color: #b1b1b1;
+
 	position: relative;
 	background-image: url(../../img/img1.jpg);
 	object-fit: cover;
@@ -36,6 +36,10 @@
 			padding: 3rem;
 		}
 
+		@include respond(phone) {
+			margin-top: 6rem;
+		}
+
 		h1,
 		h2 {
 			@include respond(tab-port) {
@@ -44,11 +48,14 @@
 
 			@include respond(phone) {
 				text-align: center;
+				line-height: 1;
+				padding: 1rem;
 			}
 		}
 
 		p {
-			text-align: center;
+			text-align: left;
+			margin: 3rem 0;
 
 			@include respond(tab-land) {
 				margin-top: 6rem;
