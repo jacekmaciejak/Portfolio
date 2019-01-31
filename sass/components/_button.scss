@@ -17,6 +17,7 @@
 			font: {
 				size: 24px;
 				weight: 300;
+				weight: bold;
 
 			}
 		}
@@ -38,7 +39,14 @@
 			height: auto;
 			padding: 10px;
 		}
+
+		&:hover {
+			border: 5px solid #fff;
+			transition: .5s;
+		}
 	}
+
+
 }
 
 
@@ -81,5 +89,11 @@
 			height: auto;
 			padding: 10px;
 		}
+
+		&:hover {
+			border: 5px solid #fff;
+			transition: .5s;
+		}
 	}
+
 }

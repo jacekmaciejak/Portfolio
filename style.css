@@ -174,7 +174,8 @@ p {
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
     animation: animateText 8s linear 3.5s infinite;
     font-size: 24px;
-    font-weight: 300; }
+    font-weight: 300;
+    font-weight: bold; }
   @media (max-width: 1200px) {
     .header_button {
       width: auto;
@@ -190,6 +191,9 @@ p {
       width: auto;
       height: auto;
       padding: 10px; } }
+  .header_button:hover {
+    border: 5px solid #fff;
+    transition: .5s; }
 
 .footer_button {
   display: grid;
@@ -226,6 +230,9 @@ p {
       width: auto;
       height: auto;
       padding: 10px; } }
+  .footer_button:hover {
+    border: 5px solid #fff;
+    transition: .5s; }
 
 .header {
   position: relative;
