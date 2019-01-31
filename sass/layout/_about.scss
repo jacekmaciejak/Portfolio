@@ -224,7 +224,33 @@
 	}
 
 	&_2 {
-		margin-top: -200px;
+
+		&-h1 {
+			h1 {
+				font-size: 8vw;
+				opacity: .1;
+			}
+
+			@include respond(tab-port) {
+				margin-top: 2rem;
+			}
+		}
+
+		&-h2 {
+			margin-top: -13vw;
+
+			h2 {
+				position: relative;
+				z-index: 9999;
+				font-size: 6vw;
+			}
+
+			@include animTextAbout;
+
+			@include respond(tab-port) {
+				margin-bottom: 2rem;
+			}
+		}
 
 		@include respond(tab-land) {
 			margin-top: 0;
@@ -240,7 +266,6 @@
 
 		&-card_4 {
 			margin-top: -100px;
-			height: 95%;
 
 			@include respond(tab-land) {
 				margin-top: 0;
@@ -257,7 +282,6 @@
 
 		&-card_5 {
 			margin-top: 50px;
-			height: 95%;
 
 			@include respond(tab-land) {
 				margin-top: 0;
@@ -274,7 +298,6 @@
 
 		&-card_6 {
 			margin-top: -100px;
-			height: 95%;
 
 			@include respond(tab-land) {
 				margin-top: 0;

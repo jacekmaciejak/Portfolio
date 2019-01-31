@@ -98,22 +98,31 @@
 		@include respond(tab-land) {
 			height: auto;
 			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 1fr 1fr;
-			grid-template-areas: "about_2-card_4 about_2-card_5""about_2-card_6 about_2-card_6";
+			grid-template-rows: .1fr .1fr 1fr 1fr;
+			grid-template-areas: "about_2-h1 about_2-h1""about_2-h2 about_2-h2""about_2-card_4 about_2-card_5""about_2-card_6 about_2-card_6";
 		}
 
 		@include respond(tab-port) {
 			height: auto;
 			grid-template-columns: 1fr;
-			grid-template-rows: 1fr 1fr 1fr;
-			grid-template-areas: "about_2-card_4""about_2-card_5""about_2-card_6";
+			grid-template-rows: .1fr .1fr 1fr 1fr 1fr;
+			grid-template-areas: "about_2-h1""about_2-h2""about_2-card_4""about_2-card_5""about_2-card_6";
 		}
 
 		@include respond(phone) {
 			height: auto;
 			grid-template-columns: 1fr;
-			grid-template-rows: 1fr 1fr 1fr;
-			grid-template-areas: "about_2-card_4""about_2-card_5""about_2-card_6";
+			grid-template-rows: .1fr .1fr 1fr 1fr 1fr;
+			grid-template-areas: "about_2-h1""about_2-h2""about_2-card_4""about_2-card_5""about_2-card_6";
+		}
+
+
+		&-h1 {
+			grid-area: about_2-h1;
+		}
+
+		&-h2 {
+			grid-area: about_2-h2;
 		}
 
 		&-card_4 {
