@@ -1,15 +1,25 @@
 .header {
 	&_button {
 
-		@include animBackButton;
-
 		display: grid;
 		width: auto;
 		height: auto;
-		border: 1px solid #b1b1b1;
 		text-align: center;
 		cursor: pointer;
 		padding: 30px;
+		background: #000;
+		border: 1px solid #c9c9c9;
+
+		a {
+			text-decoration: none;
+			@include animTextHeader;
+
+			font: {
+				size: 24px;
+				weight: 300;
+
+			}
+		}
 
 		@include respond(tab-land) {
 			width: auto;
@@ -28,21 +38,48 @@
 			height: auto;
 			padding: 10px;
 		}
+	}
+}
 
-		p {
-			align-self: center;
+
+.footer {
+	&_button {
+		display: grid;
+		width: auto;
+		height: auto;
+		text-align: center;
+		padding: 30px;
+		background: #c9c9c9;
+		border: 1px solid #fff;
+		cursor: pointer;
+
+		a {
+			text-decoration: none;
+			@include animTextFooter;
 
 			font: {
 				size: 24px;
 				weight: 300;
-			}
 
-			color: #b1b1b1;
+			}
 		}
 
-		&:hover {
-			border: 1px solid red;
-			transition: .5s;
+		@include respond(tab-land) {
+			width: auto;
+			height: auto;
+			padding: 30px;
+		}
+
+		@include respond(tab-port) {
+			width: auto;
+			height: auto;
+			padding: 20px;
+		}
+
+		@include respond(phone) {
+			width: auto;
+			height: auto;
+			padding: 10px;
 		}
 	}
 }

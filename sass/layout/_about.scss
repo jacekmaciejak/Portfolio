@@ -145,7 +145,8 @@
 
 		&-h1 {
 			h1 {
-				opacity: .5;
+				font-size: 8vw;
+				opacity: .1;
 			}
 
 			@include respond(tab-port) {
@@ -154,15 +155,15 @@
 		}
 
 		&-h2 {
-			margin-top: -150px;
+			margin-top: -13vw;
 
-			letter-spacing: 4px;
-			background: linear-gradient(90deg, #C9C9C9, #000, #C9C9C9);
-			background-repeat: no-repeat;
-			background-size: 80%;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: rgba(255, 255, 255, 0);
-			animation: animateText 3s linear infinite;
+			h2 {
+				position: relative;
+				z-index: 9999;
+				font-size: 6vw;
+			}
+
+			@include animTextAbout;
 
 			@include respond(tab-port) {
 				margin-bottom: 2rem;

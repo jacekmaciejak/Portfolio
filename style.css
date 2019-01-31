@@ -1,14 +1,4 @@
 /*
-
-background: linear-gradient(45deg, #fff, #fff, #fff);
-background-repeat: no-repeat;
-background-size: 80%;
--webkit-background-clip: border-box;
--webkit-text-fill-color: rgba(255, 255, 255, 0);
-animation: animateText 1s linear 3.5s infinite;
-
-*/
-/*
 0 - 600px: Phone
 600 - 900px: Tablet portrait
 900 - 1200px: Tablet landscape
@@ -21,9 +11,6 @@ animation: animateText 1s linear 3.5s infinite;
   box-sizing: border-box;
   font-family: 'Work Sans', sans-serif;
   font-size: 20px; }
-
-body {
-  color: #b1b1b1; }
 
 h1 {
   font-size: 3.2rem;
@@ -169,20 +156,25 @@ p {
 
 /*------------END----------------*/
 .header_button {
-  background: linear-gradient(-45deg, #fff, #fff, #fff);
-  background-repeat: no-repeat;
-  background-size: 10%;
-  -webkit-background-clip: padding-box;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  animation: animateText 1s linear 3.5s infinite;
-  opacity: .5;
   display: grid;
   width: auto;
   height: auto;
-  border: 1px solid #b1b1b1;
   text-align: center;
   cursor: pointer;
-  padding: 30px; }
+  padding: 30px;
+  background: #000;
+  border: 1px solid #c9c9c9; }
+  .header_button a {
+    text-decoration: none;
+    letter-spacing: 4px;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    animation: animateText 8s linear 3.5s infinite;
+    font-size: 24px;
+    font-weight: 300; }
   @media (max-width: 1200px) {
     .header_button {
       width: auto;
@@ -198,14 +190,42 @@ p {
       width: auto;
       height: auto;
       padding: 10px; } }
-  .header_button p {
-    align-self: center;
+
+.footer_button {
+  display: grid;
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 30px;
+  background: #c9c9c9;
+  border: 1px solid #fff;
+  cursor: pointer; }
+  .footer_button a {
+    text-decoration: none;
+    letter-spacing: 4px;
+    background: linear-gradient(90deg, #C9C9C9, #000, #C9C9C9);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    animation: animateText 7s linear 3.5s infinite;
     font-size: 24px;
-    font-weight: 300;
-    color: #b1b1b1; }
-  .header_button:hover {
-    border: 1px solid red;
-    transition: .5s; }
+    font-weight: 300; }
+  @media (max-width: 1200px) {
+    .footer_button {
+      width: auto;
+      height: auto;
+      padding: 30px; } }
+  @media (max-width: 900px) {
+    .footer_button {
+      width: auto;
+      height: auto;
+      padding: 20px; } }
+  @media (max-width: 600px) {
+    .footer_button {
+      width: auto;
+      height: auto;
+      padding: 10px; } }
 
 .header {
   position: relative;
@@ -257,7 +277,7 @@ p {
     background-size: 80%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    animation: animateText 6s linear 3.5s infinite; }
+    animation: animateText 8s linear 3.5s infinite; }
     @media (max-width: 900px) {
       .header_title h1,
       .header_title h2 {
@@ -271,6 +291,13 @@ p {
         line-height: 1;
         padding: 1rem; } }
   .header_title p {
+    letter-spacing: 4px;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    animation: animateText 8s linear 3.5s infinite;
     text-align: left;
     margin: 3rem 0; }
     @media (max-width: 1200px) {
@@ -791,12 +818,13 @@ footer {
       transition-delay: .2s;
       transform: translateY(0px); }
   .about_1-h1 h1 {
-    opacity: .5; }
+    font-size: 8vw;
+    opacity: .1; }
   @media (max-width: 900px) {
     .about_1-h1 {
       margin-top: 2rem; } }
   .about_1-h2 {
-    margin-top: -150px;
+    margin-top: -13vw;
     letter-spacing: 4px;
     background: linear-gradient(90deg, #C9C9C9, #000, #C9C9C9);
     background-repeat: no-repeat;
@@ -804,6 +832,10 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
     animation: animateText 3s linear infinite; }
+    .about_1-h2 h2 {
+      position: relative;
+      z-index: 9999;
+      font-size: 6vw; }
     @media (max-width: 900px) {
       .about_1-h2 {
         margin-bottom: 2rem; } }
@@ -906,7 +938,3 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
     animation: animateText 7s linear 3.5s infinite; }
-  footer_button {
-    display: grid;
-    justify-items: center;
-    align-items: center; }
