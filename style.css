@@ -153,9 +153,9 @@ p {
 /*-------TEXT--------------*/
 @keyframes animateText {
   0% {
-    background-position: -500%; }
+    background-position: -400%; }
   100% {
-    background-position: 500%; } }
+    background-position: 400%; } }
 
 /*------------END----------------*/
 @keyframes animateScrollDown {
