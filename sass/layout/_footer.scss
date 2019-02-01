@@ -2,6 +2,7 @@ footer {
 	//background: radial-gradient(#fff, #C9C9C9);
 	background: #c9c9c9;
 	padding-bottom: 3rem;
+	position: relative;
 
 	h2 {
 		text-align: center;
@@ -9,28 +10,28 @@ footer {
 		position: relative;
 		z-index: 9999;
 	}
+}
 
-	&_scrollUp {
+.footer_scrollUp {
+
+	position: absolute;
+	top: 50%;
+	right: 20%;
+	transform: translate(-50%, -20%);
+	width: 2px;
+	height: 150px;
+	background: transparent;
+	z-index: 9999;
+
+
+	&:before {
+		content: '';
 		position: absolute;
-		top: 50%;
-		right: 50%;
-		transform: translate(-50%, -50%);
-		width: 10px;
-		height: 150px;
-		background: #000;
-		z-index: 9999;
-
-
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: linear-gradient(transparent, #000, transparent);
-			animation: animateScrollDown 2s linear infinite;
-		}
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(transparent, #000, transparent);
+		animation: animateScrollUp 2s linear infinite;
 	}
-
 }
