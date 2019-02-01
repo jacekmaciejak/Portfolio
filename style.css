@@ -269,7 +269,7 @@ p {
 
 .header {
   position: relative;
-  background-image: url(../../img/img1.jpg);
+  background-image: url(img/img1.jpg);
   object-fit: cover;
   background-position: top;
   background-repeat: no-repeat;
