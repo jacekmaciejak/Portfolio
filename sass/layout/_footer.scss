@@ -6,6 +6,8 @@ footer {
 	h2 {
 		text-align: center;
 		@include animTextFooter;
+		position: relative;
+		z-index: 9999;
 	}
 
 }
