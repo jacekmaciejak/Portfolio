@@ -155,8 +155,7 @@
 
 footer {
 	width: 100%;
-	height: 30vh;
-	display: grid;
+	height: 35vh;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr;
 	grid-template-areas: "title""footer_button";

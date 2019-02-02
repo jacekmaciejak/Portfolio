@@ -113,7 +113,8 @@
 			color: #fff;
 
 			h3,
-			p {
+			p,
+			button {
 				transition: .5s;
 				padding: 0;
 				text-align: center;
@@ -130,10 +131,18 @@
 			p {
 				transform: translateY(70px);
 			}
+
+			button {
+				transform: translateY(80px);
+				padding: 15px;
+				margin: 70px auto 0;
+				display: block;
+			}
 		}
 
 		&:hover .content h3,
-		&:hover .content p {
+		&:hover .content p,
+		&:hover .content button {
 			opacity: 1;
 			visibility: visible;
 			transition-delay: .2s;

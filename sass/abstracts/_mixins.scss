@@ -12,7 +12,7 @@
 }
 
 @mixin animTextHeader {
-	letter-spacing: 4px;
+	letter-spacing: 3px;
 	background: linear-gradient(90deg, #000, #fff, #000);
 	background-repeat: no-repeat;
 	background-size: 80%;
@@ -22,7 +22,7 @@
 }
 
 @mixin animTextAbout {
-	letter-spacing: 4px;
+	letter-spacing: 3px;
 	background: linear-gradient(90deg, #C9C9C9, #000, #C9C9C9);
 	background-repeat: no-repeat;
 	background-size: 80%;
@@ -32,7 +32,7 @@
 }
 
 @mixin animTextFooter {
-	letter-spacing: 4px;
+	letter-spacing: 3px;
 	background: linear-gradient(90deg, #C9C9C9, #000, #C9C9C9);
 	background-repeat: no-repeat;
 	background-size: 80%;
