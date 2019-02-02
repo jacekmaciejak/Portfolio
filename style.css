@@ -199,6 +199,11 @@ p {
   border: 1px solid #c9c9c9;
   position: absolute;
   overflow: hidden; }
+  .header_button:hover,
+  .about_button:hover,
+  .footer_button:hover {
+    background: #fff;
+    -webkit-background-clip: text; }
   .header_button p,
   .about_button p,
   .footer_button p {
