@@ -202,8 +202,23 @@ p {
   .header_button:hover,
   .about_button:hover,
   .footer_button:hover {
+    /*background: #fff;
+		-webkit-background-clip: text;
+		*/
     background: #fff;
-    -webkit-background-clip: text; }
+    background-size: 100%;
+    -webkit-background-clip: text;
+    color: #fff;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+    -webkit-animateText: none;
+    -webkit-animTextHeader: none; }
   .header_button p,
   .about_button p,
   .footer_button p {
@@ -211,6 +226,27 @@ p {
     font-size: 24px;
     font-weight: 300;
     font-weight: bold; }
+    .header_button p:hover,
+    .about_button p:hover,
+    .footer_button p:hover {
+      /*background: #fff;
+			-webkit-background-clip: text;
+			*/
+      background: #fff;
+      background-size: 100%;
+      -webkit-background-clip: text;
+      color: #fff;
+      -webkit-animation-play-state: paused;
+      -moz-animation-play-state: paused;
+      -o-animation-play-state: paused;
+      animation-play-state: paused;
+      -webkit-animation-play-state: paused;
+      -moz-animation-play-state: paused;
+      -o-animation-play-state: paused;
+      animation-play-state: paused;
+      animateText: none;
+      -webkit-animateText: none;
+      -webkit-animTextHeader: none; }
   .header_button:before,
   .about_button:before,
   .footer_button:before {
@@ -256,7 +292,17 @@ p {
   background-size: 80%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  animation: animateText 8s linear 3.5s infinite; }
+  animation: animateText 8s linear 3.5s infinite;
+  -webkit-animation-play-state: running; }
+  .header_button p:hover {
+    background: #fff;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    color: #fff;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused; }
 
 /*---------------------------ABOUT-----------------------------*/
 .about .card_button {
@@ -274,6 +320,7 @@ p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
     animation: animateText 8s linear 3.5s infinite;
+    -webkit-animation-play-state: running;
     text-decoration: none;
     font-size: 24px;
     font-weight: 300;
@@ -361,7 +408,8 @@ p {
     background-size: 80%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    animation: animateText 8s linear 3.5s infinite; }
+    animation: animateText 8s linear 3.5s infinite;
+    -webkit-animation-play-state: running; }
     @media (max-width: 900px) {
       .header_title h1,
       .header_title h2 {
@@ -382,6 +430,7 @@ p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
     animation: animateText 8s linear 3.5s infinite;
+    -webkit-animation-play-state: running;
     text-align: left;
     margin: 3rem 0; }
     @media (max-width: 1200px) {
@@ -926,7 +975,7 @@ footer {
       .about_1-card .content p, .about_2-card .content p {
         transform: translateY(70px); }
       .about_1-card .content button, .about_2-card .content button {
-        transform: translateY(80px);
+        transform: translateY(40px);
         padding: 15px;
         margin: 70px auto 0;
         display: block; }

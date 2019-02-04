@@ -19,6 +19,7 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: rgba(255, 255, 255, 0);
 	animation: animateText 8s linear 3.5s infinite;
+	-webkit-animation-play-state: running;
 }
 
 @mixin animTextAbout {
@@ -41,7 +42,17 @@
 	animation: animateText 7s linear infinite;
 }
 
+@mixin animTextStop {
+	background: #fff;
+	background-size: 100%;
+	-webkit-background-clip: text;
+	color: #fff;
+	-webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+	-o-animation-play-state: paused;
+	animation-play-state: paused;
 
+}
 
 
 

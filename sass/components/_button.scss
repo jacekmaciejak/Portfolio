@@ -13,8 +13,16 @@
 	overflow: hidden;
 
 	&:hover {
-		background: #fff;
+		/*background: #fff;
 		-webkit-background-clip: text;
+		*/
+		@include animTextStop;
+		-webkit-animation-play-state: paused;
+		-moz-animation-play-state: paused;
+		-o-animation-play-state: paused;
+		animation-play-state: paused;
+		-webkit-animateText: none;
+		-webkit-animTextHeader: none;
 	}
 
 	p {
@@ -24,6 +32,20 @@
 			size: 24px;
 			weight: 300;
 			weight: bold;
+		}
+
+		&:hover {
+			/*background: #fff;
+			-webkit-background-clip: text;
+			*/
+			@include animTextStop;
+			-webkit-animation-play-state: paused;
+			-moz-animation-play-state: paused;
+			-o-animation-play-state: paused;
+			animation-play-state: paused;
+			animateText: none;
+			-webkit-animateText: none;
+			-webkit-animTextHeader: none;
 		}
 	}
 
@@ -67,6 +89,11 @@
 
 		p {
 			@include animTextHeader;
+
+			&:hover {
+				@include animTextStop;
+
+			}
 		}
 	}
 }
