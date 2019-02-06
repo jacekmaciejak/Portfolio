@@ -42,18 +42,6 @@
 	animation: animateText 7s linear infinite;
 }
 
-@mixin animTextStop {
-	background: #fff;
-	background-size: 100%;
-	-webkit-background-clip: text;
-	color: #fff;
-	-webkit-animation-play-state: paused;
-	-moz-animation-play-state: paused;
-	-o-animation-play-state: paused;
-	animation-play-state: paused;
-
-}
-
 
 
 
