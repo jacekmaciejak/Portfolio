@@ -349,3 +349,54 @@
 		}
 	}
 }
+
+.sub_about {
+	background: #c9c9c9;
+
+	&_1,
+	&_2,
+	&_3 {
+
+		&-h1 {
+			position: relative;
+			z-index: 9999;
+
+			h1 {
+				font-size: 8vw;
+				opacity: .1;
+			}
+
+			@include respond(tab-port) {
+				margin-top: 2rem;
+			}
+		}
+
+		&-h2 {
+			margin-top: -18vw;
+			position: relative;
+			z-index: 9999;
+
+			h2 {
+				font-size: 5vw;
+			}
+
+			@include animTextAbout;
+
+			@include respond(tab-port) {
+				margin-top: -16vw;
+			}
+
+			@include respond(phone) {
+				margin-top: -10vw;
+			}
+		}
+
+		&-container {
+			width: 50%;
+			margin-top: -18vw;
+		}
+	}
+
+
+
+}

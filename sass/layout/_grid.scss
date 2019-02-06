@@ -140,12 +140,27 @@
 	}
 }
 
+.sub_about {
+	width: 100%;
+
+	&_1,
+	&_2,
+	&_3 {
+		@include gridCenter;
+		height: 100vh;
+		width: 100%;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 4fr;
+	}
+}
+
 
 .section-book {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	@include gridCenter;
+	width: 100%;
+	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
-	grid-template-areas: "book__form .";
+	grid-template-areas: "book__form";
 
 	.book__form {
 		grid-area: book__form;
