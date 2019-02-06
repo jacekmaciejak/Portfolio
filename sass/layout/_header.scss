@@ -124,6 +124,12 @@
 		left: 100%;
 		transform: translate(-100%, -85%);
 		z-index: 99999;
+		opacity: .2;
+
+		&:hover {
+			opacity: 1;
+			transition: 1s;
+		}
 
 		ul {
 			position: absolute;
@@ -337,10 +343,9 @@
 	position: fixed;
 	top: 8%;
 	left: 5%;
-	transform: translate(-8%, -5%);
+	transform: translate(-5%, -8%);
 	width: 100px;
 	height: 3px;
-	background: transparent;
 
 	&:before {
 		content: '';

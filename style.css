@@ -441,7 +441,11 @@ p {
     top: 85%;
     left: 100%;
     transform: translate(-100%, -85%);
-    z-index: 99999; }
+    z-index: 99999;
+    opacity: .2; }
+    .header_panel:hover {
+      opacity: 1;
+      transition: 1s; }
     .header_panel ul {
       position: absolute;
       top: 60%;
@@ -574,10 +578,9 @@ p {
   position: fixed;
   top: 8%;
   left: 5%;
-  transform: translate(-8%, -5%);
+  transform: translate(-5%, -8%);
   width: 100px;
-  height: 3px;
-  background: transparent; }
+  height: 3px; }
   .sub_header_scrollHorizontally:before {
     content: '';
     position: absolute;
