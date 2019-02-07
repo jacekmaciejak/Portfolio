@@ -144,28 +144,30 @@
 	width: 100%;
 
 	&_1,
-	&_2,
-	&_3 {
+	&_2 {
 		@include gridCenter;
 		height: 100vh;
 		width: 100%;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr 4fr;
 	}
-}
 
+	&_3 {
+		@include gridCenter;
+		width: 100%;
+		height: 100vh;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 4fr;
 
-.section-book {
-	@include gridCenter;
-	width: 100%;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-	grid-template-areas: "book__form";
-
-	.book__form {
-		grid-area: book__form;
+		.section-book {
+			@include gridCenter;
+			width: 100%;
+		}
 	}
 }
+
+
+
 
 
 footer {
