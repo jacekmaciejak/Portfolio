@@ -268,6 +268,38 @@ p {
   animation: animateText 8s linear 3.5s infinite;
   -webkit-animation-play-state: running; }
 
+.sub_button {
+  position: fixed;
+  top: 9%;
+  left: 5%;
+  transform: translate(-5%, -9%);
+  z-index: 99999;
+  cursor: pointer;
+  width: 100px;
+  font-weight: bold;
+  background: none;
+  overflow: hidden;
+  text-align: center; }
+  .sub_button p {
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, #C9C9C9, #000, #C9C9C9);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    animation: animateText 7s linear infinite; }
+  .sub_button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+    transition: .4s; }
+  .sub_button:hover:before {
+    left: 100%; }
+
 /*---------------------------ABOUT-----------------------------*/
 .about .card_button {
   width: auto;
@@ -434,142 +466,6 @@ p {
         top: 85%;
         left: 10%;
         transform: translate(-85%, -10%); } }
-  .header_panel {
-    width: 900px;
-    height: 600px;
-    position: fixed;
-    top: 85%;
-    left: 100%;
-    transform: translate(-100%, -85%);
-    z-index: 99999;
-    opacity: .2; }
-    .header_panel:hover {
-      opacity: 1;
-      transition: 1s; }
-    .header_panel ul {
-      position: absolute;
-      top: 60%;
-      left: 50%;
-      transform: translate(-50%, -60%);
-      margin: 0;
-      padding: 0;
-      width: 900px;
-      height: 600px; }
-      .header_panel ul li {
-        list-style: none;
-        margin: 0 40px; }
-        .header_panel ul li a {
-          position: relative;
-          display: block;
-          width: 80px;
-          height: 80px;
-          background-color: #fff;
-          text-align: center;
-          transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
-          transition: .5s;
-          box-shadow: -15px 27px 3px rgba(0, 0, 0, 0.6); }
-          .header_panel ul li a .fab {
-            font-size: 40px;
-            color: #262626;
-            line-height: 80px;
-            transition: .5s; }
-          .header_panel ul li a:before {
-            content: '';
-            position: absolute;
-            top: 10px;
-            left: -20px;
-            height: 80px;
-            width: 20px;
-            background-color: #b1b1b1;
-            transition: .5s;
-            transform: rotate(0deg) skewY(-45deg); }
-          .header_panel ul li a:after {
-            content: '';
-            position: absolute;
-            bottom: -19px;
-            left: -10px;
-            height: 20px;
-            width: 100%;
-            background-color: #b1b1b1;
-            transition: .5s;
-            transform: rotate(0deg) skewX(-45deg); }
-          .header_panel ul li a:hover {
-            transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
-            box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5); }
-          .header_panel ul li a:active {
-            top: 5px; }
-        .header_panel ul li:hover .fab {
-          color: #fff; }
-        .header_panel ul li:hover:nth-child(1) a {
-          background: #3b5999; }
-        .header_panel ul li:hover:nth-child(1) a:before {
-          background: #2e4a86; }
-        .header_panel ul li:hover:nth-child(1) a:after {
-          background: #4a69ad; }
-        .header_panel ul li:hover:nth-child(2) a {
-          background: #55acee; }
-        .header_panel ul li:hover:nth-child(2) a:before {
-          background: #4184b7; }
-        .header_panel ul li:hover:nth-child(2) a:after {
-          background: #4d9fde; }
-        .header_panel ul li:hover:nth-child(3) a {
-          background: #dd4b39; }
-        .header_panel ul li:hover:nth-child(3) a:before {
-          background: #c13929; }
-        .header_panel ul li:hover:nth-child(3) a:after {
-          background: #e8432e; }
-        .header_panel ul li:hover:nth-child(4) a {
-          background: #0077b5; }
-        .header_panel ul li:hover:nth-child(4) a:before {
-          background: #036aa0; }
-        .header_panel ul li:hover:nth-child(4) a:after {
-          background: #0d82bf; }
-        .header_panel ul li:hover:nth-child(5) a {
-          background: #e4405f; }
-        .header_panel ul li:hover:nth-child(5) a:before {
-          background: #d02d4c; }
-        .header_panel ul li:hover:nth-child(5) a:after {
-          background: #f1395c; }
-      .header_panel ul .p-1 {
-        position: absolute;
-        top: 250px;
-        left: -80px; }
-      .header_panel ul .p-2 {
-        position: absolute;
-        top: 340px;
-        left: 40px; }
-      .header_panel ul .p-3 {
-        position: absolute;
-        top: 430px;
-        left: 170px; }
-      .header_panel ul .p-4 {
-        position: absolute;
-        top: 520px;
-        left: 300px; }
-      .header_panel ul .p-5 {
-        position: absolute;
-        top: 445px;
-        left: 430px; }
-      .header_panel ul .p-6 {
-        position: absolute;
-        top: 375px;
-        left: 550px; }
-      .header_panel ul .p-7 {
-        position: absolute;
-        top: 305px;
-        left: 670px; }
-      .header_panel ul .p-8 {
-        position: absolute;
-        top: 210px;
-        left: 540px; }
-      .header_panel ul .p-9 {
-        position: absolute;
-        top: 120px;
-        left: 410px; }
-      .header_panel ul .p-10 {
-        position: absolute;
-        top: 30px;
-        left: 280px; }
 
 .sub_header_scrollDown:before {
   background: linear-gradient(transparent, #000, transparent); }
@@ -590,12 +486,6 @@ p {
     height: 100%;
     background: linear-gradient(transparent, #000, transparent);
     animation: animateScrollHorizontally 2s linear infinite; }
-  .sub_header_scrollHorizontally a {
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    color: #000;
-    font-weight: bold; }
 
 .header {
   width: 100%;
@@ -1168,6 +1058,137 @@ footer {
   .sub_about_1-container, .sub_about_2-container, .sub_about_3-container {
     width: 50%;
     margin-top: -18vw; }
+  .sub_about_2 .sub_about_panel {
+    position: relative;
+    z-index: 99999;
+    opacity: .2; }
+    .sub_about_2 .sub_about_panel:hover {
+      opacity: 1;
+      transition: 1s; }
+    .sub_about_2 .sub_about_panel ul {
+      position: absolute;
+      top: 65%;
+      left: 40%;
+      transform: translate(-40%, -65%);
+      margin: 0;
+      padding: 0;
+      width: 900px;
+      height: 600px; }
+      .sub_about_2 .sub_about_panel ul li {
+        list-style: none;
+        margin: 0 40px; }
+        .sub_about_2 .sub_about_panel ul li a {
+          position: relative;
+          display: block;
+          width: 80px;
+          height: 80px;
+          background-color: #fff;
+          text-align: center;
+          transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+          transition: .5s;
+          box-shadow: -15px 27px 3px rgba(0, 0, 0, 0.6); }
+          .sub_about_2 .sub_about_panel ul li a .fab {
+            font-size: 40px;
+            color: #262626;
+            line-height: 80px;
+            transition: .5s; }
+          .sub_about_2 .sub_about_panel ul li a:before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: -20px;
+            height: 80px;
+            width: 20px;
+            background-color: #b1b1b1;
+            transition: .5s;
+            transform: rotate(0deg) skewY(-45deg); }
+          .sub_about_2 .sub_about_panel ul li a:after {
+            content: '';
+            position: absolute;
+            bottom: -19px;
+            left: -10px;
+            height: 20px;
+            width: 100%;
+            background-color: #b1b1b1;
+            transition: .5s;
+            transform: rotate(0deg) skewX(-45deg); }
+          .sub_about_2 .sub_about_panel ul li a:hover {
+            transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+            box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5); }
+          .sub_about_2 .sub_about_panel ul li a:active {
+            top: 5px; }
+        .sub_about_2 .sub_about_panel ul li:hover .fab {
+          color: #fff; }
+        .sub_about_2 .sub_about_panel ul li:hover:nth-child(1) a {
+          background: #3b5999; }
+        .sub_about_2 .sub_about_panel ul li:hover:nth-child(1) a:before {
+          background: #2e4a86; }
+        .sub_about_2 .sub_about_panel ul li:hover:nth-child(1) a:after {
+          background: #4a69ad; }
+        .sub_about_2 .sub_about_panel ul li:hover:nth-child(2) a {
+          background: #55acee; }
+        .sub_about_2 .sub_about_panel ul li:hover:nth-child(2) a:before {
+          background: #4184b7; }
+        .sub_about_2 .sub_about_panel ul li:hover:nth-child(2) a:after {
+          background: #4d9fde; }
+        .sub_about_2 .sub_about_panel ul li:hover:nth-child(3) a {
+          background: #dd4b39; }
+        .sub_about_2 .sub_about_panel ul li:hover:nth-child(3) a:before {
+          background: #c13929; }
+        .sub_about_2 .sub_about_panel ul li:hover:nth-child(3) a:after {
+          background: #e8432e; }
+        .sub_about_2 .sub_about_panel ul li:hover:nth-child(4) a {
+          background: #0077b5; }
+        .sub_about_2 .sub_about_panel ul li:hover:nth-child(4) a:before {
+          background: #036aa0; }
+        .sub_about_2 .sub_about_panel ul li:hover:nth-child(4) a:after {
+          background: #0d82bf; }
+        .sub_about_2 .sub_about_panel ul li:hover:nth-child(5) a {
+          background: #e4405f; }
+        .sub_about_2 .sub_about_panel ul li:hover:nth-child(5) a:before {
+          background: #d02d4c; }
+        .sub_about_2 .sub_about_panel ul li:hover:nth-child(5) a:after {
+          background: #f1395c; }
+      .sub_about_2 .sub_about_panel ul .p-1 {
+        position: absolute;
+        top: 250px;
+        left: -80px; }
+      .sub_about_2 .sub_about_panel ul .p-2 {
+        position: absolute;
+        top: 340px;
+        left: 40px; }
+      .sub_about_2 .sub_about_panel ul .p-3 {
+        position: absolute;
+        top: 430px;
+        left: 170px; }
+      .sub_about_2 .sub_about_panel ul .p-4 {
+        position: absolute;
+        top: 520px;
+        left: 300px; }
+      .sub_about_2 .sub_about_panel ul .p-5 {
+        position: absolute;
+        top: 445px;
+        left: 430px; }
+      .sub_about_2 .sub_about_panel ul .p-6 {
+        position: absolute;
+        top: 375px;
+        left: 550px; }
+      .sub_about_2 .sub_about_panel ul .p-7 {
+        position: absolute;
+        top: 305px;
+        left: 670px; }
+      .sub_about_2 .sub_about_panel ul .p-8 {
+        position: absolute;
+        top: 210px;
+        left: 540px; }
+      .sub_about_2 .sub_about_panel ul .p-9 {
+        position: absolute;
+        top: 120px;
+        left: 410px; }
+      .sub_about_2 .sub_about_panel ul .p-10 {
+        position: absolute;
+        top: 30px;
+        left: 280px; }
 
 footer {
   background: #c9c9c9;
