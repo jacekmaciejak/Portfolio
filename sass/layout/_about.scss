@@ -401,12 +401,6 @@
 		.sub_about_panel {
 			position: relative;
 			z-index: 99999;
-			opacity: .2;
-
-			&:hover {
-				opacity: 1;
-				transition: 1s;
-			}
 
 			ul {
 				position: absolute;

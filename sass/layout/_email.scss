@@ -4,7 +4,7 @@
 	z-index: 9999;
 
 	.book__form {
-		width: 60vw;
+		width: 55vw;
 		padding: 3rem;
 		border-radius: 3px;
 		-webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
@@ -17,10 +17,10 @@
 			width: 60%;
 
 			&__input {
-				font-size: 1.1rem;
+				font-size: 1rem;
 				font-family: inherit;
 				color: inherit;
-				padding: 1rem 1rem;
+				padding: 1rem;
 				border-radius: 2px;
 				background-color: rgba(255, 255, 255, .5);
 				border: none;
