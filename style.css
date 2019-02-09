@@ -1208,8 +1208,8 @@ footer {
           background: #f1395c; }
       .sub_about_2 .sub_about_panel ul .p-1 {
         position: absolute;
-        top: 250px;
-        left: -80px; }
+        top: 260px;
+        left: 170px; }
       .sub_about_2 .sub_about_panel ul .p-2 {
         position: absolute;
         top: 340px;
@@ -1244,8 +1244,12 @@ footer {
         left: 410px; }
       .sub_about_2 .sub_about_panel ul .p-10 {
         position: absolute;
-        top: 30px;
-        left: 280px; }
+        top: 190px;
+        left: 290px; }
+      .sub_about_2 .sub_about_panel ul .p-11 {
+        position: absolute;
+        top: 350px;
+        left: 300px; }
 
 footer {
   background: #c9c9c9;

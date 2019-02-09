@@ -412,7 +412,6 @@
 				width: 900px;
 				height: 600px;
 
-
 				li {
 					list-style: none;
 					margin: 0 40px;
@@ -539,8 +538,8 @@
 
 				.p-1 {
 					position: absolute;
-					top: 250px;
-					left: -80px;
+					top: 260px;
+					left: 170px;
 				}
 
 				.p-2 {
@@ -593,13 +592,16 @@
 
 				.p-10 {
 					position: absolute;
-					top: 30px;
-					left: 280px;
+					top: 190px;
+					left: 290px;
+				}
+
+				.p-11 {
+					position: absolute;
+					top: 350px;
+					left: 300px;
 				}
 			}
 		}
 	}
-
-
-
 }
