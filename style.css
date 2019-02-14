@@ -1125,8 +1125,8 @@ footer {
     .sub_about_2 .sub_about_panel ul {
       position: absolute;
       top: 65%;
-      left: 40%;
-      transform: translate(-40%, -65%);
+      left: 50%;
+      transform: translate(-50%, -65%);
       margin: 0;
       padding: 0;
       width: 900px;
@@ -1250,6 +1250,10 @@ footer {
         position: absolute;
         top: 350px;
         left: 300px; }
+      .sub_about_2 .sub_about_panel ul .p-12 {
+        position: absolute;
+        top: 280px;
+        left: 420px; }
 
 footer {
   background: #c9c9c9;
