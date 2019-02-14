@@ -166,25 +166,35 @@
 	}
 }
 
-
-
-
-
 footer {
 	width: 100%;
-	height: 35vh;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-template-areas: "title""footer_button";
-	@include gridCenter;
 
-	h2 {
-		grid-area: title;
+	.ind_footer {
+		height: 35vh;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: "title""footer_button";
+		@include gridCenter;
 
+		h2 {
+			grid-area: title;
+
+		}
+
+		&_button {
+			grid-area: footer_button;
+		}
 	}
 
-	&_button {
-		grid-area: footer_button;
-	}
+	.sub_footer {
+		height: 20vh;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: "title";
+		@include gridCenter;
 
+		h2 {
+			grid-area: title;
+		}
+	}
 }
