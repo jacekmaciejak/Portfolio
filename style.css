@@ -12,39 +12,8 @@
   font-family: 'Work Sans', sans-serif;
   font-size: 20px; }
 
-h1 {
-  font-size: 3.2rem;
-  line-height: 2; }
-  @media (max-width: 1200px) {
-    h1 {
-      font-size: 3rem; } }
-  @media (max-width: 900px) {
-    h1 {
-      font-size: 3rem; } }
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 2rem; } }
-
-h2 {
-  font-size: 3rem; }
-  @media (max-width: 1200px) {
-    h2 {
-      font-size: 2rem; } }
-  @media (max-width: 900px) {
-    h2 {
-      font-size: 2rem; } }
-  @media (max-width: 600px) {
-    h2 {
-      font-size: 1.3rem; } }
-
 h3 {
   font-size: 2rem; }
-
-p {
-  line-height: 1.8; }
-  @media (max-width: 600px) {
-    p {
-      font-size: 1rem; } }
 
 /*------------BACKGROUND--------------------*/
 .back {
@@ -459,6 +428,7 @@ p {
       margin-top: 6rem; } }
   .header_title h1,
   .header_title h2 {
+    font-size: 4.2vw;
     letter-spacing: 3px;
     background: linear-gradient(90deg, #000, #fff, #000);
     background-repeat: no-repeat;
@@ -480,6 +450,8 @@ p {
         line-height: 1;
         padding: 1rem; } }
   .header_title p {
+    font-size: 1.8vw;
+    line-height: 1.5;
     letter-spacing: 3px;
     background: linear-gradient(90deg, #000, #fff, #000);
     background-repeat: no-repeat;
@@ -1283,8 +1255,8 @@ footer {
   footer .footer_scrollUp {
     position: absolute;
     top: 50%;
-    right: 20%;
-    transform: translate(-20%, -50%);
+    right: 13%;
+    transform: translate(-13%, -50%);
     width: 2px;
     height: 150px;
     background: transparent;
