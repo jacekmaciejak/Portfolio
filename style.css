@@ -679,14 +679,14 @@ footer {
     background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 60%, transparent 50%), url(img/img2.jpg);
     background-position: center;
     background-size: cover; }
-    @media (max-width: 900px) {
+    @media (max-width: 1200px) {
       .section-book .book__form {
         width: 95%;
-        padding: 1rem;
+        padding: 2rem;
         background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 75%, transparent 50%), url(img/img2.jpg); } }
     .section-book .book__form .form {
       width: 60%; }
-      @media (max-width: 900px) {
+      @media (max-width: 1200px) {
         .section-book .book__form .form {
           width: 90%; } }
       .section-book .book__form .form__input {
