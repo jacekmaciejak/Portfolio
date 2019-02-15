@@ -679,8 +679,16 @@ footer {
     background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 60%, transparent 50%), url(img/img2.jpg);
     background-position: center;
     background-size: cover; }
+    @media (max-width: 900px) {
+      .section-book .book__form {
+        width: 95%;
+        padding: 1rem;
+        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 75%, transparent 50%), url(img/img2.jpg); } }
     .section-book .book__form .form {
       width: 60%; }
+      @media (max-width: 900px) {
+        .section-book .book__form .form {
+          width: 90%; } }
       .section-book .book__form .form__input {
         font-size: 1rem;
         font-family: inherit;
@@ -941,7 +949,7 @@ footer {
       .about_1-h1 {
         margin-top: 2rem; } }
   .about_1-h2 {
-    margin-top: -13vw;
+    margin-top: -8vw;
     position: relative;
     z-index: 9999;
     letter-spacing: 3px;
@@ -955,7 +963,7 @@ footer {
       font-size: 6vw; }
     @media (max-width: 900px) {
       .about_1-h2 {
-        margin-top: -16vw; } }
+        margin-top: -9vw; } }
     @media (max-width: 600px) {
       .about_1-h2 {
         margin-top: -10vw; } }
@@ -1005,7 +1013,7 @@ footer {
       .about_2-h1 {
         margin-top: 2rem; } }
   .about_2-h2 {
-    margin-top: -13vw;
+    margin-top: -8vw;
     position: relative;
     z-index: 9999;
     letter-spacing: 3px;
@@ -1019,7 +1027,7 @@ footer {
       font-size: 6vw; }
     @media (max-width: 900px) {
       .about_2-h2 {
-        margin-top: -16vw; } }
+        margin-top: -9vw; } }
     @media (max-width: 600px) {
       .about_2-h2 {
         margin-top: -10vw; } }
@@ -1081,7 +1089,7 @@ footer {
       .sub_about_1-h1, .sub_about_2-h1, .sub_about_3-h1 {
         margin-top: 2rem; } }
   .sub_about_1-h2, .sub_about_2-h2, .sub_about_3-h2 {
-    margin-top: -18vw;
+    margin-top: -8vw;
     position: relative;
     z-index: 9999;
     letter-spacing: 3px;
@@ -1095,10 +1103,10 @@ footer {
       font-size: 5vw; }
     @media (max-width: 900px) {
       .sub_about_1-h2, .sub_about_2-h2, .sub_about_3-h2 {
-        margin-top: -16vw; } }
+        margin-top: -29vw; } }
     @media (max-width: 600px) {
       .sub_about_1-h2, .sub_about_2-h2, .sub_about_3-h2 {
-        margin-top: -10vw; } }
+        margin-top: -42vw; } }
   .sub_about_1-container, .sub_about_2-container, .sub_about_3-container {
     width: 50%;
     margin-top: -18vw; }
