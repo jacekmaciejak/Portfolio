@@ -1,6 +1,6 @@
 .about {
 	//background: radial-gradient(#fff, #C9C9C9);
-	background: $main_background;
+	background: $main_background-color;
 	padding-bottom: 2rem;
 
 	&_1,
@@ -110,7 +110,7 @@
 			z-index: 2;
 			padding: 20px;
 			box-sizing: border-box;
-			color: #fff;
+			color: $first_text-color;
 
 			h3,
 			p,
