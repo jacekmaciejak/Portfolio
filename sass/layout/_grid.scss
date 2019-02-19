@@ -12,6 +12,7 @@
 		grid-template-areas: "header_title""header_button"
 	}
 
+	/*
 	@include respond(tab-port) {
 		grid-template-columns: 1fr;
 		grid-template-rows: 2fr 1fr;
@@ -23,7 +24,7 @@
 		grid-template-rows: 2fr 1fr;
 		grid-template-areas: "header_title""header_button"
 	}
-
+*/
 	&_title {
 		grid-area: header_title;
 	}
@@ -64,10 +65,12 @@
 		}
 
 		@include respond(phone) {
+			/*
 			height: auto;
 			grid-template-columns: 1fr;
 			grid-template-rows: .1fr .1fr 1fr 1fr 1fr;
 			grid-template-areas: "about_1-h1""about_1-h2""about_1-card_1""about_1-card_2""about_1-card_3";
+		*/
 		}
 
 		&-h1 {
@@ -110,10 +113,12 @@
 		}
 
 		@include respond(phone) {
+			/*
 			height: auto;
 			grid-template-columns: 1fr;
 			grid-template-rows: .1fr .1fr 1fr 1fr 1fr;
 			grid-template-areas: "about_2-h1""about_2-h2""about_2-card_4""about_2-card_5""about_2-card_6";
+		*/
 		}
 
 
@@ -144,7 +149,8 @@
 	width: 100%;
 
 	&_1,
-	&_2 {
+	&_2,
+	&_3 {
 		@include gridCenter;
 		height: 100vh;
 		width: 100%;
@@ -153,12 +159,6 @@
 	}
 
 	&_3 {
-		@include gridCenter;
-		width: 100%;
-		height: 100vh;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 4fr;
-
 		.section-book {
 			@include gridCenter;
 			width: 100%;
@@ -178,7 +178,6 @@ footer {
 
 		h2 {
 			grid-area: title;
-
 		}
 
 		&_button {
