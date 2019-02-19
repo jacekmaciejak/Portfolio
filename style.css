@@ -11,9 +11,6 @@
   box-sizing: border-box;
   font-family: 'Allerta Stencil', sans-serif; }
 
-h3 {
-  font-size: 2rem; }
-
 /*------------BACKGROUND--------------------*/
 .back {
   position: fixed;
@@ -689,7 +686,7 @@ footer {
         .section-book .book__form .form {
           width: 90%; } }
       .section-book .book__form .form__input {
-        font-size: 1rem;
+        font-size: calc(5px + 1vw);
         font-family: inherit;
         color: inherit;
         padding: 1rem;
@@ -715,7 +712,7 @@ footer {
         -webkit-transform: translateY(-4rem);
         transform: translateY(-4rem); }
       .section-book .book__form .form__label {
-        font-size: 1rem;
+        font-size: calc(5px + 1vw);
         font-weight: 600;
         margin-left: 4rem;
         margin-top: .7rem;
@@ -915,14 +912,17 @@ footer {
         font-weight: bold; }
       .about_1-card .content h3, .about_2-card .content h3 {
         margin-bottom: 30px;
-        transform: translateY(-70px); }
+        transform: translateY(-70px);
+        font-size: calc(20px + 1vw); }
       .about_1-card .content p, .about_2-card .content p {
-        transform: translateY(-70px); }
+        transform: translateY(-70px);
+        font-size: calc(5px + 1vw); }
       .about_1-card .content ul, .about_2-card .content ul {
         transform: translateY(70px);
         margin-top: 30px;
         list-style: none;
-        line-height: 1.5; }
+        line-height: 1.7;
+        font-size: calc(3px + 1vw); }
       .about_1-card .content button, .about_2-card .content button {
         transform: translateY(40px);
         padding: 15px;
