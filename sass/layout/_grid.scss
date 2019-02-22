@@ -2,9 +2,9 @@
 	width: 100%;
 	height: 100vh;
 	display: grid;
-	grid-template-columns: .5fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-areas: ". . . . . ."". . . . . ."". header_title header_title header_title . ."". header_title header_title header_title . ."". header_title header_title header_title . ."". header_button header_button . . ."". . . . . .";
+	grid-template-areas: " . . . . ."" . . . . ."" header_title header_title header_title . ."" header_title header_title header_title . ."" header_title header_title header_title . ."" header_button header_button header_button . ."" . . . . .";
 
 	@include respond(tab-land) {
 		grid-template-columns: 1fr;
@@ -175,7 +175,6 @@ footer {
 		grid-template-rows: 1fr 1fr;
 		grid-template-areas: "title""footer_button";
 		@include gridCenter;
-
 		h2 {
 			grid-area: title;
 		}

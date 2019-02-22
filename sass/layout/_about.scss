@@ -2,6 +2,7 @@
 	//background: radial-gradient(#fff, #C9C9C9);
 	background: $main_background-color;
 	padding-bottom: 2rem;
+	color: #fff;
 
 	&_1,
 	&_2 {
@@ -180,7 +181,7 @@
 
 			h1 {
 				font-size: 8vw;
-				opacity: .1;
+				opacity: .2;
 			}
 
 			@include respond(tab-port) {
@@ -189,7 +190,6 @@
 		}
 
 		&-h2 {
-			margin-top: -8vw;
 			position: relative;
 			z-index: 9999;
 
@@ -269,7 +269,7 @@
 
 			h1 {
 				font-size: 8vw;
-				opacity: .1;
+				opacity: .2;
 			}
 
 			@include respond(tab-port) {
@@ -278,7 +278,6 @@
 		}
 
 		&-h2 {
-			margin-top: -8vw;
 			position: relative;
 			z-index: 9999;
 
@@ -369,7 +368,8 @@
 
 
 .sub_about {
-	background: #c9c9c9;
+	background: $main_background-color;
+	color: #fff;
 
 	&_1,
 	&_2,
@@ -378,10 +378,11 @@
 		&-h1 {
 			position: relative;
 			z-index: 9999;
+			margin-top: 80px;
 
 			h1 {
 				font-size: 8vw;
-				opacity: .1;
+				opacity: .2;
 			}
 
 			@include respond(tab-port) {
@@ -392,7 +393,7 @@
 		&-h2 {
 			position: relative;
 			z-index: 9999;
-			top: -120px;
+			top: -40px;
 
 			h2 {
 				font-size: 6vw;
@@ -416,6 +417,7 @@
 			text-align: justify;
 			font-size: calc(12px + 1vw);
 			letter-spacing: 1px;
+
 		}
 	}
 
@@ -433,11 +435,6 @@
 				padding: 0;
 				width: 900px;
 				height: 600px;
-
-
-				@include respond(tab-port) {}
-
-				@include respond(phone) {}
 
 				li {
 					list-style: none;

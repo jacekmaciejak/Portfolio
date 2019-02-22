@@ -8,9 +8,10 @@
 	cursor: pointer;
 	padding: 30px;
 	background: #000;
-	border: 1px solid #c9c9c9;
+	border: 1px solid #fff;
 	position: absolute;
 	overflow: hidden;
+	letter-spacing: 2px;
 
 	p {
 		text-decoration: none;
@@ -37,7 +38,6 @@
 		}
 	}
 
-
 	&:hover:before {
 		left: 100%;
 	}
@@ -63,13 +63,14 @@
 
 /*---------------------------HEADER-----------------------------*/
 .header {
-	&_button {
 
-		p {
-			@include animTextHeader;
-		}
+	&_button {
+		color: #fff;
+		opacity: .5;
 
 		&:hover {
+			transition: .8s;
+			opacity: 1;
 			background: linear-gradient(90deg, #fff, #fff, #fff);
 			background-size: 100%;
 			-webkit-background-clip: text;
@@ -90,10 +91,8 @@
 	background: none;
 	overflow: hidden;
 	text-align: center;
-
-	p {
-		@include animTextFooter;
-	}
+	color: #fff;
+	letter-spacing: 2px;
 
 	&:before {
 		content: '';
@@ -111,7 +110,7 @@
 	}
 
 	&:hover {
-		background: linear-gradient(90deg, #000, #000, #000);
+		background: linear-gradient(90deg, #fff, #fff, #fff);
 		background-size: 100%;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: rgba(255, 255, 255, 1);
@@ -129,9 +128,9 @@
 		background: #000;
 		border: 1px solid #c9c9c9;
 		overflow: hidden;
+		color: #fff;
 
 		p {
-			@include animTextHeader;
 			text-decoration: none;
 
 			font: {
@@ -187,7 +186,6 @@
 	position: relative;
 
 	p {
-		@include animTextFooter;
 		position: relative;
 		z-index: 9999;
 		text-decoration: none;
@@ -218,7 +216,7 @@
 		background: linear-gradient(90deg, #000, #000, #000);
 		background-size: 100%;
 		-webkit-background-clip: text;
-		-webkit-text-fill-color: rgba(255, 255, 255, 1);
+		-webkit-text-fill-color: rgba(000, 000, 000, 1);
 	}
 
 }
@@ -229,17 +227,14 @@
 .footer {
 
 	&_button {
-		background: #c9c9c9;
 		border: 1px solid #fff;
 		margin-top: 60px;
-
-		p {
-			@include animTextFooter;
-			position: relative;
-			z-index: 9999;
-		}
+		color: #fff;
+		opacity: .5;
 
 		&:hover {
+			transition: .8s;
+			opacity: 1;
 			background: linear-gradient(90deg, #000, #000, #000);
 			background-size: 100%;
 			-webkit-background-clip: text;
