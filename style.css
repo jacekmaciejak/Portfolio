@@ -594,6 +594,9 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    @media (max-width: 900px) {
+      footer .ind_footer {
+        height: 20vh; } }
     footer .ind_footer h2 {
       grid-area: title; }
     footer .ind_footer_button {
@@ -673,6 +676,9 @@ footer {
   background: #000;
   padding-bottom: 2rem;
   color: #fff; }
+  @media (max-width: 900px) {
+    .about {
+      padding-bottom: 0; } }
   .about_1, .about_2 {
     display: grid;
     justify-items: center;
@@ -833,21 +839,9 @@ footer {
     @media (max-width: 1200px) {
       .about_1-card_1 {
         margin-top: 0; } }
-    @media (max-width: 900px) {
-      .about_1-card_1 {
-        margin-top: 0; } }
-    @media (max-width: 600px) {
-      .about_1-card_1 {
-        margin-top: 0; } }
   .about_1-card_2 {
     margin-top: 50px; }
     @media (max-width: 1200px) {
-      .about_1-card_2 {
-        margin-top: 0; } }
-    @media (max-width: 900px) {
-      .about_1-card_2 {
-        margin-top: 0; } }
-    @media (max-width: 600px) {
       .about_1-card_2 {
         margin-top: 0; } }
   .about_1-card_3 {
@@ -858,11 +852,6 @@ footer {
         width: 95%; } }
     @media (max-width: 900px) {
       .about_1-card_3 {
-        margin-top: 0;
-        width: 90%; } }
-    @media (max-width: 600px) {
-      .about_1-card_3 {
-        margin-top: 0;
         width: 90%; } }
   .about_2-h1 {
     position: relative;
@@ -894,32 +883,14 @@ footer {
   @media (max-width: 1200px) {
     .about_2 {
       margin-top: 0; } }
-  @media (max-width: 900px) {
-    .about_2 {
-      margin-top: 0; } }
-  @media (max-width: 600px) {
-    .about_2 {
-      margin-top: 0; } }
   .about_2-card_4 {
     margin-top: -100px; }
     @media (max-width: 1200px) {
       .about_2-card_4 {
         margin-top: 0; } }
-    @media (max-width: 900px) {
-      .about_2-card_4 {
-        margin-top: 0; } }
-    @media (max-width: 600px) {
-      .about_2-card_4 {
-        margin-top: 0; } }
   .about_2-card_5 {
     margin-top: 50px; }
     @media (max-width: 1200px) {
-      .about_2-card_5 {
-        margin-top: 0; } }
-    @media (max-width: 900px) {
-      .about_2-card_5 {
-        margin-top: 0; } }
-    @media (max-width: 600px) {
       .about_2-card_5 {
         margin-top: 0; } }
   .about_2-card_6 {
@@ -930,11 +901,6 @@ footer {
         width: 95%; } }
     @media (max-width: 900px) {
       .about_2-card_6 {
-        margin-top: 0;
-        width: 90%; } }
-    @media (max-width: 600px) {
-      .about_2-card_6 {
-        margin-top: 0;
         width: 90%; } }
 
 /*-------------------------------------------------------------------*/

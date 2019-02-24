@@ -3,6 +3,10 @@
 	padding-bottom: 2rem;
 	color: $first_text-color;
 
+	@include respond(tab-port) {
+		padding-bottom: 0;
+	}
+
 	&_1,
 	&_2 {
 		@include gridCenter;
@@ -205,28 +209,12 @@
 			@include respond(tab-land) {
 				margin-top: 0;
 			}
-
-			@include respond(tab-port) {
-				margin-top: 0;
-			}
-
-			@include respond(phone) {
-				margin-top: 0;
-			}
 		}
 
 		&-card_2 {
 			margin-top: 50px;
 
 			@include respond(tab-land) {
-				margin-top: 0;
-			}
-
-			@include respond(tab-port) {
-				margin-top: 0;
-			}
-
-			@include respond(phone) {
 				margin-top: 0;
 			}
 		}
@@ -241,12 +229,6 @@
 			}
 
 			@include respond(tab-port) {
-				margin-top: 0;
-				width: 90%;
-			}
-
-			@include respond(phone) {
-				margin-top: 0;
 				width: 90%;
 			}
 		}
@@ -291,26 +273,10 @@
 			margin-top: 0;
 		}
 
-		@include respond(tab-port) {
-			margin-top: 0;
-		}
-
-		@include respond(phone) {
-			margin-top: 0;
-		}
-
 		&-card_4 {
 			margin-top: -100px;
 
 			@include respond(tab-land) {
-				margin-top: 0;
-			}
-
-			@include respond(tab-port) {
-				margin-top: 0;
-			}
-
-			@include respond(phone) {
 				margin-top: 0;
 			}
 		}
@@ -319,14 +285,6 @@
 			margin-top: 50px;
 
 			@include respond(tab-land) {
-				margin-top: 0;
-			}
-
-			@include respond(tab-port) {
-				margin-top: 0;
-			}
-
-			@include respond(phone) {
 				margin-top: 0;
 			}
 		}
@@ -340,12 +298,6 @@
 			}
 
 			@include respond(tab-port) {
-				margin-top: 0;
-				width: 90%;
-			}
-
-			@include respond(phone) {
-				margin-top: 0;
 				width: 90%;
 			}
 		}

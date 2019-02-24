@@ -176,6 +176,10 @@ footer {
 		grid-template-areas: "title""footer_button";
 		@include gridCenter;
 
+		@include respond(tab-port) {
+			height: 20vh;
+		}
+
 		h2 {
 			grid-area: title;
 		}
