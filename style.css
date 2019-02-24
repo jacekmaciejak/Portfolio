@@ -355,11 +355,13 @@
   justify-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  /*
+	@include respond(phone) {
+		background-position: calc(100% + 200px);
+	}
+*/ }
   @media (max-width: 900px) {
-    .header {
-      background-position: calc(100% + 200px); } }
-  @media (max-width: 600px) {
     .header {
       background-position: calc(100% + 200px); } }
   .header:hover {
@@ -380,14 +382,15 @@
         margin-top: 6rem; } }
     .header_title h1,
     .header_title h2 {
-      font-size: 4.2vw; }
+      font-size: 4.2vw;
+      /*
+			@include respond(phone) {
+				text-align: center;
+				line-height: 1;
+				padding: 1rem;
+			}
+*/ }
       @media (max-width: 900px) {
-        .header_title h1,
-        .header_title h2 {
-          text-align: center;
-          line-height: 1;
-          padding: 1rem; } }
-      @media (max-width: 600px) {
         .header_title h1,
         .header_title h2 {
           text-align: center;
@@ -415,7 +418,14 @@
     transform: translate(-90%, -50%);
     width: 2px;
     height: 150px;
-    background: transparent; }
+    background: transparent;
+    /*
+		@include respond(tab-port) {
+			top: 85%;
+			left: 10%;
+			transform: translate(-85%, -10%);
+		}
+		*/ }
     .header_scrollDown:before {
       content: '';
       position: absolute;
@@ -426,11 +436,6 @@
       background: linear-gradient(transparent, #fff, transparent);
       animation: animateScrollDown 2s linear infinite; }
     @media (max-width: 1200px) {
-      .header_scrollDown {
-        top: 85%;
-        left: 10%;
-        transform: translate(-85%, -10%); } }
-    @media (max-width: 900px) {
       .header_scrollDown {
         top: 85%;
         left: 10%;
@@ -677,8 +682,6 @@ footer {
   .about_1-card, .about_2-card {
     width: 100%;
     height: 100%;
-    -webkit-box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7);
-    box-shadow: 6px 4px 10px 1px rgba(0, 0, 0, 0.7);
     transition: .5s;
     position: relative; }
     @media (max-width: 1200px) {
@@ -696,37 +699,28 @@ footer {
         height: 300px;
         width: 90%;
         margin: 30px 0; } }
-    .about_1-card:before, .about_2-card:before {
+    .about_1-card::before, .about_1-card::after, .about_2-card::before, .about_2-card::after {
       content: '';
       position: absolute;
       top: 20px;
       left: 20px;
       right: 20px;
       bottom: 20px;
-      border-top: 1px solid #fff;
-      border-bottom: 1px solid #fff;
       box-sizing: border-box;
       transition: .5s;
-      transform: scaleX(0);
       opacity: 0;
       z-index: 1; }
+    .about_1-card::before, .about_2-card::before {
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      transform: scaleX(0); }
     .about_1-card:hover:before, .about_2-card:hover:before {
       transform: scaleX(1);
       opacity: 1; }
-    .about_1-card:after, .about_2-card:after {
-      content: '';
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      right: 20px;
-      bottom: 20px;
-      border-left: 1px solid #fff;
-      border-right: 1px solid #fff;
-      box-sizing: border-box;
-      transition: .5s;
-      transform: scaleY(0);
-      opacity: 0;
-      z-index: 1; }
+    .about_1-card::after, .about_2-card::after {
+      border-left: 1px solid #000;
+      border-right: 1px solid #000;
+      transform: scaleY(0); }
     .about_1-card:hover:after, .about_2-card:hover:after {
       transform: scaleY(1);
       opacity: 1; }
@@ -756,7 +750,7 @@ footer {
       z-index: 2;
       padding: 20px;
       box-sizing: border-box;
-      color: #fff; }
+      color: #000; }
       .about_1-card .content h3,
       .about_1-card .content p,
       .about_1-card .content button,
@@ -827,7 +821,7 @@ footer {
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
     animation: animateText 3s linear infinite; }
     .about_1-h2 h2 {
-      font-size: 6vw; }
+      font-size: 5vw; }
     @media (max-width: 900px) {
       .about_1-h2 {
         margin-top: -9vw; } }
@@ -890,7 +884,7 @@ footer {
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
     animation: animateText 3s linear infinite; }
     .about_2-h2 h2 {
-      font-size: 6vw; }
+      font-size: 5vw; }
     @media (max-width: 900px) {
       .about_2-h2 {
         margin-top: -9vw; } }
@@ -981,7 +975,7 @@ footer {
 			}
 */ }
     .sub_about_1-h2 h2, .sub_about_2-h2 h2, .sub_about_3-h2 h2 {
-      font-size: 6vw; }
+      font-size: 5vw; }
   .sub_about_1-container, .sub_about_2-container, .sub_about_3-container {
     width: 70%;
     line-height: 2;
@@ -1185,17 +1179,10 @@ footer {
 
 footer {
   background: #000;
-  position: relative; }
+  position: relative;
+  color: #fff; }
   footer h2 {
-    letter-spacing: 3px;
-    background: linear-gradient(90deg, #000, #fff, #000);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    animation: animateText 8s linear infinite;
     position: relative;
-    z-index: 9999;
     font-size: 4vw; }
   footer .footer_scrollUp {
     position: absolute;

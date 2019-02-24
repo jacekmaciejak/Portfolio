@@ -1,5 +1,4 @@
 .header {
-
 	position: relative;
 	background-image: url(img/img1.jpg);
 	object-fit: cover;
@@ -18,10 +17,11 @@
 		background-position: calc(100% + 200px);
 	}
 
+	/*
 	@include respond(phone) {
 		background-position: calc(100% + 200px);
 	}
-
+*/
 	&:hover {
 		transition: .5s;
 		filter: grayscale(0);
@@ -30,7 +30,7 @@
 
 	&_title {
 
-		color: #fff;
+		color: $first_text-color;
 
 		@include respond(tab-land) {
 			padding: 3rem;
@@ -55,11 +55,13 @@
 				padding: 1rem;
 			}
 
+			/*
 			@include respond(phone) {
 				text-align: center;
 				line-height: 1;
 				padding: 1rem;
 			}
+*/
 		}
 
 		p {
@@ -112,11 +114,13 @@
 			transform: translate(-85%, -10%);
 		}
 
+		/*
 		@include respond(tab-port) {
 			top: 85%;
 			left: 10%;
 			transform: translate(-85%, -10%);
 		}
+		*/
 	}
 }
 

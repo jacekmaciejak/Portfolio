@@ -1,8 +1,7 @@
 .about {
-	//background: radial-gradient(#fff, #C9C9C9);
 	background: $main_background-color;
 	padding-bottom: 2rem;
-	color: #fff;
+	color: $first_text-color;
 
 	&_1,
 	&_2 {
@@ -13,8 +12,6 @@
 	&_2-card {
 		width: 100%;
 		height: 100%;
-		-webkit-box-shadow: $about_card-shadow;
-		box-shadow: $about_card-shadow;
 		transition: .5s;
 		position: relative;
 
@@ -36,20 +33,24 @@
 			margin: 30px 0;
 		}
 
-		&:before {
+		&::before,
+		&::after {
 			content: '';
 			position: absolute;
 			top: 20px;
 			left: 20px;
 			right: 20px;
 			bottom: 20px;
-			border-top: 1px solid #fff;
-			border-bottom: 1px solid #fff;
 			box-sizing: border-box;
 			transition: .5s;
-			transform: scaleX(0);
 			opacity: 0;
 			z-index: 1;
+		}
+
+		&::before {
+			border-top: 1px solid #000;
+			border-bottom: 1px solid #000;
+			transform: scaleX(0);
 		}
 
 		&:hover:before {
@@ -57,20 +58,10 @@
 			opacity: 1;
 		}
 
-		&:after {
-			content: '';
-			position: absolute;
-			top: 20px;
-			left: 20px;
-			right: 20px;
-			bottom: 20px;
-			border-left: 1px solid #fff;
-			border-right: 1px solid #fff;
-			box-sizing: border-box;
-			transition: .5s;
+		&::after {
+			border-left: 1px solid #000;
+			border-right: 1px solid #000;
 			transform: scaleY(0);
-			opacity: 0;
-			z-index: 1;
 		}
 
 		&:hover:after {
@@ -111,7 +102,7 @@
 			z-index: 2;
 			padding: 20px;
 			box-sizing: border-box;
-			color: $first_text-color;
+			color: $second_text-color;
 
 			h3,
 			p,
@@ -194,7 +185,7 @@
 			z-index: 9999;
 
 			h2 {
-				font-size: 6vw;
+				font-size: 5vw;
 			}
 
 			@include animTextAbout;
@@ -282,7 +273,7 @@
 			z-index: 9999;
 
 			h2 {
-				font-size: 6vw;
+				font-size: 5vw;
 			}
 
 			@include animTextAbout;
@@ -369,7 +360,7 @@
 
 .sub_about {
 	background: $main_background-color;
-	color: #fff;
+	color: $first_text-color;
 
 	&_1,
 	&_2,
@@ -396,7 +387,7 @@
 			top: -40px;
 
 			h2 {
-				font-size: 6vw;
+				font-size: 5vw;
 			}
 
 			@include animTextAbout;
@@ -510,7 +501,7 @@
 					&:hover {
 
 						.fab {
-							color: #fff;
+							color: $first_text-color;
 						}
 
 						&:nth-child(1) a {

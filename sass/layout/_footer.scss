@@ -1,12 +1,10 @@
 footer {
 	background: $main_background-color;
 	position: relative;
-
+	color: $first_text-color;
 
 	h2 {
-		@include animTextFooter;
 		position: relative;
-		z-index: 9999;
 		font-size: 4vw;
 	}
 
