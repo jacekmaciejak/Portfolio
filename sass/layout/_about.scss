@@ -118,6 +118,13 @@
 				opacity: 0;
 				visibility: hidden;
 				font-weight: bold;
+
+				@include respond(tab-port) {
+					visibility: visible;
+					transition-property: none !important;
+					transform: none !important;
+					animation: none !important;
+				}
 			}
 
 			h3 {
