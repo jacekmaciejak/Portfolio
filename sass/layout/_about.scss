@@ -1,7 +1,7 @@
 .about {
 	background: $main_background-color;
-	padding-bottom: 2rem;
 	color: $first_text-color;
+	padding-bottom: 2rem;
 
 	@include respond(tab-port) {
 		padding-bottom: 0;
@@ -29,6 +29,24 @@
 			height: 400px;
 			width: 90%;
 			margin: 30px 0;
+			/*CSS transitions*/
+			-o-transition-property: none !important;
+			-moz-transition-property: none !important;
+			-ms-transition-property: none !important;
+			-webkit-transition-property: none !important;
+			transition-property: none !important;
+			/*CSS transforms*/
+			-o-transform: none !important;
+			-moz-transform: none !important;
+			-ms-transform: none !important;
+			-webkit-transform: none !important;
+			transform: none !important;
+			/*CSS animations*/
+			-webkit-animation: none !important;
+			-moz-animation: none !important;
+			-o-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
 		}
 
 		@include respond(phone) {
@@ -55,6 +73,10 @@
 			border-top: 1px solid #000;
 			border-bottom: 1px solid #000;
 			transform: scaleX(0);
+
+			@include respond(tab-port) {
+				display: none;
+			}
 		}
 
 		&:hover:before {
@@ -66,6 +88,10 @@
 			border-left: 1px solid #000;
 			border-right: 1px solid #000;
 			transform: scaleY(0);
+
+			@include respond(tab-port) {
+				display: none;
+			}
 		}
 
 		&:hover:after {
@@ -88,8 +114,12 @@
 				transition: .5s;
 				filter: grayscale(1);
 				-webkit-filter: grayscale(1);
-			}
 
+				@include respond(tab-port) {
+					filter: grayscale(0) saturate(2);
+					-webkit-filter: grayscale(0) saturate(2);
+				}
+			}
 		}
 
 		&:hover &-img img {
@@ -108,6 +138,8 @@
 			box-sizing: border-box;
 			color: $second_text-color;
 
+			@include respond(tab-port) {}
+
 			h3,
 			p,
 			button,
@@ -120,22 +152,29 @@
 				font-weight: bold;
 
 				@include respond(tab-port) {
+					opacity: 1;
 					visibility: visible;
-					transition-property: none !important;
-					transform: none !important;
-					animation: none !important;
+					transform: translateY(0);
 				}
 			}
 
 			h3 {
 				margin-bottom: 30px;
 				transform: translateY(-70px);
-				font-size: calc(20px + 1vw);
+				font-size: calc(30px + 1vw);
+
+				@include respond(tab-port) {
+					transform: none;
+				}
 			}
 
 			p {
 				transform: translateY(-70px);
-				font-size: calc(5px + 1vw);
+				font-size: calc(12px + 1vw);
+
+				@include respond(tab-port) {
+					transform: none;
+				}
 			}
 
 			ul {
@@ -143,7 +182,11 @@
 				margin-top: 30px;
 				list-style: none;
 				line-height: 1.7;
-				font-size: calc(3px + 1vw);
+				font-size: calc(12px + 1vw);
+
+				@include respond(tab-port) {
+					transform: none;
+				}
 			}
 
 			button {
@@ -153,13 +196,8 @@
 				display: block;
 
 				@include respond(tab-port) {
-					padding: 5px 20px;
-					margin: 50px auto 0;
-				}
-
-				@include respond(phone) {
-					padding: 5px 20px;
 					margin: 20px auto 0;
+					transform: none;
 				}
 			}
 		}
@@ -172,6 +210,11 @@
 			visibility: visible;
 			transition-delay: .2s;
 			transform: translateY(0px);
+
+			@include respond(tab-port) {
+				transform: none;
+				transition-delay: none;
+			}
 		}
 	}
 
@@ -200,14 +243,6 @@
 			}
 
 			@include animTextAbout;
-
-			@include respond(tab-port) {
-				margin-top: -9vw;
-			}
-
-			@include respond(phone) {
-				margin-top: -10vw;
-			}
 		}
 
 		&-card_1 {
@@ -266,14 +301,6 @@
 			}
 
 			@include animTextAbout;
-
-			@include respond(tab-port) {
-				margin-top: -9vw;
-			}
-
-			@include respond(phone) {
-				margin-top: -10vw;
-			}
 		}
 
 		@include respond(tab-land) {
@@ -405,7 +432,6 @@
 							width: 50px;
 							height: 50px;
 						}
-
 
 						.fab {
 							font-size: 40px;

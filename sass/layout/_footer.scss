@@ -1,6 +1,6 @@
 footer {
-	background: $main_background-color;
 	position: relative;
+	background: $main_background-color;
 	color: $first_text-color;
 
 	h2 {
@@ -12,8 +12,8 @@ footer {
 
 		position: absolute;
 		top: 50%;
-		right: 13%;
-		transform: translate(-13%, -50%);
+		left: 92%;
+		transform: translate(-92%, -50%);
 		width: 2px;
 		height: 150px;
 		background: transparent;
