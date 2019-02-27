@@ -221,6 +221,10 @@
 			h1 {
 				font-size: 8vw;
 				opacity: .2;
+
+				@include respond(tab-port) {
+					font-size: calc(20px + 3.5vw);
+				}
 			}
 
 			@include respond(tab-port) {
@@ -234,9 +238,17 @@
 
 			h2 {
 				font-size: 5vw;
+
+				@include respond(tab-port) {
+					font-size: calc(20px + 3.5vw);
+				}
 			}
 
 			@include animTextAbout;
+
+			@include respond(tab-land) {
+				margin-bottom: 2rem;
+			}
 		}
 
 		&-card_1 {
@@ -279,6 +291,10 @@
 			h1 {
 				font-size: 8vw;
 				opacity: .2;
+
+				@include respond(tab-port) {
+					font-size: calc(20px + 3.5vw);
+				}
 			}
 
 			@include respond(tab-port) {
@@ -292,9 +308,17 @@
 
 			h2 {
 				font-size: 5vw;
+
+				@include respond(tab-port) {
+					font-size: calc(20px + 3.5vw);
+				}
 			}
 
 			@include animTextAbout;
+
+			@include respond(tab-land) {
+				margin-bottom: 2rem;
+			}
 		}
 
 		@include respond(tab-land) {
@@ -357,7 +381,7 @@
 			}
 
 			@include respond(tab-port) {
-				margin-top: 2rem;
+				margin-top: 100px;
 			}
 		}
 
@@ -371,15 +395,10 @@
 			}
 
 			@include animTextAbout;
-			/*
-			@include respond(tab-port) {
-				margin-top: -29vw;
-			}
 
-			@include respond(phone) {
-				margin-top: -42vw;
+			@include respond(tab-land) {
+				top: -50px;
 			}
-*/
 		}
 
 		&-container {

@@ -5,7 +5,7 @@ footer {
 
 	h2 {
 		position: relative;
-		font-size: 4vw;
+		font-size: 3.5vw;
 
 		@include respond(tab-port) {
 			text-align: center;

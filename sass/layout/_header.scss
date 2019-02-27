@@ -29,8 +29,8 @@
 	}
 
 	&_title {
-
 		color: $first_text-color;
+		padding-left: 5%;
 
 		@include respond(tab-land) {
 			padding: 3rem;
@@ -48,30 +48,25 @@
 
 		h1,
 		h2 {
-			font-size: 4.2vw;
+			font-size: calc(20px + 3.5vw);
+			line-height: 1.5;
 
-			@include respond(tab-port) {
+			@include respond(tab-land) {
 				text-align: center;
 				padding: 10px;
-				font-size: calc(20px + 3.5vw);
 			}
 		}
 
 		p {
-			font-size: 1.8vw;
-			line-height: 1.5;
+			font-size: calc(10px + 1.8vw);
+			line-height: 2;
 			text-align: left;
 			margin: 3rem 0;
 
 			@include respond(tab-land) {
-				margin-top: 6rem;
-			}
-
-			@include respond(tab-port) {
 				font-size: calc(12px + 2vw);
 				margin-top: 5rem;
 				text-align: center;
-				line-height: 2;
 			}
 		}
 	}
