@@ -43,6 +43,7 @@
 
 		@include respond(phone) {
 			margin-top: 6rem;
+			padding: 1rem;
 		}
 
 		h1,
@@ -51,21 +52,12 @@
 
 			@include respond(tab-port) {
 				text-align: center;
-				line-height: 1;
-				padding: 1rem;
+				padding: 10px;
+				font-size: calc(20px + 3.5vw);
 			}
-
-			/*
-			@include respond(phone) {
-				text-align: center;
-				line-height: 1;
-				padding: 1rem;
-			}
-*/
 		}
 
 		p {
-
 			font-size: 1.8vw;
 			line-height: 1.5;
 			text-align: left;
@@ -76,12 +68,10 @@
 			}
 
 			@include respond(tab-port) {
-				margin-top: 3rem;
+				font-size: calc(12px + 2vw);
+				margin-top: 5rem;
 				text-align: center;
-			}
-
-			@include respond(phone) {
-				margin-top: 3rem;
+				line-height: 2;
 			}
 		}
 	}
@@ -124,6 +114,12 @@
 		*/
 	}
 
+	&_scrollDown {
+		@include respond(tab-port) {
+			display: none;
+		}
+	}
+
 	&_sub-scrollDown {
 		top: 50%;
 		left: 92%;
@@ -136,10 +132,11 @@
 
 	position: fixed;
 	top: 8%;
-	left: 5%;
-	transform: translate(-5%, -8%);
-	width: 100px;
+	left: 1%;
+	transform: translate(-1%, -8%);
+	width: 80px;
 	height: 3px;
+	z-index: 99999999;
 
 	&:before {
 		content: '';

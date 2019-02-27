@@ -1,25 +1,37 @@
 .header_button,
-.about_button,
-.footer_button {
+.footer_button,
+.sub_button {
 	display: grid;
 	width: auto;
 	height: auto;
 	text-align: center;
 	cursor: pointer;
 	padding: 30px;
-	background: #000;
+	background: transparent;
 	border: 1px solid #fff;
 	position: absolute;
 	overflow: hidden;
 	letter-spacing: 2px;
+	opacity: .5;
+	color: $first_text-color;
+
+	@include respond(tab-land) {}
+
+	@include respond(tab-port) {
+		padding: 20px;
+		opacity: 1;
+	}
 
 	p {
 		text-decoration: none;
 
 		font: {
 			size: 24px;
-			weight: 300;
 			weight: bold;
+		}
+
+		@include respond(tab-port) {
+			font-size: calc(10px + 2vw);
 		}
 	}
 
@@ -38,20 +50,10 @@
 		}
 	}
 
-	&:hover:before {
+	&:hover:before,
+	&:active:before,
+	&:focus:before {
 		left: 100%;
-	}
-
-	@include respond(tab-land) {
-		width: auto;
-		height: auto;
-		padding: 30px;
-	}
-
-	@include respond(tab-port) {
-		width: auto;
-		height: auto;
-		padding: 20px;
 	}
 }
 
@@ -59,9 +61,6 @@
 .header {
 
 	&_button {
-		color: #fff;
-		opacity: .5;
-
 		&:hover {
 			transition: .8s;
 			opacity: 1;
@@ -76,38 +75,17 @@
 .sub_button {
 	position: fixed;
 	top: 9%;
-	left: 5%;
-	transform: translate(-5%, -9%);
-	z-index: 99999;
-	cursor: pointer;
-	width: 100px;
-	font-weight: bold;
-	background: none;
-	overflow: hidden;
-	text-align: center;
-	color: #fff;
-	letter-spacing: 2px;
+	left: 1%;
+	transform: translate(-1%, -9%);
+	border: none;
+	width: 80px;
+	z-index: 99999999;
+	background-color: #333333;
+	padding: 5px 0;
+	opacity: 1;
 
-	&:before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: -100%;
-		width: 100%;
-		height: 100%;
-		background: linear-gradient(90deg, transparent, #fff, transparent);
-		transition: .4s;
-	}
-
-	&:hover:before {
-		left: 100%;
-	}
-
-	&:hover {
-		background: linear-gradient(90deg, #fff, #fff, #fff);
-		background-size: 100%;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: rgba(255, 255, 255, 1);
+	p {
+		font-size: 15px;
 	}
 }
 
@@ -119,17 +97,16 @@
 		width: auto;
 		height: auto;
 		cursor: pointer;
-		background: #000;
+		background: $second_text-color;
 		border: 1px solid #fff;
 		overflow: hidden;
-		color: #fff;
+		color: $first_text-color;
 
 		p {
 			text-decoration: none;
 
 			font: {
 				size: 24px;
-				weight: 300;
 				weight: bold;
 			}
 		}
@@ -143,26 +120,22 @@
 			height: 100%;
 			background: linear-gradient(90deg, transparent, #fff, transparent);
 			transition: .5s;
+
+			@include respond(tab-port) {
+				display: none;
+			}
+
 		}
 
 		&:hover:before {
 			left: 100%;
 		}
 
-		@include respond(tab-land) {
-			width: auto;
-			height: auto;
-		}
+		@include respond(tab-land) {}
 
-		@include respond(tab-port) {
-			width: auto;
-			height: auto;
-		}
+		@include respond(tab-port) {}
 
-		@include respond(phone) {
-			width: auto;
-			height: auto;
-		}
+		@include respond(phone) {}
 	}
 }
 
@@ -221,18 +194,6 @@
 .footer {
 
 	&_button {
-		border: 1px solid #fff;
 		margin-top: 60px;
-		color: #fff;
-		opacity: .5;
-
-		&:hover {
-			transition: .8s;
-			opacity: 1;
-			background: linear-gradient(90deg, #000, #000, #000);
-			background-size: 100%;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: rgba(255, 255, 255, 1);
-		}
 	}
 }
