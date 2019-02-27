@@ -17,7 +17,7 @@
 	color: $first_text-color;
 
 	@include respond(tab-port) {
-		padding: 20px;
+		padding: 10px;
 		opacity: 1;
 	}
 
@@ -60,6 +60,8 @@
 .header {
 
 	&_button {
+		margin-top: 100px;
+
 		&:hover {
 			transition: .8s;
 			opacity: 1;
@@ -67,6 +69,10 @@
 			background-size: 100%;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: rgba(255, 255, 255, 1);
+		}
+
+		@include respond(tab-land) {
+			margin-top: 0px;
 		}
 	}
 }
@@ -96,7 +102,7 @@
 		background: $second_text-color;
 		color: $first_text-color;
 		padding: 10px !important;
-		margin: 30px auto;
+		margin: 30px auto 0;
 		position: relative;
 	}
 }
@@ -147,7 +153,6 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: rgba(000, 000, 000, 1);
 	}
-
 }
 
 
