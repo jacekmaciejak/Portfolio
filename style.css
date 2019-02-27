@@ -150,7 +150,8 @@
 
 .header_button,
 .footer_button,
-.sub_button {
+.sub_button,
+.card_button {
   display: grid;
   width: auto;
   height: auto;
@@ -167,23 +168,27 @@
   @media (max-width: 900px) {
     .header_button,
     .footer_button,
-    .sub_button {
+    .sub_button,
+    .card_button {
       padding: 20px;
       opacity: 1; } }
   .header_button p,
   .footer_button p,
-  .sub_button p {
+  .sub_button p,
+  .card_button p {
     text-decoration: none;
     font-size: 24px;
     font-weight: bold; }
     @media (max-width: 900px) {
       .header_button p,
       .footer_button p,
-      .sub_button p {
+      .sub_button p,
+      .card_button p {
         font-size: calc(10px + 2vw); } }
   .header_button:before,
   .footer_button:before,
-  .sub_button:before {
+  .sub_button:before,
+  .card_button:before {
     content: '';
     position: absolute;
     top: 0;
@@ -194,7 +199,8 @@
     transition: .5s; }
     .header_button:before:hover,
     .footer_button:before:hover,
-    .sub_button:before:hover {
+    .sub_button:before:hover,
+    .card_button:before:hover {
       background: linear-gradient(90deg, #fff, #fff, #fff); }
   .header_button:hover:before, .header_button:active:before, .header_button:focus:before,
   .footer_button:hover:before,
@@ -202,7 +208,10 @@
   .footer_button:focus:before,
   .sub_button:hover:before,
   .sub_button:active:before,
-  .sub_button:focus:before {
+  .sub_button:focus:before,
+  .card_button:hover:before,
+  .card_button:active:before,
+  .card_button:focus:before {
     left: 100%; }
 
 /*---------------------------HEADER-----------------------------*/
@@ -230,31 +239,11 @@
 
 /*---------------------------ABOUT-----------------------------*/
 .about .card_button {
-  width: auto;
-  height: auto;
-  cursor: pointer;
   background: #000;
-  border: 1px solid #fff;
-  overflow: hidden;
-  color: #fff; }
-  .about .card_button p {
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold; }
-  .about .card_button:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, #fff, transparent);
-    transition: .5s; }
-    @media (max-width: 900px) {
-      .about .card_button:before {
-        display: none; } }
-  .about .card_button:hover:before {
-    left: 100%; }
+  color: #fff;
+  padding: 10px !important;
+  margin: 30px auto;
+  position: relative; }
 
 /*---------------------------EMAIL-----------------------------*/
 .email_button {
@@ -292,7 +281,16 @@
 
 /*---------------------------FOOTER-----------------------------*/
 .footer_button {
-  margin-top: 60px; }
+  margin-top: 60px;
+  margin: 0 auto;
+  position: relative; }
+  .footer_button:hover {
+    transition: .8s;
+    opacity: 1;
+    background: linear-gradient(90deg, #fff, #fff, #fff);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white; }
 
 .header {
   position: relative;
@@ -418,20 +416,7 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
   grid-template-rows: .8fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: " . . . . ." " . . . . ." " header_title header_title header_title . ." " header_title header_title header_title . ." " header_title header_title header_title . ." " header_button header_button header_button . ." " . . . . .";
-  /*
-	@include respond(tab-port) {
-		grid-template-columns: 1fr;
-		grid-template-rows: 2fr 1fr;
-		grid-template-areas: "header_title""header_button"
-	}
-
-	@include respond(phone) {
-		grid-template-columns: 1fr;
-		grid-template-rows: 2fr 1fr;
-		grid-template-areas: "header_title""header_button"
-	}
-*/ }
+  grid-template-areas: " . . . . ." " . . . . ." " header_title header_title header_title . ." " header_title header_title header_title . ." " header_title header_title header_title . ." " header_button header_button header_button . ." " . . . . ."; }
   @media (max-width: 1200px) {
     .header {
       grid-template-columns: 1fr;
@@ -447,7 +432,7 @@
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr .5fr 1fr 1fr 1fr .5fr 1fr 1fr 1fr 1fr;
   grid-template-rows: .5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
 
 .about .about_1 {
@@ -646,32 +631,12 @@ footer {
     position: relative; }
     @media (max-width: 1200px) {
       .about_1-card, .about_2-card {
-        height: 400px;
+        height: 500px;
         width: 90%;
         margin: 30px 0; } }
     @media (max-width: 900px) {
       .about_1-card, .about_2-card {
-        height: 400px;
-        width: 90%;
-        margin: 30px 0;
-        /*CSS transitions*/
-        -o-transition-property: none !important;
-        -moz-transition-property: none !important;
-        -ms-transition-property: none !important;
-        -webkit-transition-property: none !important;
-        transition-property: none !important;
-        /*CSS transforms*/
-        -o-transform: none !important;
-        -moz-transform: none !important;
-        -ms-transform: none !important;
-        -webkit-transform: none !important;
-        transform: none !important;
-        /*CSS animations*/
-        -webkit-animation: none !important;
-        -moz-animation: none !important;
-        -o-animation: none !important;
-        -ms-animation: none !important;
-        animation: none !important; } }
+        height: 450px; } }
     .about_1-card::before, .about_1-card::after, .about_2-card::before, .about_2-card::after {
       content: '';
       position: absolute;
@@ -759,35 +724,31 @@ footer {
             visibility: visible;
             transform: translateY(0); } }
       .about_1-card .content h3, .about_2-card .content h3 {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         transform: translateY(-70px);
-        font-size: calc(30px + 1vw); }
+        font-size: 30px; }
         @media (max-width: 900px) {
           .about_1-card .content h3, .about_2-card .content h3 {
             transform: none; } }
       .about_1-card .content p, .about_2-card .content p {
         transform: translateY(-70px);
-        font-size: calc(12px + 1vw); }
+        font-size: 23px; }
         @media (max-width: 900px) {
           .about_1-card .content p, .about_2-card .content p {
             transform: none; } }
       .about_1-card .content ul, .about_2-card .content ul {
         transform: translateY(70px);
-        margin-top: 30px;
+        margin-top: 20px;
         list-style: none;
-        line-height: 1.7;
-        font-size: calc(12px + 1vw); }
+        line-height: 1.4;
+        font-size: 23px; }
         @media (max-width: 900px) {
           .about_1-card .content ul, .about_2-card .content ul {
             transform: none; } }
       .about_1-card .content button, .about_2-card .content button {
-        transform: translateY(40px);
-        padding: 15px;
-        margin: 40px auto 0;
-        display: block; }
+        transform: translateY(40px); }
         @media (max-width: 900px) {
           .about_1-card .content button, .about_2-card .content button {
-            margin: 20px auto 0;
             transform: none; } }
     .about_1-card:hover .content h3,
     .about_1-card:hover .content p,
@@ -818,7 +779,7 @@ footer {
       opacity: .2; }
       @media (max-width: 900px) {
         .about_1-h1 h1 {
-          font-size: calc(20px + 3.5vw); } }
+          font-size: calc(30px + 3.5vw); } }
     @media (max-width: 900px) {
       .about_1-h1 {
         margin-top: 2rem; } }
@@ -836,7 +797,7 @@ footer {
       font-size: 5vw; }
       @media (max-width: 900px) {
         .about_1-h2 h2 {
-          font-size: calc(20px + 3.5vw); } }
+          font-size: calc(30px + 3.5vw); } }
     @media (max-width: 1200px) {
       .about_1-h2 {
         margin-bottom: 2rem; } }
@@ -867,7 +828,7 @@ footer {
       opacity: .2; }
       @media (max-width: 900px) {
         .about_2-h1 h1 {
-          font-size: calc(20px + 3.5vw); } }
+          font-size: calc(30px + 3.5vw); } }
     @media (max-width: 900px) {
       .about_2-h1 {
         margin-top: 2rem; } }
@@ -885,7 +846,7 @@ footer {
       font-size: 5vw; }
       @media (max-width: 900px) {
         .about_2-h2 h2 {
-          font-size: calc(20px + 3.5vw); } }
+          font-size: calc(30px + 3.5vw); } }
     @media (max-width: 1200px) {
       .about_2-h2 {
         margin-bottom: 2rem; } }

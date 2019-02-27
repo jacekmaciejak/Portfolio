@@ -12,19 +12,6 @@
 		grid-template-areas: "header_title""header_button"
 	}
 
-	/*
-	@include respond(tab-port) {
-		grid-template-columns: 1fr;
-		grid-template-rows: 2fr 1fr;
-		grid-template-areas: "header_title""header_button"
-	}
-
-	@include respond(phone) {
-		grid-template-columns: 1fr;
-		grid-template-rows: 2fr 1fr;
-		grid-template-areas: "header_title""header_button"
-	}
-*/
 	&_title {
 		grid-area: header_title;
 	}
@@ -41,7 +28,7 @@
 		width: 100%;
 		height: 100vh;
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr .5fr 1fr 1fr 1fr .5fr 1fr 1fr 1fr 1fr;
 		grid-template-rows: .5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	}
 

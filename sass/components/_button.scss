@@ -1,6 +1,7 @@
 .header_button,
 .footer_button,
-.sub_button {
+.sub_button,
+.card_button {
 	display: grid;
 	width: auto;
 	height: auto;
@@ -14,8 +15,6 @@
 	letter-spacing: 2px;
 	opacity: .5;
 	color: $first_text-color;
-
-	@include respond(tab-land) {}
 
 	@include respond(tab-port) {
 		padding: 20px;
@@ -94,48 +93,11 @@
 .about {
 
 	.card_button {
-		width: auto;
-		height: auto;
-		cursor: pointer;
 		background: $second_text-color;
-		border: 1px solid #fff;
-		overflow: hidden;
 		color: $first_text-color;
-
-		p {
-			text-decoration: none;
-
-			font: {
-				size: 24px;
-				weight: bold;
-			}
-		}
-
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: -100%;
-			width: 100%;
-			height: 100%;
-			background: linear-gradient(90deg, transparent, #fff, transparent);
-			transition: .5s;
-
-			@include respond(tab-port) {
-				display: none;
-			}
-
-		}
-
-		&:hover:before {
-			left: 100%;
-		}
-
-		@include respond(tab-land) {}
-
-		@include respond(tab-port) {}
-
-		@include respond(phone) {}
+		padding: 10px !important;
+		margin: 30px auto;
+		position: relative;
 	}
 }
 
@@ -195,5 +157,16 @@
 
 	&_button {
 		margin-top: 60px;
+		margin: 0 auto;
+		position: relative;
+
+		&:hover {
+			transition: .8s;
+			opacity: 1;
+			background: linear-gradient(90deg, #fff, #fff, #fff);
+			background-size: 100%;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: rgba(255, 255, 255, 1);
+		}
 	}
 }
