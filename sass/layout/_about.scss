@@ -19,6 +19,8 @@
 		transition: .5s;
 		position: relative;
 
+
+
 		@include respond(tab-land) {
 			height: 500px;
 			width: 90%;
@@ -109,6 +111,7 @@
 			padding: 20px;
 			box-sizing: border-box;
 			color: $second_text-color;
+			text-shadow: 4px 2px 5px rgba(255, 255, 255, 0.73);
 
 			h3,
 			p,

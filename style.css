@@ -708,7 +708,8 @@ footer {
       z-index: 2;
       padding: 20px;
       box-sizing: border-box;
-      color: #000; }
+      color: #000;
+      text-shadow: 4px 2px 5px rgba(255, 255, 255, 0.73); }
       .about_1-card .content h3,
       .about_1-card .content p,
       .about_1-card .content button,
