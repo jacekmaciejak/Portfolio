@@ -313,12 +313,7 @@
   justify-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  /*
-	@include respond(phone) {
-		background-position: calc(100% + 200px);
-	}
-*/ }
+  align-items: center; }
   @media (max-width: 900px) {
     .header {
       background-position: calc(100% + 200px); } }
@@ -354,6 +349,9 @@
       line-height: 2;
       text-align: left;
       margin: 3rem 0; }
+      .header_title p::first-letter {
+        font-size: calc(50px + 1vw);
+        line-height: 0; }
       @media (max-width: 1200px) {
         .header_title p {
           font-size: calc(12px + 2vw);
@@ -614,7 +612,17 @@ footer {
         margin-top: .7rem;
         display: block;
         -webkit-transition: all .3s;
-        transition: all .3s; }
+        transition: all .3s;
+        opacity: .5; }
+        @media (max-width: 1200px) {
+          .section-book .book__form .form__label {
+            margin-left: 7rem; } }
+        @media (max-width: 900px) {
+          .section-book .book__form .form__label {
+            margin-left: 5rem; } }
+        @media (max-width: 600px) {
+          .section-book .book__form .form__label {
+            margin-left: 3rem; } }
 
 .about {
   background: #000;
@@ -917,6 +925,9 @@ footer {
     text-align: justify;
     font-size: calc(13px + 1vw);
     letter-spacing: 1px; }
+    .sub_about_1-container p::first-letter, .sub_about_2-container p::first-letter, .sub_about_3-container p::first-letter {
+      font-size: calc(40px + 1vw);
+      line-height: 0; }
     @media (max-width: 1200px) {
       .sub_about_1-container, .sub_about_2-container, .sub_about_3-container {
         margin-top: -100px; } }
@@ -943,8 +954,7 @@ footer {
           background-color: #fff;
           text-align: center;
           transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
-          transition: .5s;
-          box-shadow: -15px 27px 3px rgba(0, 0, 0, 0.6); }
+          transition: .5s; }
           @media (max-width: 900px) {
             .sub_about_2 .sub_about_panel ul li a {
               width: 50px;
@@ -983,7 +993,7 @@ footer {
             transform: rotate(0deg) skewX(-45deg); }
           .sub_about_2 .sub_about_panel ul li a:hover {
             transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
-            box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5); }
+            box-shadow: -50px 50px 50px rgba(255, 255, 255, 0.7); }
           .sub_about_2 .sub_about_panel ul li a:active {
             top: 5px; }
         .sub_about_2 .sub_about_panel ul li:hover .fab {

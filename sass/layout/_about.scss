@@ -384,6 +384,13 @@
 			font-size: calc(13px + 1vw);
 			letter-spacing: 1px;
 
+			p {
+				&::first-letter {
+					font-size: calc(40px + 1vw);
+					line-height: 0;
+				}
+			}
+
 			@include respond(tab-land) {
 				margin-top: -100px;
 			}
@@ -418,7 +425,7 @@
 						text-align: center;
 						transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
 						transition: .5s;
-						box-shadow: -15px 27px 3px rgba(0, 0, 0, .6);
+						//box-shadow: -15px 27px 3px rgba(255, 255, 255, .6);
 
 						@include respond(tab-port) {
 							width: 50px;
@@ -467,7 +474,7 @@
 
 						&:hover {
 							transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
-							box-shadow: -50px 50px 50px rgba(0, 0, 0, .5);
+							box-shadow: -50px 50px 50px rgba(255, 255, 255, .7);
 						}
 
 						&:active {

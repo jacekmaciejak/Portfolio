@@ -17,11 +17,6 @@
 		background-position: calc(100% + 200px);
 	}
 
-	/*
-	@include respond(phone) {
-		background-position: calc(100% + 200px);
-	}
-*/
 	&:hover {
 		transition: .5s;
 		filter: grayscale(0);
@@ -62,6 +57,11 @@
 			line-height: 2;
 			text-align: left;
 			margin: 3rem 0;
+
+			&::first-letter {
+				font-size: calc(50px + 1vw);
+				line-height: 0;
+			}
 
 			@include respond(tab-land) {
 				font-size: calc(12px + 2vw);
