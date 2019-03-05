@@ -15,23 +15,17 @@
 	letter-spacing: 2px;
 	opacity: .5;
 	color: $first_text-color;
+	text-decoration: none;
 
-	@include respond(tab-port) {
-		padding: 10px;
-		opacity: 1;
+	font: {
+		size: 24px;
+		weight: bold;
 	}
 
-	p {
-		text-decoration: none;
-
-		font: {
-			size: 24px;
-			weight: bold;
-		}
-
-		@include respond(tab-port) {
-			font-size: calc(10px + 2vw);
-		}
+	@include respond(tab-port) {
+		font-size: calc(10px + 2vw);
+		padding: 10px;
+		opacity: 1;
 	}
 
 	&:before {
@@ -88,10 +82,7 @@
 	background-color: #333333;
 	padding: 5px 0;
 	opacity: 1;
-
-	p {
-		font-size: 15px;
-	}
+	font-size: 15px;
 }
 
 /*---------------------------ABOUT-----------------------------*/
@@ -119,17 +110,14 @@
 	overflow: hidden;
 	background: transparent;
 	position: relative;
+	position: relative;
+	z-index: 9999;
+	text-decoration: none;
 
-	p {
-		position: relative;
-		z-index: 9999;
-		text-decoration: none;
-
-		font: {
-			size: 24px;
-			weight: 300;
-			weight: bold;
-		}
+	font: {
+		size: 24px;
+		weight: 300;
+		weight: bold;
 	}
 
 	&:before {
