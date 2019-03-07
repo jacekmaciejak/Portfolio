@@ -1,0 +1,9 @@
+#Przekierowanie na bezWWW
+Options +FollowSymLinks
+RewriteEngine on
+DirectoryIndex index.html
+RewriteCond %{HTTP_HOST} ^www.jacekmaciejak.pl$ [NC]
+RewriteRule ^(.*)$ http://jacekmaciejak.pl/$1 [R=301,L]
+
+
+
