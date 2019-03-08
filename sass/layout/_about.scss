@@ -198,7 +198,7 @@
 				opacity: .2;
 
 				@include respond(tab-port) {
-					font-size: calc(30px + 3.5vw);
+					font-size: calc(50px + 3.5vw);
 				}
 			}
 
@@ -268,7 +268,7 @@
 				opacity: .2;
 
 				@include respond(tab-port) {
-					font-size: calc(30px + 3.5vw);
+					font-size: calc(50px + 3.5vw);
 				}
 			}
 
@@ -357,6 +357,7 @@
 
 				@include respond(tab-port) {
 					font-size: calc(50px + 3.5vw);
+					line-height: 1;
 				}
 			}
 
@@ -369,6 +370,10 @@
 			position: relative;
 			z-index: 9999;
 			top: -40px;
+
+			@include respond(tab-port) {
+				top: -20px;
+			}
 
 			h2 {
 				font-size: 5vw;
@@ -398,6 +403,10 @@
 			@include respond(tab-land) {
 				margin-top: -100px;
 			}
+
+			@include respond(phone) {
+				margin-top: -50px;
+			}
 		}
 	}
 
@@ -415,6 +424,13 @@
 				padding: 0;
 				width: 900px;
 				height: 600px;
+
+				@include respond(phone) {
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+
+				}
 
 				li {
 					list-style: none;

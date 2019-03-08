@@ -37,7 +37,7 @@
 		}
 
 		@include respond(phone) {
-			margin-top: 6rem;
+			margin-top: 5rem;
 			padding: 1rem;
 		}
 
@@ -132,6 +132,10 @@
 	width: 80px;
 	height: 3px;
 	z-index: 99999999;
+
+	@include respond(phone) {
+		top: 3%;
+	}
 
 	&:before {
 		content: '';
