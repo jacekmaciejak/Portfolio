@@ -43,7 +43,7 @@
 
 		h1,
 		h2 {
-			font-size: calc(20px + 3.5vw);
+			font-size: calc(25px + 3.5vw);
 			line-height: 1.5;
 
 			@include respond(tab-land) {
@@ -59,7 +59,7 @@
 			margin: 3rem 0;
 
 			&::first-letter {
-				font-size: calc(50px + 1vw);
+				font-size: calc(30px + 1vw);
 				line-height: 0;
 			}
 
@@ -129,7 +129,7 @@
 	top: 8%;
 	left: 1%;
 	transform: translate(-1%, -8%);
-	width: 80px;
+	width: 90px;
 	height: 3px;
 	z-index: 99999999;
 

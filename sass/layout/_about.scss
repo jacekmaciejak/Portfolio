@@ -395,7 +395,7 @@
 
 			p {
 				&::first-letter {
-					font-size: calc(40px + 1vw);
+					font-size: calc(30px + 1vw);
 					line-height: 0;
 				}
 			}
@@ -405,7 +405,7 @@
 			}
 
 			@include respond(phone) {
-				margin-top: -50px;
+				margin-top: 0px;
 			}
 		}
 	}
