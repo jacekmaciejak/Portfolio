@@ -1,25 +1,25 @@
 <?php
 
-// Tworzymy zmienną dla imienia i nazwiska
-$name = $_POST['name'];
+	// Tworzymy zmienną dla imienia i nazwiska
+	$name = $_POST['name'];
 
-// Tworzymy zmienną dla adresu email
-$email = $_POST['email'];
+	// Tworzymy zmienną dla adresu email
+	$email = $_POST['email'];
 
-// Tworzymy zmienną dla wiadomości
-$message = $_POST['message'];
+	// Tworzymy zmienną dla wiadomości
+	$message = $_POST['message'];
 
-// Podajesz adres email z którego ma być wysłana wiadomość
-$odkogo = "Moja strona - portfolio";
+	// Podajesz adres email z którego ma być wysłana wiadomość
+	$odkogo = "Moja strona - portfolio";
 
-// Podajesz adres email na który chcesz otrzymać wiadomość
-$dokogo = "jacekmaciejak@poczta.fm";
+	// Podajesz adres email na który chcesz otrzymać wiadomość
+	$dokogo = "jacekmaciejak@poczta.fm";
 
-// Podajesz tytuł jaki ma mieć ta wiadomość email
-$tytul = "Wiadomość z mojej strony - Portfolio;
+	// Podajesz tytuł jaki ma mieć ta wiadomość email
+	$tytul = "Wiadomość z mojej strony - Portfolio";
 
 // Przygotowujesz treść wiadomości
-$wiadomosc = "";
+$wiadomosc  ="";
 $wiadomosc .= "Imie i nazwisko: " . $name . "\n";
 $wiadomosc .= "Email: " . $email . "\n";
 $wiadomosc .= "Wiadomość: " . $message . "\n";
@@ -35,9 +35,9 @@ $sukces = mail($dokogo, $tytul, $wiadomosc, $naglowek);
 
 // Przekierowywujemy na potwierdzenie
 if ($sukces){
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=/potwierdzenie.php\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=index.html\">";
 }
 else{
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=/subpage.html\">";
+	print "<meta http-equiv=\"refresh\" content=\"0;URL=subpage.html\">";
 }
 ?>

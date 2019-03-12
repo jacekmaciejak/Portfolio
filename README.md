@@ -9,4 +9,5 @@ The site has been built using the following technologies:
    - Grid Layout,
    - Responsive web design,
    - JavaScript,
-   - JQuery.
+   - JQuery,
+   - PHP (email script).

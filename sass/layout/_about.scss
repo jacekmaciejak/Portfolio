@@ -19,8 +19,6 @@
 		transition: .5s;
 		position: relative;
 
-
-
 		@include respond(tab-land) {
 			height: 500px;
 			width: 90%;
@@ -429,7 +427,6 @@
 					top: 50%;
 					left: 50%;
 					transform: translate(-50%, -50%);
-
 				}
 
 				li {
