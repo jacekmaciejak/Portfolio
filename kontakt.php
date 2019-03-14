@@ -35,7 +35,7 @@ $sukces = mail($dokogo, $tytul, $wiadomosc, $naglowek);
 
 // Przekierowywujemy na potwierdzenie
 if ($sukces){
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=index.html\">";
+	print "<meta http-equiv=\"refresh\" content=\"0;URL=confirmation.html\">";
 }
 else{
 	print "<meta http-equiv=\"refresh\" content=\"0;URL=subpage.html\">";

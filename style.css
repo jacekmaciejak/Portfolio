@@ -151,7 +151,8 @@
 .header_button,
 .footer_button,
 .sub_button,
-.card_button {
+.card_button,
+.conf_button {
   display: grid;
   width: auto;
   height: auto;
@@ -172,14 +173,16 @@
     .header_button,
     .footer_button,
     .sub_button,
-    .card_button {
+    .card_button,
+    .conf_button {
       font-size: calc(10px + 2vw);
       padding: 20px;
       opacity: 1; } }
   .header_button:before,
   .footer_button:before,
   .sub_button:before,
-  .card_button:before {
+  .card_button:before,
+  .conf_button:before {
     content: '';
     position: absolute;
     top: 0;
@@ -191,7 +194,8 @@
     .header_button:before:hover,
     .footer_button:before:hover,
     .sub_button:before:hover,
-    .card_button:before:hover {
+    .card_button:before:hover,
+    .conf_button:before:hover {
       background: linear-gradient(90deg, #fff, #fff, #fff); }
   .header_button:hover:before, .header_button:active:before, .header_button:focus:before,
   .footer_button:hover:before,
@@ -202,7 +206,10 @@
   .sub_button:focus:before,
   .card_button:hover:before,
   .card_button:active:before,
-  .card_button:focus:before {
+  .card_button:focus:before,
+  .conf_button:hover:before,
+  .conf_button:active:before,
+  .conf_button:focus:before {
     left: 100%; }
 
 /*---------------------------HEADER-----------------------------*/
@@ -282,6 +289,17 @@
   margin: 0 auto;
   position: relative; }
   .footer_button:hover {
+    transition: .8s;
+    opacity: 1;
+    background: linear-gradient(90deg, #fff, #fff, #fff);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white; }
+
+/*---------------------------CONFIRMATION-----------------------------*/
+.conf_button {
+  position: relative; }
+  .conf_button:hover {
     transition: .8s;
     opacity: 1;
     background: linear-gradient(90deg, #fff, #fff, #fff);
@@ -425,6 +443,8 @@
   .header_button {
     grid-area: header_button; }
 
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
 .about .about_1,
 .about .about_2 {
   width: 100%;
@@ -499,6 +519,8 @@
   .about .about_2-card_6 {
     grid-area: about_2-card_6; }
 
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
 .sub_about {
   width: 100%; }
   .sub_about_1, .sub_about_2, .sub_about_3 {
@@ -519,6 +541,8 @@
     align-items: center;
     width: 100%; }
 
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
 footer {
   width: 100%; }
   footer .ind_footer {
@@ -551,6 +575,25 @@ footer {
     footer .sub_footer h2 {
       grid-area: title; }
 
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+.conf {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas: "text" "button"; }
+  .conf_text {
+    width: auto;
+    grid-area: "text"; }
+  .conf_button {
+    grid-area: "button"; }
+
+/*--------------------------------------*/
 .section-book {
   color: #000;
   position: relative;
@@ -1237,3 +1280,27 @@ footer {
       height: 100%;
       background: linear-gradient(transparent, #fff, transparent);
       animation: animateScrollUp 2s linear infinite; }
+
+.conf {
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+  line-height: 2;
+  font-size: calc(13px + 1vw);
+  letter-spacing: 1px;
+  text-align: center; }
+  .conf_text {
+    border: 1px solid #fff; }
+    @media only screen and (max-width: 600px) {
+      .conf_text {
+        margin: 0 20px; } }
+    .conf_text p {
+      padding: 60px; }
+      .conf_text p::first-letter {
+        font-size: calc(30px + 1vw);
+        line-height: 0; }
+      @media only screen and (max-width: 600px) {
+        .conf_text p {
+          padding: 20px; } }
+  .conf_button {
+    margin-top: -400px; }

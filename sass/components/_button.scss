@@ -1,7 +1,8 @@
 .header_button,
 .footer_button,
 .sub_button,
-.card_button {
+.card_button,
+.conf_button {
 	display: grid;
 	width: auto;
 	height: auto;
@@ -165,5 +166,21 @@
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: rgba(255, 255, 255, 1);
 		}
+	}
+}
+
+/*---------------------------CONFIRMATION-----------------------------*/
+
+
+.conf_button {
+	position: relative;
+
+	&:hover {
+		transition: .8s;
+		opacity: 1;
+		background: linear-gradient(90deg, #fff, #fff, #fff);
+		background-size: 100%;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: rgba(255, 255, 255, 1);
 	}
 }
