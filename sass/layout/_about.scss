@@ -423,15 +423,17 @@
 				width: 900px;
 				height: 600px;
 
-				@include respond(phone) {
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
+				@include respond(tab-port) {
+					width: 400px;
+					top: 55%;
+					left: 112%;
+					transform: translate(-112%, -55%);
 				}
 
 				li {
 					list-style: none;
 					margin: 0 40px;
+					display: inline-block;
 
 					a {
 						position: relative;

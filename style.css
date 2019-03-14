@@ -563,7 +563,7 @@ footer {
     footer .ind_footer_button {
       grid-area: footer_button; }
   footer .sub_footer {
-    height: 20vh;
+    height: 25vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "title";
@@ -997,14 +997,16 @@ footer {
       padding: 0;
       width: 900px;
       height: 600px; }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 900px) {
         .sub_about_2 .sub_about_panel ul {
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%); } }
+          width: 400px;
+          top: 55%;
+          left: 112%;
+          transform: translate(-112%, -55%); } }
       .sub_about_2 .sub_about_panel ul li {
         list-style: none;
-        margin: 0 40px; }
+        margin: 0 40px;
+        display: inline-block; }
         .sub_about_2 .sub_about_panel ul li a {
           position: relative;
           display: block;
@@ -1280,6 +1282,9 @@ footer {
       height: 100%;
       background: linear-gradient(transparent, #fff, transparent);
       animation: animateScrollUp 2s linear infinite; }
+  @media only screen and (min-width: 1800px) {
+    footer .sub_footer {
+      padding-top: 80px; } }
 
 .conf {
   background-color: #000;

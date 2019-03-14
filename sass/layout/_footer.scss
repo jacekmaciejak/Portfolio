@@ -25,7 +25,6 @@ footer {
 		background: transparent;
 		z-index: 9999;
 
-
 		&:before {
 			content: '';
 			position: absolute;
@@ -36,5 +35,11 @@ footer {
 			background: linear-gradient(transparent, #fff, transparent);
 			animation: animateScrollUp 2s linear infinite;
 		}
+	}
+
+	.sub_footer {
+
+		@include respond(big-desktop) {
+			padding-top: 80px;		}
 	}
 }
