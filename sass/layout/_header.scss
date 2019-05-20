@@ -71,6 +71,11 @@
 		}
 	}
 
+	.new {
+		color: red;
+		transition: .8s;
+	}
+
 	&_scrollDown,
 	&_sub-scrollDown {
 

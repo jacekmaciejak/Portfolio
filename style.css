@@ -442,6 +442,9 @@
           font-size: calc(12px + 2vw);
           margin-top: 5rem;
           text-align: center; } }
+  .header .new {
+    color: red;
+    transition: .8s; }
   .header_scrollDown, .header_sub-scrollDown {
     position: absolute;
     top: 90%;

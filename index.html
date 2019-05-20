@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Jacek Maciejak</title>
 	<meta name="description" content="Jacek Maciejak portfolio, projects">
 	<meta name="keywords" content="HTML, CSS, SASS, SCSS, JavaScript, JQuery">
@@ -19,18 +20,19 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
+
 </head>
 
 <body>
 
 	<main>
 		<div class="header">
-			<div class="header_title">
+			<div class="header_title" id="box">
 				<h1>Front-end developer</h1>
 				<h2>Jacek Maciejak</h2>
-				<p>Hi, I'm front-end developer living in Warsaw. <br> I encourage you to review my projects.</p>
+				<p class="text">Hi, I'm front-end developer living in Warsaw. <br> I encourage you to review my projects.</p>
 			</div>
-			<input type="checkbox" class="header_btn">
+			<input type="checkbox" class="header_btn" onclick="changeLanguage()">
 			<label for="toggle">
 				<span class="en">En</span>
 				<span class="pl">Pl</span>
@@ -186,6 +188,14 @@
 			duration: 1000,
 			mirror: true
 		});
+
+	</script>
+
+	<script>
+		function changeLanguage() {
+			var x = document.getElementById("box");
+			x.classList.toggle("new");
+		}
 
 	</script>
 
