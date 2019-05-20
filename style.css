@@ -228,7 +228,8 @@
 
 .header_btn {
   position: absolute;
-  margin: 100px 0px 0px -120px;
+  top: 70px;
+  left: 80px;
   width: 120px;
   height: 40px;
   -webkit-appearance: none;
@@ -237,6 +238,10 @@
   border-radius: 20px;
   box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px black, 0 5px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 0, 0, 0.2);
   cursor: pointer; }
+  @media only screen and (max-width: 1200px) {
+    .header_btn {
+      top: 40px;
+      left: 40px; } }
   .header_btn:checked:before {
     left: 40px; }
   .header_btn:before {
@@ -475,16 +480,14 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
   grid-template-rows: .8fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: " header_btn . . . ." " . . . . ." " header_title header_title header_title . ." " header_title header_title header_title . ." " header_title header_title header_title . ." " header_button header_button header_button . ." " . . . . ."; }
+  grid-template-areas: " . . . . ." " . . . . ." " header_title header_title header_title . ." " header_title header_title header_title . ." " header_title header_title header_title . ." " header_button header_button header_button . ." " . . . . ."; }
   @media only screen and (max-width: 1200px) {
     .header {
       grid-template-columns: 1fr;
       grid-template-rows: 2fr 1fr;
-      grid-template-areas: "header_title" "header_button" "header_btn"; } }
+      grid-template-areas: "header_title" "header_button"; } }
   .header_title {
     grid-area: header_title; }
-  .header_btn {
-    grid-area: header_btn; }
   .header_button {
     grid-area: header_button; }
 

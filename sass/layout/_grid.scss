@@ -4,20 +4,16 @@
 	display: grid;
 	grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: .8fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-areas: " header_btn . . . ."" . . . . ."" header_title header_title header_title . ."" header_title header_title header_title . ."" header_title header_title header_title . ."" header_button header_button header_button . ."" . . . . .";
+	grid-template-areas: " . . . . ."" . . . . ."" header_title header_title header_title . ."" header_title header_title header_title . ."" header_title header_title header_title . ."" header_button header_button header_button . ."" . . . . .";
 
 	@include respond(tab-land) {
 		grid-template-columns: 1fr;
 		grid-template-rows: 2fr 1fr;
-		grid-template-areas: "header_title""header_button""header_btn";
+		grid-template-areas: "header_title""header_button";
 	}
 
 	&_title {
 		grid-area: header_title;
-	}
-
-	&_btn {
-		grid-area: header_btn;
 	}
 
 	&_button {
