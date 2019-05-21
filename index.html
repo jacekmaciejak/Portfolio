@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="script.js"></script>
 	<!---------------------------------------------------------------------->
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -32,10 +33,10 @@
 				<h2>Jacek Maciejak</h2>
 				<p class="text">Hi, I'm front-end developer living in Warsaw. <br> I encourage you to review my projects.</p>
 			</div>
-			<input type="checkbox" class="header_btn" onclick="changeLanguage()">
+			<input type="checkbox" class="header_btn" onclick="window.location.href='index_pl.html'">
 			<label for="toggle">
-				<span class="en">En</span>
-				<span class="pl">Pl</span>
+				<span class="en" value="en">En</span>
+				<span class="pl" value="pl">Pl</span>
 			</label>
 			<button class="header_button" type="button" onclick="window.location.href='subpage.html'">About & contact</button>
 			<div class="header_scrollDown"></div>
@@ -190,15 +191,14 @@
 		});
 
 	</script>
-
+	<!--
 	<script>
 		function changeLanguage() {
 			var x = document.getElementById("box");
 			x.classList.toggle("new");
 		}
-
 	</script>
-
+-->
 </body>
 
 </html>
