@@ -41,8 +41,12 @@
 </head>
 
 <body>
+	<div class="loader">
+		<img src="img/loading.gif"
+			alt="Loading...">
+	</div>
 	<main>
-		<div class="header">
+		<section class="header">
 			<div class="header_title">
 				<h1>Front-end developer</h1>
 				<h2>Jacek Maciejak</h2>
@@ -65,9 +69,9 @@
 				O mnie/kontakt
 			</button>
 			<div class="header_scrollDown"></div>
-		</div>
+		</section>
 
-		<div class="about">
+		<section class="about">
 			<div class="about_1">
 				<div class="about_1-h1"
 					data-aos="fade-up">
@@ -230,7 +234,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	</main>
 	<footer>
 		<div class="ind_footer">
@@ -243,7 +247,7 @@
 			<div class="footer_scrollUp"></div>
 		</div>
 	</footer>
-
+	<script src="js/loader.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 		AOS.init({
@@ -251,6 +255,7 @@
 			mirror: true,
 		});
 	</script>
+
 </body>
 
 </html>

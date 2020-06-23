@@ -81,3 +81,11 @@
 	}
 
 }
+
+//---------LOADER---------
+@keyframes fadeOut {
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}

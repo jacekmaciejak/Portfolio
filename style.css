@@ -148,6 +148,11 @@
     transform-origin: left;
     transform: scaleX(0); } }
 
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden; } }
+
 .header_button,
 .footer_button,
 .sub_button,
@@ -386,6 +391,22 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: white; }
+
+.loader {
+  position: fixed;
+  z-index: 9999999999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.hidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards; }
 
 .header {
   position: relative;
@@ -1461,4 +1482,5 @@ footer {
     .error .terminal a::after {
       content: "]"; }
     .error .terminal .errorcode {
-      color: white; }
+      color: white;
+      font-size: 2rem; }
