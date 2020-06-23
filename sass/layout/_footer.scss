@@ -6,6 +6,7 @@ footer {
 	h2 {
 		position: relative;
 		font-size: 3.5vw;
+		font-weight: 100;
 
 		@include respond(tab-port) {
 			text-align: center;
@@ -40,6 +41,7 @@ footer {
 	.sub_footer {
 
 		@include respond(big-desktop) {
-			padding-top: 80px;		}
+			padding-top: 80px;
+		}
 	}
 }
