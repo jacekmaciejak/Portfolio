@@ -43,7 +43,7 @@
 
 		h1,
 		h2 {
-			font-size: calc(25px + 3.5vw);
+			font-size: calc(20px + 3.5vw);
 			line-height: 1.5;
 
 			@include respond(tab-land) {

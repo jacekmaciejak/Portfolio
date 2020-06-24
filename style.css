@@ -173,7 +173,7 @@
   color: #fff;
   text-decoration: none;
   border-radius: 3px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold; }
   @media only screen and (max-width: 900px) {
     .header_button,
@@ -399,13 +399,13 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: white;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center; }
 
 .hidden {
-  animation: fadeOut 1s;
+  animation: fadeOut 2s;
   animation-fill-mode: forwards; }
 
 .header {
@@ -448,7 +448,7 @@
         padding: 1rem; } }
     .header_title h1,
     .header_title h2 {
-      font-size: calc(25px + 3.5vw);
+      font-size: calc(20px + 3.5vw);
       line-height: 1.5; }
       @media only screen and (max-width: 1200px) {
         .header_title h1,
