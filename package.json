@@ -20,7 +20,9 @@
 	"author": "Jacek Maciejak",
 	"license": "ISC",
 	"dependencies": {
+		"braces": "^3.0.2",
 		"live": "^0.1.25-beta.0",
+		"lodash": "^4.17.15",
 		"server": "^1.0.29"
 	},
 	"devDependencies": {
