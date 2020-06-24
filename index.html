@@ -50,6 +50,21 @@
 		onclick="scrollToTop(200,3)">
 		<i class="fa fa-arrow-up"></i>
 	</button>
+	<nav class="navbar"
+		id="navbar">
+		<a href="#main"
+			class="navbar__brand">Jacek Maciejak</a>
+		<!-- <a href="#main" class="navbar_brand"><span>J</span>acek<span>M</span>aciejak</a> -->
+		<ul>
+			<li><a href="#swiper">Projekty</a></li>
+			<li><a href="#about">O nas</a></li>
+			<li><a href="#products">Produkty</a></li>
+			<li><a href="#wrap">Pracownicy</a></li>
+		</ul>
+		<button class="navbar__toggler">
+			<span></span>
+		</button>
+	</nav>
 	<main>
 		<section class="header">
 			<div class="header_title">
@@ -249,11 +264,12 @@
 				onclick="window.location.href='subpage.html'">
 				O mnie/kontakt
 			</button>
-			<div class="footer_scrollUp"></div>
+			<!-- <div class="footer_scrollUp"></div> -->
 		</div>
 	</footer>
 	<script src="js/loader.js"></script>
 	<script src="js/topButton.js"></script>
+	<script src="js/navbar.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 		AOS.init({
