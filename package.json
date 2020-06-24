@@ -3,6 +3,10 @@
 	"version": "1.0.0",
 	"description": "Page about my projects",
 	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://jacekmaciejak.github.io/Portfolio/"
+	},
 	"scripts": {
 		"watch:sass": "node-sass sass/main.scss style.css -w",
 		"devserver": "live-server",
