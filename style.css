@@ -486,12 +486,6 @@
   @media only screen and (max-width: 1200px) {
     .header_scrollDown,
     .sub_about_1-scrollDown {
-      top: 85%;
-      left: 10%;
-      transform: translate(-85%, -10%); } }
-  @media only screen and (max-width: 900px) {
-    .header_scrollDown,
-    .sub_about_1-scrollDown {
       display: none; } }
 
 .sub_about_1-scrollDown {
