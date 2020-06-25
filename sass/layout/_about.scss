@@ -192,7 +192,7 @@
 			z-index: 9999;
 
 			h1 {
-				font-size: 8vw;
+				font-size: 7vw;
 				opacity: .2;
 
 				@include respond(tab-port) {
@@ -262,7 +262,7 @@
 			z-index: 9999;
 
 			h1 {
-				font-size: 8vw;
+				font-size: 7vw;
 				opacity: .2;
 
 				@include respond(tab-port) {
@@ -329,10 +329,6 @@
 	}
 }
 
-/*-------------------------------------------------------------------*/
-/*----------------------------SUBPAGE--------------------------------*/
-/*-------------------------------------------------------------------*/
-
 
 .sub_about {
 	background: $main_background-color;
@@ -349,7 +345,7 @@
 			text-align: center;
 
 			h1 {
-				font-size: 8vw;
+				font-size: 7vw;
 				opacity: .2;
 
 				@include respond(tab-port) {

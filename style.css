@@ -662,27 +662,29 @@
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 6fr; }
-  .sub_about_3 .section-book {
-    display: grid;
-    justify-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 100%; }
+  .sub_about_3 {
+    height: 100vh; }
+    .sub_about_3 .section-book {
+      display: grid;
+      justify-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%; }
 
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
 footer {
-  width: 100%;
-  height: 10vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "title";
   display: grid;
   justify-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  width: 100%;
+  height: 15vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "title"; }
   footer h2 {
     grid-area: title; }
 
@@ -710,9 +712,8 @@ footer {
   position: relative;
   z-index: 9999; }
   .section-book .book__form {
-    width: 55vw;
-    height: 100%;
-    padding: 3rem;
+    width: 50vw;
+    padding: 2rem;
     border-radius: 3px;
     -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
@@ -733,10 +734,10 @@ footer {
         .section-book .book__form .form {
           width: 70%; } }
       .section-book .book__form .form__input {
-        font-size: calc(8px + 1vw);
+        font-size: calc(5px + 1vw);
         font-family: inherit;
         color: inherit;
-        padding: 1rem;
+        padding: .7rem;
         border-radius: 2px;
         background-color: rgba(255, 255, 255, 0.5);
         border: none;
@@ -762,10 +763,9 @@ footer {
         -webkit-transform: translateY(-4rem);
         transform: translateY(-4rem); }
       .section-book .book__form .form__label {
-        font-size: calc(8px + 1vw);
+        font-size: calc(1px + 1vw);
         font-weight: 600;
         margin-left: 4rem;
-        margin-top: .7rem;
         display: block;
         -webkit-transition: all .3s;
         transition: all .3s;
@@ -942,7 +942,7 @@ footer {
     position: relative;
     z-index: 9999; }
     .about_1-h1 h1 {
-      font-size: 8vw;
+      font-size: 7vw;
       opacity: .2; }
       @media only screen and (max-width: 900px) {
         .about_1-h1 h1 {
@@ -991,7 +991,7 @@ footer {
     position: relative;
     z-index: 9999; }
     .about_2-h1 h1 {
-      font-size: 8vw;
+      font-size: 7vw;
       opacity: .2; }
       @media only screen and (max-width: 900px) {
         .about_2-h1 h1 {
@@ -1040,9 +1040,6 @@ footer {
       .about_2-card_6 {
         width: 90%; } }
 
-/*-------------------------------------------------------------------*/
-/*----------------------------SUBPAGE--------------------------------*/
-/*-------------------------------------------------------------------*/
 .sub_about {
   background: #000;
   color: #fff; }
@@ -1052,7 +1049,7 @@ footer {
     margin-top: 80px;
     text-align: center; }
     .sub_about_1-h1 h1, .sub_about_2-h1 h1, .sub_about_3-h1 h1 {
-      font-size: 8vw;
+      font-size: 7vw;
       opacity: .2; }
       @media only screen and (max-width: 900px) {
         .sub_about_1-h1 h1, .sub_about_2-h1 h1, .sub_about_3-h1 h1 {

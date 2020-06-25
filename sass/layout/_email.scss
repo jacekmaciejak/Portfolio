@@ -4,9 +4,9 @@
 	z-index: 9999;
 
 	.book__form {
-		width: 55vw;
-		height: 100%;
-		padding: 3rem;
+		width: 50vw;
+		// height: 100%;
+		padding: 2rem;
 		border-radius: 3px;
 		-webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
 		box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
@@ -32,10 +32,10 @@
 			}
 
 			&__input {
-				font-size: calc(8px + 1vw);
+				font-size: calc(5px + 1vw);
 				font-family: inherit;
 				color: inherit;
-				padding: 1rem;
+				padding: .7rem;
 				border-radius: 2px;
 				background-color: rgba(255, 255, 255, .5);
 				border: none;
@@ -64,7 +64,7 @@
 				}
 			}
 
-			&__input:placeholder-shown + .form__label {
+			&__input:placeholder-shown+.form__label {
 				opacity: 0;
 				visibility: hidden;
 				-webkit-transform: translateY(-4rem);
@@ -72,10 +72,10 @@
 			}
 
 			&__label {
-				font-size: calc(8px + 1vw);
+				font-size: calc(1px + 1vw);
 				font-weight: 600;
 				margin-left: 4rem;
-				margin-top: .7rem;
+				// margin-top: .5rem;
 				display: block;
 				-webkit-transition: all .3s;
 				transition: all .3s;

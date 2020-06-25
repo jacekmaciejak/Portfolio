@@ -151,6 +151,8 @@
 	}
 
 	&_3 {
+		height: 100vh;
+
 		.section-book {
 			@include gridCenter;
 			width: 100%;
@@ -161,12 +163,13 @@
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
 footer {
+	@include gridCenter;
 	width: 100%;
-	height: 10vh;
+	height: 15vh;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
 	grid-template-areas: "title";
-	@include gridCenter;
+
 
 
 	h2 {
