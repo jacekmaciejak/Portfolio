@@ -5,7 +5,7 @@ footer {
 
 	h2 {
 		position: relative;
-		font-size: 3.5vw;
+		font-size: 2vw;
 		font-weight: 100;
 
 		@include respond(tab-port) {
@@ -38,10 +38,10 @@ footer {
 	// 	}
 	// }
 
-	.sub_footer {
+	// .sub_footer {
 
-		@include respond(big-desktop) {
-			padding-top: 80px;
-		}
-	}
+	// 	@include respond(big-desktop) {
+	// 		padding-top: 80px;
+	// 	}
+	// }
 }

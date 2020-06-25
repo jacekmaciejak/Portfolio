@@ -12,93 +12,6 @@
   font-family: 'Allerta Stencil', sans-serif; }
 
 /*------------BACKGROUND--------------------*/
-.back {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  overflow: hidden; }
-  .back:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 100%;
-    height: 5px;
-    background: #fff;
-    opacity: .1; }
-  .back:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 5px;
-    height: 100%;
-    background: #fff;
-    opacity: .1; }
-  .back .niddle {
-    position: absolute;
-    top: calc(50% - 2px);
-    left: 50%;
-    height: 4px;
-    width: 1200px;
-    background: #fff;
-    animation: animate 7s linear infinite;
-    transform-origin: left;
-    opacity: .1; }
-  .back .number {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-    .back .number div {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      font-size: 25em;
-      font-weight: bold;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      animation: animateNumber 3s linear infinite; }
-      .back .number div:nth-child(1) {
-        animation-delay: 1s; }
-      .back .number div:nth-child(2) {
-        animation-delay: 2s; }
-      .back .number div:nth-child(3) {
-        animation-delay: 3s; }
-  .back .circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 500px;
-    height: 500px;
-    border: 5px solid #fff;
-    border-radius: 50%;
-    opacity: .1; }
-    @media only screen and (max-width: 600px) {
-      .back .circle {
-        width: 400px;
-        height: 400px; } }
-  .back .circle2 {
-    width: 600px;
-    height: 600px;
-    position: relative; }
-    @media only screen and (max-width: 600px) {
-      .back .circle2 {
-        width: 500px;
-        height: 500px; } }
-
 @keyframes animateText {
   0% {
     background-position: -400%; }
@@ -154,7 +67,6 @@
     visibility: hidden; } }
 
 .header_button,
-.footer_button,
 .sub_button,
 .card_button,
 .conf_button {
@@ -163,7 +75,7 @@
   height: auto;
   text-align: center;
   cursor: pointer;
-  padding: 30px;
+  padding: 20px;
   background: transparent;
   border: 1px solid #fff;
   position: absolute;
@@ -177,7 +89,6 @@
   font-weight: bold; }
   @media only screen and (max-width: 900px) {
     .header_button,
-    .footer_button,
     .sub_button,
     .card_button,
     .conf_button {
@@ -185,7 +96,6 @@
       padding: 20px;
       opacity: 1; } }
   .header_button:before,
-  .footer_button:before,
   .sub_button:before,
   .card_button:before,
   .conf_button:before {
@@ -198,15 +108,11 @@
     background: linear-gradient(90deg, transparent, #fff, transparent);
     transition: .5s; }
     .header_button:before:hover,
-    .footer_button:before:hover,
     .sub_button:before:hover,
     .card_button:before:hover,
     .conf_button:before:hover {
       background: linear-gradient(90deg, #fff, #fff, #fff); }
   .header_button:hover:before, .header_button:active:before, .header_button:focus:before,
-  .footer_button:hover:before,
-  .footer_button:active:before,
-  .footer_button:focus:before,
   .sub_button:hover:before,
   .sub_button:active:before,
   .sub_button:focus:before,
@@ -447,14 +353,14 @@
   box-shadow: 0 20px 40px -10px #818181;
   transition: .5s;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-color: #000; }
   .navbar__brand {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    float: left;
     height: inherit;
-    font-size: calc(13px + 1vw);
+    font-size: calc(10px + 1vw);
     text-transform: uppercase;
     font-weight: 400;
     position: relative;
@@ -464,7 +370,7 @@
       position: absolute;
       left: 50%;
       content: '';
-      height: 3px;
+      height: 2px;
       background: #fff;
       transition: all .5s linear;
       width: 0;
@@ -485,7 +391,7 @@
       .navbar ul li a {
         text-decoration: none;
         color: #fff;
-        font-size: calc(13px + 1vw);
+        font-size: calc(10px + 1vw);
         display: block;
         text-align: center;
         margin: 0 20px;
@@ -494,7 +400,7 @@
           position: absolute;
           left: 50%;
           content: '';
-          height: 3px;
+          height: 2px;
           background: #fff;
           transition: all .4s linear;
           width: 0;
@@ -771,36 +677,21 @@
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
 footer {
-  width: 100%; }
-  footer .ind_footer {
-    height: 35vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "title" "footer_button";
-    display: grid;
-    justify-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    @media only screen and (max-width: 900px) {
-      footer .ind_footer {
-        height: 20vh; } }
-    footer .ind_footer h2 {
-      grid-area: title; }
-    footer .ind_footer_button {
-      grid-area: footer_button; }
-  footer .sub_footer {
-    height: 25vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "title";
-    display: grid;
-    justify-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    footer .sub_footer h2 {
-      grid-area: title; }
+  width: 100%;
+  height: 10vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "title";
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media only screen and (max-width: 900px) {
+    footer {
+      height: 20vh; } }
+  footer h2 {
+    grid-area: title; }
 
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
@@ -1484,16 +1375,13 @@ footer {
   color: #fff; }
   footer h2 {
     position: relative;
-    font-size: 3.5vw;
+    font-size: 2vw;
     font-weight: 100; }
     @media only screen and (max-width: 900px) {
       footer h2 {
         text-align: center;
         padding: 10px;
         font-size: calc(15px + 2vw); } }
-  @media only screen and (min-width: 1800px) {
-    footer .sub_footer {
-      padding-top: 80px; } }
 
 .conf {
   background-color: #000;

@@ -56,17 +56,18 @@
 			class="navbar__brand">Jacek Maciejak</a>
 		<!-- <a href="#main" class="navbar_brand"><span>J</span>acek<span>M</span>aciejak</a> -->
 		<ul>
-			<li><a href="#swiper">Projekty</a></li>
-			<li><a href="#about">O nas</a></li>
-			<li><a href="#products">Produkty</a></li>
-			<li><a href="#wrap">Pracownicy</a></li>
+			<li><a href="#about">Projekty</a></li>
+			<li><a href="#sub_about">O mnie</a></li>
+			<li><a href="#panel">Technologie</a></li>
+			<li><a href="#contact">Kontakt</a></li>
 		</ul>
 		<button class="navbar__toggler">
 			<span></span>
 		</button>
 	</nav>
 	<main>
-		<section class="header">
+		<section class="header"
+			id="main">
 			<div class="header_title">
 				<h1>Front-end developer</h1>
 				<h2>Jacek Maciejak</h2>
@@ -85,13 +86,14 @@
 			</label> -->
 			<button class="header_button"
 				type="button"
-				onclick="window.location.href='subpage.html'">
-				O mnie/kontakt
+				onclick="window.location.href='#contact'">
+				Kontakt
 			</button>
 			<div class="header_scrollDown"></div>
 		</section>
 
-		<section class="about">
+		<section class="about"
+			id="about">
 			<div class="about_1">
 				<div class="about_1-h1"
 					data-aos="fade-up">
@@ -255,18 +257,172 @@
 				</div>
 			</div>
 		</section>
+		<section class="sub_about"
+			id="sub_about">
+			<div class="sub_about_1">
+				<div class="sub_about_1-h1"
+					data-aos="fade-up">
+					<h1>Kim jestem?</h1>
+				</div>
+				<div class="sub_about_1-h2"
+					data-aos="fade-up">
+					<h2>O mnie</h2>
+				</div>
+				<div class="sub_about_1-container">
+					<p>
+						Witaj na mojej stronie. Jestem front-end
+						developerem, w
+						codziennej
+						pracy koduję w HTML5, CSS3 - SASS(SCSS), Bootstrap4,
+						Git, Node.js
+						oraz metodologi BEM. We wszystkich projektach
+						stosuję
+						standardy
+						Responsive Web Design oraz Grid i Flexbox.
+						Codziennie
+						ciężko
+						pracuję aby zdobywać nowe doświadczenie w kodowaniu
+						stron
+						internetowych i programowaniu aplikacji w JavaScript
+						ES6
+						oraz
+						bibliotece React. Potrafię dostosować się do wymagań
+						projektu jak
+						również lubię współpracować w zespole. Z
+						przyjemnością
+						nawiążę
+						wspołpracę, która umożliwi mi na dalszy rozwój.
+					</p>
+				</div>
+			</div>
+			<div class="sub_about_2"
+				id="panel">
+				<div class="sub_about_2-h1"
+					data-aos="fade-up">
+					<h1>Moja wiedza?</h1>
+				</div>
+				<div class="sub_about_2-h2"
+					data-aos="fade-up">
+					<h2>Technologie</h2>
+				</div>
+				<div class="sub_about_panel"
+					data-aos="fade-up">
+					<ul>
+						<li class="p-5">
+							<a href="https://www.facebook.com/profile.php?id=100007445748069"
+								target="_blank"><i
+									class="fab fa-facebook-f"></i></a>
+						</li>
+						<li class="p-2">
+							<a href="#panel"><i class="fab fa-html5"></i></a>
+						</li>
+						<li class="p-11">
+							<a href="#panel"><i class="fab fa-js"></i></a>
+						</li>
+						<li class="p-4">
+							<a href="www.linkedin.com/in/jacek-maciejak-frontend-developer"
+								target="_blank"><i
+									class="fab fa-linkedin-in"></i></a>
+						</li>
+						<li class="p-1">
+							<a href="#panel"><i class="fab fa-css3-alt"></i></a>
+						</li>
+						<li class="p-6">
+							<a href="#panel"><i class="fab">B4</i></a>
+						</li>
+						<li class="p-7">
+							<a href="#panel"><i class="fab"><img
+										src="img/rwd.png"
+										alt="" /></i></a>
+						</li>
+						<li class="p-8">
+							<a href="#panel"><i class="fab">Flex <br />
+									Box</i></a>
+						</li>
+						<li class="p-9">
+							<a href="#panel"><i class="fab">Grid</i></a>
+						</li>
+						<li class="p-10">
+							<a href="#panel"><i class="fab fa-sass"></i></a>
+						</li>
+						<li class="p-3">
+							<a href="https://github.com/jacekmaciejak"
+								target="_blank"><i
+									class="fab fa-github"></i></a>
+						</li>
+						<li class="p-12">
+							<a href="#panel"><i class="fab fa-react"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="sub_about_3">
+				<div class="sub_about_3-h1"
+					data-aos="fade-up">
+					<h1>Skontaktuje się ze mną</h1>
+				</div>
+				<div class="sub_about_3-h2"
+					data-aos="fade-up">
+					<h2>Kontakt</h2>
+				</div>
+				<section class="section-book"
+					id="contact"
+					data-aos="fade-up">
+					<div class="book__form">
+						<form class="form"
+							autocomplete="off"
+							method="post"
+							action="kontakt.php">
+							<div class="form__group">
+								<input type="text"
+									class="form__input"
+									placeholder="Imię i nazwisko"
+									id="name"
+									name="name"
+									required />
+								<label for="name"
+									class="form__label">Imię i
+									nazwisko</label>
+							</div>
+							<div class="form__group">
+								<input type="email"
+									class="form__input"
+									placeholder="Email"
+									id="email"
+									name="email"
+									required />
+								<label for="email"
+									class="form__label">Email</label>
+							</div>
+							<div class="form__group">
+								<textarea name="message"
+									id="message"
+									cols="40"
+									rows="4"
+									class="form__input"
+									placeholder="Wiadomość"
+									required></textarea>
+							</div>
+							<div class="form__group">
+								<button class="email_button"
+									name="submit"
+									type="submit">
+									Wyślij &rarr;
+								</button>
+							</div>
+						</form>
+					</div>
+				</section>
+			</div>
+		</section>
 	</main>
 	<footer>
-		<div class="ind_footer">
-			<h2>Chcesz mnie poznać?</h2>
-			<button class="footer_button"
-				type="button"
-				onclick="window.location.href='subpage.html'">
-				O mnie/kontakt
-			</button>
-			<!-- <div class="footer_scrollUp"></div> -->
+		<div class="footer">
+			<h2>Zachęcam do kontaktu :)</h2>
+			<div class="footer_scrollUp"></div>
 		</div>
 	</footer>
+
 	<script src="js/loader.js"></script>
 	<script src="js/topButton.js"></script>
 	<script src="js/navbar.js"></script>
