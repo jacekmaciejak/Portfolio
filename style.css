@@ -223,7 +223,7 @@
   position: relative;
   z-index: 9999;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
   font-weight: bold; }
   .email_button:before {
@@ -289,7 +289,7 @@
 #scrollToTopButton {
   position: fixed;
   z-index: 99999;
-  bottom: 100px;
+  bottom: 50px;
   right: 40px;
   height: 60px;
   width: 60px;
@@ -303,6 +303,10 @@
   transform: scale(0);
   visibility: hidden;
   transition: .2s; }
+  @media only screen and (max-width: 900px) {
+    #scrollToTopButton {
+      height: 50px;
+      width: 50px; } }
   #scrollToTopButton .fa {
     color: #000; }
   #scrollToTopButton.show {
@@ -318,7 +322,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99999999999999;
+  z-index: 999999999;
   height: 80px;
   line-height: 60px;
   letter-spacing: 2px;
@@ -327,6 +331,9 @@
   display: flex;
   justify-content: space-between;
   background-color: #000; }
+  @media only screen and (max-width: 900px) {
+    .navbar {
+      padding: 0; } }
   .navbar__brand {
     display: inline-block;
     text-decoration: none;
@@ -338,6 +345,9 @@
     position: relative;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 900px) {
+      .navbar__brand {
+        display: none; } }
     .navbar__brand:after {
       position: absolute;
       left: 50%;
@@ -357,9 +367,21 @@
     align-items: center; }
     @media only screen and (max-width: 900px) {
       .navbar ul {
-        padding: 0 10px; } }
+        padding: 0 10px;
+        display: block;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        height: 100vh;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.3s;
+        position: relative;
+        z-index: 99999999; } }
     .navbar ul li {
       display: inline-block; }
+      @media only screen and (max-width: 900px) {
+        .navbar ul li {
+          width: 100%; } }
       .navbar ul li a {
         text-decoration: none;
         color: #fff;
@@ -380,11 +402,34 @@
         .navbar ul li a:hover:after {
           width: 100%;
           left: 0px; }
+          @media only screen and (max-width: 900px) {
+            .navbar ul li a:hover:after {
+              width: 50%;
+              left: 25%; } }
+        @media only screen and (max-width: 900px) {
+          .navbar ul li a {
+            padding: 10px 0;
+            font-size: 30px; } }
   .navbar .open {
     max-height: 100vh;
     padding-top: 100px; }
   .navbar__toggler {
     display: none; }
+    @media only screen and (max-width: 900px) {
+      .navbar__toggler {
+        display: block;
+        position: absolute;
+        z-index: 99999999;
+        height: 40px;
+        top: 20px;
+        right: 20px;
+        background-color: transparent;
+        color: #fff;
+        border: 3px solid #fff;
+        border-radius: 5px;
+        outline: none;
+        padding: 0 5px;
+        cursor: pointer; } }
     .navbar__toggler span,
     .navbar__toggler span::before,
     .navbar__toggler span::after {
@@ -445,8 +490,8 @@
       left: 10%;
       transform: translate(-85%, -10%); } }
   @media only screen and (max-width: 900px) {
-    .header_scrollDown_scrollDown,
-    .sub_about_1-scrollDown_scrollDown {
+    .header_scrollDown,
+    .sub_about_1-scrollDown {
       display: none; } }
 
 .sub_about_1-scrollDown {
@@ -644,9 +689,6 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  @media only screen and (max-width: 900px) {
-    footer {
-      height: 20vh; } }
   footer h2 {
     grid-area: title; }
 
@@ -1056,6 +1098,9 @@ footer {
     @media only screen and (max-width: 1200px) {
       .sub_about_1-container, .sub_about_2-container, .sub_about_3-container {
         margin-top: -100px; } }
+    @media only screen and (max-width: 900px) {
+      .sub_about_1-container, .sub_about_2-container, .sub_about_3-container {
+        width: 90%; } }
     @media only screen and (max-width: 600px) {
       .sub_about_1-container, .sub_about_2-container, .sub_about_3-container {
         margin-top: 0px; } }
@@ -1334,13 +1379,11 @@ footer {
   color: #fff; }
   footer h2 {
     position: relative;
-    font-size: 2vw;
+    font-size: calc(6px + 2vw);
     font-weight: 100; }
     @media only screen and (max-width: 900px) {
       footer h2 {
-        text-align: center;
-        padding: 10px;
-        font-size: calc(15px + 2vw); } }
+        margin-top: -30px; } }
 
 .conf {
   background-color: #000;
