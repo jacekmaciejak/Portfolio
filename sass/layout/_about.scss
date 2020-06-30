@@ -448,7 +448,7 @@
 						text-align: center;
 						transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
 						transition: .5s;
-						cursor: default;
+						// cursor: default;
 
 
 						@include respond(tab-port) {
