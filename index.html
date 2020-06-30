@@ -340,11 +340,11 @@
 										alt="" /></i></a>
 						</li>
 						<li class="p-8">
-							<a href="#panel"><i class="fab">Flex <br />
+							<a href="#popup__flex"><i class="fab">Flex <br />
 									Box</i></a>
 						</li>
 						<li class="p-9">
-							<a href="#panel"><i class="fab">Grid</i></a>
+							<a href="#popup__grid"><i class="fab">Grid</i></a>
 						</li>
 						<li class="p-10">
 							<a href="#popup__sass"><i
@@ -454,10 +454,10 @@
 					<ul class="popup__wrapper-left">
 						<li>{border-radius: 10px}</li>
 						<li>{color: #000}</li>
-						<li>{display:grid}</li>
-						<li>{display:flex}</li>
-						<li>{font-size:calc(18px + 1vw)}</li>
-						<li>{width:100vw}</li>
+						<li>{display: grid}</li>
+						<li>{display: flex}</li>
+						<li>{font-size: calc(18px + 1vw)}</li>
+						<li>{width: 100vw}</li>
 					</ul>
 					<p class="popup__wrapper-right">
 						Poziom znajomości: BARDZO DOBRY
@@ -478,6 +478,49 @@
 						<li>@include respond(tab-port){}</li>
 						<li>$color-primary:#55c57a;</li>
 						<li>@import "components/button";</li>
+					</ul>
+					<p class="popup__wrapper-right">
+						Poziom znajomości: BARDZO DOBRY
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="popup__grid"
+			id="popup__grid">
+			<div class="popup__content">
+				<a href="#footer"
+					class="popup__close"> &times;</a>
+				<h2 class="popup__heading">Grid</h2>
+				<hr>
+				<div class="popup__wrapper">
+					<ul class="popup__wrapper-left">
+						<li>{display: grid}</li>
+						<li>{grid-column-start: col-start 2}</li>
+						<li>{grid-template-columns: 1fr 50px}</li>
+						<li>{grid-row-end: span 2}</li>
+						<li>{justify-self: start}</li>
+					</ul>
+					<p class="popup__wrapper-right">
+						Poziom znajomości: BARDZO DOBRY
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="popup__flex"
+			id="popup__flex">
+			<div class="popup__content">
+				<a href="#footer"
+					class="popup__close"> &times;</a>
+				<h2 class="popup__heading">Flexbox</h2>
+				<hr>
+				<div class="popup__wrapper">
+					<ul class="popup__wrapper-left">
+						<li>{display: flex}</li>
+						<li>{flex-direction: row}</li>
+						<li>{flex-wrap: nowrap}</li>
+						<li>{justify-content: flex-start}</li>
+						<li>{align-self: auto}</li>
+
 					</ul>
 					<p class="popup__wrapper-right">
 						Poziom znajomości: BARDZO DOBRY
