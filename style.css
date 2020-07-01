@@ -288,7 +288,7 @@
 
 #scrollToTopButton {
   position: fixed;
-  z-index: 99999;
+  z-index: 999999;
   bottom: 50px;
   right: 40px;
   height: 60px;
@@ -382,6 +382,9 @@
       @media only screen and (max-width: 900px) {
         .navbar ul li {
           width: 100%; } }
+      @media only screen and (max-width: 470px) {
+        .navbar ul li:nth-child(3) {
+          display: none; } }
       .navbar ul li a {
         text-decoration: none;
         color: #fff;
@@ -1352,6 +1355,9 @@ footer {
         margin-top: 0px; } }
   .sub_about_1 {
     position: relative; }
+  @media only screen and (max-width: 470px) {
+    .sub_about_2 {
+      display: none; } }
   .sub_about_2 .sub_about_panel {
     position: relative;
     z-index: 99999; }

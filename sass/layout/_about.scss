@@ -413,6 +413,10 @@
 	}
 
 	&_2 {
+		@include respond(small-phone) {
+			display: none;
+		}
+
 		.sub_about_panel {
 			position: relative;
 			z-index: 99999;

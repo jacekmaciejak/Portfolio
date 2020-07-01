@@ -1,642 +1,654 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Jacek Maciejak</title>
-    <meta name="description" content="Jacek Maciejak portfolio, projects" />
-    <meta name="keywords" content="HTML, CSS, SASS, SCSS, JavaScript, JQuery" />
-    <meta name="author" content="Jacek Maciejak" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Allerta+Stencil"
-      rel="stylesheet"
-    />
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-    <!---------------------------------------------------------------------->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <title>Jacek Maciejak</title>
+  <meta name="description"
+    content="Jacek Maciejak portfolio, projects" />
+  <meta name="keywords"
+    content="HTML, CSS, SASS, SCSS, JavaScript, JQuery" />
+  <meta name="author"
+    content="Jacek Maciejak" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+    href="style.css" />
+  <link
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+  <link rel="stylesheet"
+    href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil"
+    rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-  <body>
-    <div class="loader">
-      <img src="img/loading.gif" alt="Loading..." />
-    </div>
-    <button id="scrollToTopButton" onclick="scrollToTop(200,3)">
-      <i class="fa fa-arrow-up"></i>
+  <!---------------------------------------------------------------------->
+  <link rel="apple-touch-icon"
+    sizes="180x180"
+    href="/apple-touch-icon.png" />
+  <link rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="favicon/favicon-32x32.png" />
+  <link rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="favicon/favicon-16x16.png" />
+  <link rel="manifest"
+    href="/site.webmanifest" />
+</head>
+
+<body>
+  <div class="loader">
+    <img src="img/loading.gif"
+      alt="Loading..." />
+  </div>
+  <button id="scrollToTopButton"
+    onclick="scrollToTop(200,3)">
+    <i class="fa fa-arrow-up"></i>
+  </button>
+  <nav class="navbar"
+    id="navbar">
+    <a href="#strona-glowna"
+      class="navbar__brand">Jacek Maciejak</a>
+    <!-- <a href="#main" class="navbar_brand"><span>J</span>acek<span>M</span>aciejak</a> -->
+    <ul>
+      <li><a href="#projekty">Projekty</a></li>
+      <li><a href="#o-mnie">O mnie</a></li>
+      <li id="nav-technologie"><a href="#technologie">Technologie</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <button class="navbar__toggler">
+      <span></span>
     </button>
-    <nav class="navbar" id="navbar">
-      <a href="#strona-glowna" class="navbar__brand">Jacek Maciejak</a>
-      <!-- <a href="#main" class="navbar_brand"><span>J</span>acek<span>M</span>aciejak</a> -->
-      <ul>
-        <li><a href="#projekty">Projekty</a></li>
-        <li><a href="#o-mnie">O mnie</a></li>
-        <li><a href="#technologie">Technologie</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-      </ul>
-      <button class="navbar__toggler">
-        <span></span>
-      </button>
-    </nav>
-    <main>
-      <section class="header" id="strona-glowna">
-        <div class="header_title">
-          <h1>Front-end developer</h1>
-          <h2>Jacek Maciejak</h2>
-          <!-- <p>Hi, I'm front-end developer living in Warsaw. <br> I encourage you to review my projects.</p> -->
-          <p>
-            Witaj, jestem front-end developerem mieszkającym w Warszawie.
-            <br />Zapraszam Cię do zapoznania z moimi projektami.
-          </p>
-        </div>
-        <!-- <input type="checkbox"
+  </nav>
+  <main>
+    <section class="header"
+      id="strona-glowna">
+      <div class="header_title">
+        <h1>Front-end developer</h1>
+        <h2>Jacek Maciejak</h2>
+        <!-- <p>Hi, I'm front-end developer living in Warsaw. <br> I encourage you to review my projects.</p> -->
+        <p>
+          Witaj, jestem front-end developerem mieszkającym w Warszawie.
+          <br />Zapraszam Cię do zapoznania z moimi projektami.
+        </p>
+      </div>
+      <!-- <input type="checkbox"
 				class="header_btn">
 			<label for="toggle">
 				<span class="en">En</span>
 				<span class="pl">Pl</span>
 			</label> -->
-        <button
-          class="header_button"
-          type="button"
-          onclick="window.location.href='#kontakt'"
-        >
-          Kontakt
-        </button>
-        <div class="header_scrollDown"></div>
-      </section>
+      <button class="header_button"
+        type="button"
+        onclick="window.location.href='#kontakt'">
+        Kontakt
+      </button>
+      <div class="header_scrollDown"></div>
+    </section>
 
-      <section class="about" id="projekty">
-        <div class="about_1">
-          <div class="about_1-h1" data-aos="fade-up">
-            <h1>Portfolio</h1>
-          </div>
-          <div class="about_1-h2" data-aos="fade-up">
-            <h2>Projekty</h2>
-          </div>
-          <div
-            class="about_1-card about_1-card_1"
-            data-aos="fade-up"
-            data-aos-offset="200"
-          >
-            <div class="about_1-card-img">
-              <img src="img/card_1.jpg" alt="image" />
-            </div>
-            <div class="content">
-              <h3>Site</h3>
-              <p>Strona została zakodowana przy użyciu:</p>
-              <ul>
-                <li>HTML5</li>
-                <li>SCSS</li>
-                <li>Grid Layout</li>
-                <li>Responsive web design</li>
-                <li>JavaScript</li>
-                <li>JQuery</li>
-              </ul>
-              <button
-                class="card_button"
-                type="button"
-                onclick="window.open('https://jacekmaciejak.github.io/Site/','_blank')"
-              >
-                Zobacz projekt
-              </button>
-            </div>
-          </div>
-          <div
-            class="about_1-card about_1-card_2"
-            data-aos="fade-up"
-            data-aos-offset="300"
-          >
-            <div class="about_1-card-img">
-              <img src="img/card_2.jpg" alt="image" />
-            </div>
-            <div class="content">
-              <h3>Restaurant</h3>
-              <p>Strona została zakodowana przy użyciu:</p>
-              <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Grid Layout</li>
-                <li>Responsive web design</li>
-                <li>JavaScript</li>
-              </ul>
-              <button
-                class="card_button"
-                type="button"
-                onclick="window.open('https://jacekmaciejak.github.io/Restaurant/','_blank')"
-              >
-                Zobacz projekt
-              </button>
-            </div>
-          </div>
-          <div
-            class="about_1-card about_1-card_3"
-            data-aos="fade-up"
-            data-aos-offset="200"
-          >
-            <div class="about_1-card-img">
-              <img src="img/card_3.jpg" alt="image" />
-            </div>
-            <div class="content">
-              <h3>Veterinary clinic</h3>
-              <p>Strona została zakodowana przy użyciu:</p>
-              <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Grid Layout</li>
-                <li>Responsive web design</li>
-                <li>JavaScript</li>
-                <li>JQuery</li>
-                <li>Bootstrap4</li>
-              </ul>
-              <button
-                class="card_button"
-                type="button"
-                onclick="window.open('https://jacekmaciejak.github.io/Veterinary-clinic/. ','_blank')"
-              >
-                Zobacz projekt
-              </button>
-            </div>
-          </div>
+    <section class="about"
+      id="projekty">
+      <div class="about_1">
+        <div class="about_1-h1"
+          data-aos="fade-up">
+          <h1>Portfolio</h1>
         </div>
-        <div class="about_2">
-          <div class="about_2-h1" data-aos="fade-up">
-            <h1>Portfolio</h1>
-          </div>
-          <div class="about_2-h2" data-aos="fade-up">
-            <h2>Projekty</h2>
-          </div>
-          <div
-            class="about_2-card about_2-card_4"
-            data-aos="fade-up"
-            data-aos-offset="150"
-          >
-            <div class="about_2-card-img">
-              <img src="img/card_4.jpg" alt="image" />
-            </div>
-            <div class="content">
-              <h3>App PHE</h3>
-              <p>Strona została zakodowana przy użyciu:</p>
-              <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Grid Layout</li>
-                <li>JavaScript</li>
-              </ul>
-              <button
-                class="card_button"
-                type="button"
-                onclick="window.open('https://jacekmaciejak.github.io/App-PHE/','_blank')"
-              >
-                Zobacz projekt
-              </button>
-            </div>
-          </div>
-          <div
-            class="about_2-card about_2-card_5"
-            data-aos="fade-up"
-            data-aos-offset="300"
-          >
-            <div class="about_2-card-img">
-              <img src="img/card_5.jpg" alt="image" />
-            </div>
-            <div class="content">
-              <h3>Dice game</h3>
-              <p>Gra została zaprogramowana przy użyciu:</p>
-              <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-              </ul>
-              <button
-                class="card_button"
-                type="button"
-                onclick="window.open('https://jacekmaciejak.github.io/Dice-game/','_blank')"
-              >
-                Zobacz projekt
-              </button>
-            </div>
-          </div>
-          <div
-            class="about_2-card about_2-card_6"
-            data-aos="fade-up"
-            data-aos-offset="150"
-          >
-            <div class="about_2-card-img">
-              <img src="img/card_6.jpg" alt="image" />
-            </div>
-            <div class="content">
-              <h3>Rock, paper and scissors - game</h3>
-              <p>Gra została zaprogramowana przy użyciu:</p>
-              <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-              </ul>
-              <button
-                class="card_button"
-                type="button"
-                onclick="window.open('https://jacekmaciejak.github.io/Rock-paper-and-scissors---game/','_blank')"
-              >
-                Zobacz projekt
-              </button>
-            </div>
-          </div>
+        <div class="about_1-h2"
+          data-aos="fade-up">
+          <h2>Projekty</h2>
         </div>
-      </section>
-      <section class="sub_about" id="o-mnie">
-        <div class="sub_about_1">
-          <div class="sub_about_1-h1" data-aos="fade-up">
-            <h1>Kim jestem?</h1>
+        <div class="about_1-card about_1-card_1"
+          data-aos="fade-up"
+          data-aos-offset="200">
+          <div class="about_1-card-img">
+            <img src="img/card_1.jpg"
+              alt="image" />
           </div>
-          <div class="sub_about_1-h2" data-aos="fade-up">
-            <h2>O mnie</h2>
-          </div>
-          <div class="sub_about_1-container">
-            <p>
-              Witaj na mojej stronie. Jestem front-end developerem, w codziennej
-              pracy koduję w HTML5, CSS3 - SASS(SCSS), Bootstrap4, Git, Node.js
-              oraz metodologi BEM. We wszystkich projektach stosuję standardy
-              Responsive Web Design oraz Grid i Flexbox. Codziennie ciężko
-              pracuję aby zdobywać nowe doświadczenie w kodowaniu stron
-              internetowych i programowaniu aplikacji w JavaScript ES6 oraz
-              bibliotece React. Potrafię dostosować się do wymagań projektu jak
-              również lubię współpracować w zespole. Z przyjemnością nawiążę
-              współpracę, która umożliwi mi na dalszy rozwój.
-            </p>
-            <div class="sub_about_1-scrollDown"></div>
-          </div>
-        </div>
-        <div class="sub_about_2" id="technologie">
-          <div class="sub_about_2-h1" data-aos="fade-up">
-            <h1>Moja wiedza?</h1>
-          </div>
-          <div class="sub_about_2-h2" data-aos="fade-up">
-            <h2>Technologie</h2>
-          </div>
-          <div class="sub_about_panel" data-aos="fade-up">
+          <div class="content">
+            <h3>Site</h3>
+            <p>Strona została zakodowana przy użyciu:</p>
             <ul>
-              <li class="p-5">
-                <a
-                  href="https://www.facebook.com/profile.php?id=100007445748069"
-                  target="_blank"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-              </li>
-              <li class="p-2">
-                <a href="#popup__html"><i class="fab fa-html5"></i></a>
-              </li>
-              <li class="p-11">
-                <a href="#popup__js"><i class="fab fa-js"></i></a>
-              </li>
-              <li class="p-4">
-                <a
-                  href="www.linkedin.com/in/jacek-maciejak-frontend-developer"
-                  target="_blank"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </li>
-              <li class="p-1">
-                <a href="#popup__css"><i class="fab fa-css3-alt"></i></a>
-              </li>
-              <li class="p-6">
-                <a href="#popup__b4"><i class="fab">B4</i></a>
-              </li>
-              <li class="p-7">
-                <a href="#popup__rwd"
-                  ><i class="fab"><img src="img/rwd.png" alt="image" /></i
-                ></a>
-              </li>
-              <li class="p-8">
-                <a href="#popup__flex"
-                  ><i class="fab"
-                    >Flex <br />
-                    Box</i
-                  ></a
-                >
-              </li>
-              <li class="p-9">
-                <a href="#popup__grid"><i class="fab">Grid</i></a>
-              </li>
-              <li class="p-10">
-                <a href="#popup__sass"><i class="fab fa-sass"></i></a>
-              </li>
-              <li class="p-3">
-                <a href="https://github.com/jacekmaciejak" target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </li>
-              <li class="p-12">
-                <a href="#popup__react"><i class="fab fa-react"></i></a>
-              </li>
+              <li>HTML5</li>
+              <li>SCSS</li>
+              <li>Grid Layout</li>
+              <li>Responsive web design</li>
+              <li>JavaScript</li>
+              <li>JQuery</li>
             </ul>
+            <button class="card_button"
+              type="button"
+              onclick="window.open('https://jacekmaciejak.github.io/Site/','_blank')">
+              Zobacz projekt
+            </button>
           </div>
         </div>
-        <div class="sub_about_3">
-          <div class="sub_about_3-h1" data-aos="fade-up">
-            <h1>Skontaktuje się ze mną</h1>
+        <div class="about_1-card about_1-card_2"
+          data-aos="fade-up"
+          data-aos-offset="300">
+          <div class="about_1-card-img">
+            <img src="img/card_2.jpg"
+              alt="image" />
           </div>
-          <div class="sub_about_3-h2" data-aos="fade-up">
-            <h2>Kontakt</h2>
-          </div>
-          <section class="section-book" id="kontakt" data-aos="fade-up">
-            <div class="book__form">
-              <form
-                class="form"
-                autocomplete="off"
-                method="post"
-                action="kontakt.php"
-              >
-                <div class="form__group">
-                  <input
-                    type="text"
-                    class="form__input"
-                    placeholder="Imię i nazwisko"
-                    id="name"
-                    name="name"
-                    required
-                  />
-                  <label for="name" class="form__label">Imię i nazwisko</label>
-                </div>
-                <div class="form__group">
-                  <input
-                    type="email"
-                    class="form__input"
-                    placeholder="Email"
-                    id="email"
-                    name="email"
-                    required
-                  />
-                  <label for="email" class="form__label">Email</label>
-                </div>
-                <div class="form__group">
-                  <textarea
-                    name="message"
-                    id="message"
-                    cols="40"
-                    rows="4"
-                    class="form__input"
-                    placeholder="Wiadomość"
-                    required
-                  ></textarea>
-                </div>
-                <div class="form__group">
-                  <button class="email_button" name="submit" type="submit">
-                    Wyślij &rarr;
-                  </button>
-                </div>
-              </form>
-            </div>
-          </section>
-        </div>
-      </section>
-      <!-- Popups -->
-      <section class="popup__html" id="popup__html">
-        <div class="popup__content">
-          <a href="#technologie" class="popup__close"> &times;</a>
-          <h2 class="popup__heading">HTML5</h2>
-          <hr />
-          <div class="popup__wrapper">
-            <ul class="popup__wrapper-left">
-              <li>&lt;header&gt;</li>
-              <li>&lt;nav&gt;</li>
-              <li>&lt;sction&gt;</li>
-              <li>&lt;article&gt;</li>
-              <li>&lt;aside&gt;</li>
-              <li>&lt;footer&gt;</li>
+          <div class="content">
+            <h3>Restaurant</h3>
+            <p>Strona została zakodowana przy użyciu:</p>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Grid Layout</li>
+              <li>Responsive web design</li>
+              <li>JavaScript</li>
             </ul>
-            <p class="popup__wrapper-right">
-              Poziom znajomości:<br />
-              BARDZO DOBRY
-            </p>
+            <button class="card_button"
+              type="button"
+              onclick="window.open('https://jacekmaciejak.github.io/Restaurant/','_blank')">
+              Zobacz projekt
+            </button>
           </div>
         </div>
-      </section>
-      <section class="popup__css" id="popup__css">
-        <div class="popup__content">
-          <a href="#technologie" class="popup__close"> &times;</a>
-          <h2 class="popup__heading">CSS3</h2>
-          <hr />
-          <div class="popup__wrapper">
-            <ul class="popup__wrapper-left">
-              <li>{border-radius: 10px}</li>
-              <li>{color: #000}</li>
-              <li>{display: grid}</li>
-              <li>{display: flex}</li>
-              <li>{font-size: calc(18px + 1vw)}</li>
-              <li>{width: 100vw}</li>
+        <div class="about_1-card about_1-card_3"
+          data-aos="fade-up"
+          data-aos-offset="200">
+          <div class="about_1-card-img">
+            <img src="img/card_3.jpg"
+              alt="image" />
+          </div>
+          <div class="content">
+            <h3>Veterinary clinic</h3>
+            <p>Strona została zakodowana przy użyciu:</p>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Grid Layout</li>
+              <li>Responsive web design</li>
+              <li>JavaScript</li>
+              <li>JQuery</li>
+              <li>Bootstrap4</li>
             </ul>
-            <p class="popup__wrapper-right">
-              Poziom znajomości: <br />
-              BARDZO DOBRY
-            </p>
+            <button class="card_button"
+              type="button"
+              onclick="window.open('https://jacekmaciejak.github.io/Veterinary-clinic/. ','_blank')">
+              Zobacz projekt
+            </button>
           </div>
         </div>
-      </section>
-      <section class="popup__sass" id="popup__sass">
-        <div class="popup__content">
-          <a href="#technologie" class="popup__close"> &times;</a>
-          <h2 class="popup__heading">SASS (SCSS)</h2>
-          <hr />
-          <div class="popup__wrapper">
-            <ul class="popup__wrapper-left">
-              <li>@mixin animTextHeader{}</li>
-              <li>@include respond(tab-port){}</li>
-              <li>$color-primary:#55c57a;</li>
-              <li>@import "components/button";</li>
-            </ul>
-            <p class="popup__wrapper-right">
-              Poziom znajomości:<br />
-              BARDZO DOBRY
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="popup__grid" id="popup__grid">
-        <div class="popup__content">
-          <a href="#technologie" class="popup__close"> &times;</a>
-          <h2 class="popup__heading">Grid</h2>
-          <hr />
-          <div class="popup__wrapper">
-            <ul class="popup__wrapper-left">
-              <li>{display: grid}</li>
-              <li>{grid-column-start: col-start 2}</li>
-              <li>{grid-template-columns: 1fr 50px}</li>
-              <li>{grid-row-end: span 2}</li>
-              <li>{justify-self: start}</li>
-            </ul>
-            <p class="popup__wrapper-right">
-              Poziom znajomości:<br />
-              BARDZO DOBRY
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="popup__flex" id="popup__flex">
-        <div class="popup__content">
-          <a href="#technologie" class="popup__close"> &times;</a>
-          <h2 class="popup__heading">Flexbox</h2>
-          <hr />
-          <div class="popup__wrapper">
-            <ul class="popup__wrapper-left">
-              <li>{display: flex}</li>
-              <li>{flex-direction: row}</li>
-              <li>{flex-wrap: nowrap}</li>
-              <li>{justify-content: flex-start}</li>
-              <li>{align-self: auto}</li>
-            </ul>
-            <p class="popup__wrapper-right">
-              Poziom znajomości: <br />
-              BARDZO DOBRY
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="popup__js" id="popup__js">
-        <div class="popup__content">
-          <a href="#technologie" class="popup__close"> &times;</a>
-          <h2 class="popup__heading">JavaScript ES6</h2>
-          <hr />
-          <div class="popup__wrapper">
-            <ul class="popup__wrapper-left">
-              <li>let & const</li>
-              <li>Arrow Functions</li>
-              <li>Classes</li>
-              <li>Template Literals</li>
-              <li>Array and object destructing</li>
-            </ul>
-            <p class="popup__wrapper-right">
-              Poziom znajomości: <br />
-              DOBRY
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="popup__react" id="popup__react">
-        <div class="popup__content">
-          <a href="#technologie" class="popup__close"> &times;</a>
-          <h2 class="popup__heading">React</h2>
-          <hr />
-          <div class="popup__wrapper">
-            <ul class="popup__wrapper-left">
-              <li>JSX</li>
-              <li>Components</li>
-              <li>Styled Components</li>
-              <li>React Router</li>
-            </ul>
-            <p class="popup__wrapper-right">
-              Poziom znajomości: <br />
-              DOBRY
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="popup__rwd" id="popup__rwd">
-        <div class="popup__content">
-          <a href="#technologie" class="popup__close"> &times;</a>
-          <h2 class="popup__heading">Responsive web design</h2>
-          <hr />
-          <div class="popup__wrapper">
-            <ul class="popup__wrapper-left">
-              <li>Fluid Grid/Flexbox Systems</li>
-              <li>Fluid Image Use</li>
-              <li>Media Queries</li>
-              <li>Relative units</li>
-              <li>Fluid font sizing</li>
-            </ul>
-            <p class="popup__wrapper-right">
-              Poziom znajomości: <br />
-              BARDZO DOBRY
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="popup__b4" id="popup__b4">
-        <div class="popup__content">
-          <a href="#technologie" class="popup__close"> &times;</a>
-          <h2 class="popup__heading">Bootstrap4</h2>
-          <hr />
-          <div class="popup__wrapper">
-            <ul class="popup__wrapper-left">
-              <li>Components</li>
-              <li>Responsive structures and styles</li>
-              <li>Lightweight and customizable</li>
-              <li>Great grid system</li>
-              <li>Good documentation</li>
-            </ul>
-            <p class="popup__wrapper-right">
-              Poziom znajomości: <br />
-              DOBRY
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="popup__footer" id="popup-footer">
-        <div class="popup__content">
-          <div class="popup__left">
-            <img src="img/img6.jpg" alt="Zdjecie" class="popup__img" />
-            <img src="img/img7.jpg" alt="Zdjecie" class="popup__img" />
-          </div>
-          <div class="popup__right">
-            <a href="#footer" class="popup__close">&times;</a>
-            <h2 class="heading__secondary">Lorem, ipsum dolor.</h2>
-            <h3 class="heading__tertiary">
-              Lorem &ndash; Lorem ipsum dolor sit amet, consectetur adipisicing.
-            </h3>
-            <p class="popup__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Eligendi, consequatur? Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Molestias laudantium vero neque dolorem, earum
-              porro nemo distinctio recusandae accusamus. Quis pariatur facere,
-              ad recusandae officia eaque cumque non vel eligendi!lorem Lorem
-              ipsum dolor sit amet, consectetur adipisicing elit. Veniam ullam
-              nesciunt, voluptatem ut aliquam doloribus reiciendis quasi
-              delectus. Non vitae ex vero, dolor sit amet, consectetur
-              adipisicing elit. Aut similique expedita autem voluptatibus,
-              laborum, mollitia et, omnis minus sit neque consequatur aliquid
-              illo corporis dignissimos minima voluptas. Et, earum iure.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer">
-        <h2>Zachęcam do kontaktu :)</h2>
-        <div class="footer_scrollUp"></div>
       </div>
-    </footer>
+      <div class="about_2">
+        <div class="about_2-h1"
+          data-aos="fade-up">
+          <h1>Portfolio</h1>
+        </div>
+        <div class="about_2-h2"
+          data-aos="fade-up">
+          <h2>Projekty</h2>
+        </div>
+        <div class="about_2-card about_2-card_4"
+          data-aos="fade-up"
+          data-aos-offset="150">
+          <div class="about_2-card-img">
+            <img src="img/card_4.jpg"
+              alt="image" />
+          </div>
+          <div class="content">
+            <h3>App PHE</h3>
+            <p>Strona została zakodowana przy użyciu:</p>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Grid Layout</li>
+              <li>JavaScript</li>
+            </ul>
+            <button class="card_button"
+              type="button"
+              onclick="window.open('https://jacekmaciejak.github.io/App-PHE/','_blank')">
+              Zobacz projekt
+            </button>
+          </div>
+        </div>
+        <div class="about_2-card about_2-card_5"
+          data-aos="fade-up"
+          data-aos-offset="300">
+          <div class="about_2-card-img">
+            <img src="img/card_5.jpg"
+              alt="image" />
+          </div>
+          <div class="content">
+            <h3>Dice game</h3>
+            <p>Gra została zaprogramowana przy użyciu:</p>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+            <button class="card_button"
+              type="button"
+              onclick="window.open('https://jacekmaciejak.github.io/Dice-game/','_blank')">
+              Zobacz projekt
+            </button>
+          </div>
+        </div>
+        <div class="about_2-card about_2-card_6"
+          data-aos="fade-up"
+          data-aos-offset="150">
+          <div class="about_2-card-img">
+            <img src="img/card_6.jpg"
+              alt="image" />
+          </div>
+          <div class="content">
+            <h3>Rock, paper and scissors - game</h3>
+            <p>Gra została zaprogramowana przy użyciu:</p>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+            <button class="card_button"
+              type="button"
+              onclick="window.open('https://jacekmaciejak.github.io/Rock-paper-and-scissors---game/','_blank')">
+              Zobacz projekt
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sub_about"
+      id="o-mnie">
+      <div class="sub_about_1">
+        <div class="sub_about_1-h1"
+          data-aos="fade-up">
+          <h1>Kim jestem?</h1>
+        </div>
+        <div class="sub_about_1-h2"
+          data-aos="fade-up">
+          <h2>O mnie</h2>
+        </div>
+        <div class="sub_about_1-container">
+          <p>
+            Witaj na mojej stronie. Jestem front-end developerem, w codziennej
+            pracy koduję w HTML5, CSS3 - SASS(SCSS), Bootstrap4, Git, Node.js
+            oraz metodologi BEM. We wszystkich projektach stosuję standardy
+            Responsive Web Design oraz Grid i Flexbox. Codziennie ciężko
+            pracuję aby zdobywać nowe doświadczenie w kodowaniu stron
+            internetowych i programowaniu aplikacji w JavaScript ES6 oraz
+            bibliotece React. Potrafię dostosować się do wymagań projektu jak
+            również lubię współpracować w zespole. Z przyjemnością nawiążę
+            współpracę, która umożliwi mi na dalszy rozwój.
+          </p>
+          <div class="sub_about_1-scrollDown"></div>
+        </div>
+      </div>
+      <div class="sub_about_2"
+        id="technologie">
+        <div class="sub_about_2-h1"
+          data-aos="fade-up">
+          <h1>Moja wiedza?</h1>
+        </div>
+        <div class="sub_about_2-h2"
+          data-aos="fade-up">
+          <h2>Technologie</h2>
+        </div>
+        <div class="sub_about_panel"
+          data-aos="fade-up">
+          <ul>
+            <li class="p-5">
+              <a href="https://www.facebook.com/profile.php?id=100007445748069"
+                target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="p-2">
+              <a href="#popup__html"><i class="fab fa-html5"></i></a>
+            </li>
+            <li class="p-11">
+              <a href="#popup__js"><i class="fab fa-js"></i></a>
+            </li>
+            <li class="p-4">
+              <a href="www.linkedin.com/in/jacek-maciejak-frontend-developer"
+                target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="p-1">
+              <a href="#popup__css"><i class="fab fa-css3-alt"></i></a>
+            </li>
+            <li class="p-6">
+              <a href="#popup__b4"><i class="fab">B4</i></a>
+            </li>
+            <li class="p-7">
+              <a href="#popup__rwd"><i class="fab"><img src="img/rwd.png"
+                    alt="image" /></i></a>
+            </li>
+            <li class="p-8">
+              <a href="#popup__flex"><i class="fab">Flex <br />
+                  Box</i></a>
+            </li>
+            <li class="p-9">
+              <a href="#popup__grid"><i class="fab">Grid</i></a>
+            </li>
+            <li class="p-10">
+              <a href="#popup__sass"><i class="fab fa-sass"></i></a>
+            </li>
+            <li class="p-3">
+              <a href="https://github.com/jacekmaciejak"
+                target="_blank"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="p-12">
+              <a href="#popup__react"><i class="fab fa-react"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sub_about_3">
+        <div class="sub_about_3-h1"
+          data-aos="fade-up">
+          <h1>Skontaktuje się ze mną</h1>
+        </div>
+        <div class="sub_about_3-h2"
+          data-aos="fade-up">
+          <h2>Kontakt</h2>
+        </div>
+        <section class="section-book"
+          id="kontakt"
+          data-aos="fade-up">
+          <div class="book__form">
+            <form class="form"
+              autocomplete="off"
+              method="post"
+              action="kontakt.php">
+              <div class="form__group">
+                <input type="text"
+                  class="form__input"
+                  placeholder="Imię i nazwisko"
+                  id="name"
+                  name="name"
+                  required />
+                <label for="name"
+                  class="form__label">Imię i nazwisko</label>
+              </div>
+              <div class="form__group">
+                <input type="email"
+                  class="form__input"
+                  placeholder="Email"
+                  id="email"
+                  name="email"
+                  required />
+                <label for="email"
+                  class="form__label">Email</label>
+              </div>
+              <div class="form__group">
+                <textarea name="message"
+                  id="message"
+                  cols="40"
+                  rows="4"
+                  class="form__input"
+                  placeholder="Wiadomość"
+                  required></textarea>
+              </div>
+              <div class="form__group">
+                <button class="email_button"
+                  name="submit"
+                  type="submit">
+                  Wyślij &rarr;
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- Popups -->
+    <section class="popup__html"
+      id="popup__html">
+      <div class="popup__content">
+        <a href="#technologie"
+          class="popup__close"> &times;</a>
+        <h2 class="popup__heading">HTML5</h2>
+        <hr />
+        <div class="popup__wrapper">
+          <ul class="popup__wrapper-left">
+            <li>&lt;header&gt;</li>
+            <li>&lt;nav&gt;</li>
+            <li>&lt;sction&gt;</li>
+            <li>&lt;article&gt;</li>
+            <li>&lt;aside&gt;</li>
+            <li>&lt;footer&gt;</li>
+          </ul>
+          <p class="popup__wrapper-right">
+            Poziom znajomości:<br />
+            BARDZO DOBRY
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="popup__css"
+      id="popup__css">
+      <div class="popup__content">
+        <a href="#technologie"
+          class="popup__close"> &times;</a>
+        <h2 class="popup__heading">CSS3</h2>
+        <hr />
+        <div class="popup__wrapper">
+          <ul class="popup__wrapper-left">
+            <li>{border-radius: 10px}</li>
+            <li>{color: #000}</li>
+            <li>{display: grid}</li>
+            <li>{display: flex}</li>
+            <li>{font-size: calc(18px + 1vw)}</li>
+            <li>{width: 100vw}</li>
+          </ul>
+          <p class="popup__wrapper-right">
+            Poziom znajomości: <br />
+            BARDZO DOBRY
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="popup__sass"
+      id="popup__sass">
+      <div class="popup__content">
+        <a href="#technologie"
+          class="popup__close"> &times;</a>
+        <h2 class="popup__heading">SASS (SCSS)</h2>
+        <hr />
+        <div class="popup__wrapper">
+          <ul class="popup__wrapper-left">
+            <li>@mixin animTextHeader{}</li>
+            <li>@include respond(tab-port){}</li>
+            <li>$color-primary:#55c57a;</li>
+            <li>@import "components/button";</li>
+          </ul>
+          <p class="popup__wrapper-right">
+            Poziom znajomości:<br />
+            BARDZO DOBRY
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="popup__grid"
+      id="popup__grid">
+      <div class="popup__content">
+        <a href="#technologie"
+          class="popup__close"> &times;</a>
+        <h2 class="popup__heading">Grid</h2>
+        <hr />
+        <div class="popup__wrapper">
+          <ul class="popup__wrapper-left">
+            <li>{display: grid}</li>
+            <li>{grid-column-start: col-start 2}</li>
+            <li>{grid-template-columns: 1fr 50px}</li>
+            <li>{grid-row-end: span 2}</li>
+            <li>{justify-self: start}</li>
+          </ul>
+          <p class="popup__wrapper-right">
+            Poziom znajomości:<br />
+            BARDZO DOBRY
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="popup__flex"
+      id="popup__flex">
+      <div class="popup__content">
+        <a href="#technologie"
+          class="popup__close"> &times;</a>
+        <h2 class="popup__heading">Flexbox</h2>
+        <hr />
+        <div class="popup__wrapper">
+          <ul class="popup__wrapper-left">
+            <li>{display: flex}</li>
+            <li>{flex-direction: row}</li>
+            <li>{flex-wrap: nowrap}</li>
+            <li>{justify-content: flex-start}</li>
+            <li>{align-self: auto}</li>
+          </ul>
+          <p class="popup__wrapper-right">
+            Poziom znajomości: <br />
+            BARDZO DOBRY
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="popup__js"
+      id="popup__js">
+      <div class="popup__content">
+        <a href="#technologie"
+          class="popup__close"> &times;</a>
+        <h2 class="popup__heading">JavaScript ES6</h2>
+        <hr />
+        <div class="popup__wrapper">
+          <ul class="popup__wrapper-left">
+            <li>let & const</li>
+            <li>Arrow Functions</li>
+            <li>Classes</li>
+            <li>Template Literals</li>
+            <li>Array and object destructing</li>
+          </ul>
+          <p class="popup__wrapper-right">
+            Poziom znajomości: <br />
+            DOBRY
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="popup__react"
+      id="popup__react">
+      <div class="popup__content">
+        <a href="#technologie"
+          class="popup__close"> &times;</a>
+        <h2 class="popup__heading">React</h2>
+        <hr />
+        <div class="popup__wrapper">
+          <ul class="popup__wrapper-left">
+            <li>JSX</li>
+            <li>Components</li>
+            <li>Styled Components</li>
+            <li>React Router</li>
+          </ul>
+          <p class="popup__wrapper-right">
+            Poziom znajomości: <br />
+            DOBRY
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="popup__rwd"
+      id="popup__rwd">
+      <div class="popup__content">
+        <a href="#technologie"
+          class="popup__close"> &times;</a>
+        <h2 class="popup__heading">Responsive web design</h2>
+        <hr />
+        <div class="popup__wrapper">
+          <ul class="popup__wrapper-left">
+            <li>Fluid Grid/Flexbox Systems</li>
+            <li>Fluid Image Use</li>
+            <li>Media Queries</li>
+            <li>Relative units</li>
+            <li>Fluid font sizing</li>
+          </ul>
+          <p class="popup__wrapper-right">
+            Poziom znajomości: <br />
+            BARDZO DOBRY
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="popup__b4"
+      id="popup__b4">
+      <div class="popup__content">
+        <a href="#technologie"
+          class="popup__close"> &times;</a>
+        <h2 class="popup__heading">Bootstrap4</h2>
+        <hr />
+        <div class="popup__wrapper">
+          <ul class="popup__wrapper-left">
+            <li>Components</li>
+            <li>Responsive structures and styles</li>
+            <li>Lightweight and customizable</li>
+            <li>Great grid system</li>
+            <li>Good documentation</li>
+          </ul>
+          <p class="popup__wrapper-right">
+            Poziom znajomości: <br />
+            DOBRY
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="popup__footer"
+      id="popup-footer">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/img6.jpg"
+            alt="Zdjecie"
+            class="popup__img" />
+          <img src="img/img7.jpg"
+            alt="Zdjecie"
+            class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#footer"
+            class="popup__close">&times;</a>
+          <h2 class="heading__secondary">Lorem, ipsum dolor.</h2>
+          <h3 class="heading__tertiary">
+            Lorem &ndash; Lorem ipsum dolor sit amet, consectetur adipisicing.
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Eligendi, consequatur? Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Molestias laudantium vero neque dolorem, earum
+            porro nemo distinctio recusandae accusamus. Quis pariatur facere,
+            ad recusandae officia eaque cumque non vel eligendi!lorem Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Veniam ullam
+            nesciunt, voluptatem ut aliquam doloribus reiciendis quasi
+            delectus. Non vitae ex vero, dolor sit amet, consectetur
+            adipisicing elit. Aut similique expedita autem voluptatibus,
+            laborum, mollitia et, omnis minus sit neque consequatur aliquid
+            illo corporis dignissimos minima voluptas. Et, earum iure.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <h2>Zachęcam do kontaktu :)</h2>
+      <div class="footer_scrollUp"></div>
+    </div>
+  </footer>
 
-    <script src="js/loader.js"></script>
-    <script src="js/topButton.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000,
-        mirror: true,
-      });
-    </script>
-  </body>
+  <script src="js/loader.js"></script>
+  <script src="js/topButton.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/windowstop.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      mirror: true,
+    });
+  </script>
+</body>
+
 </html>
