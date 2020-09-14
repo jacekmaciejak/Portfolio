@@ -19,5 +19,3 @@ RedirectMatch 301 jacekmaciejak.pl/#main(.*) jacekmaciejak.pl/strona-glowna/$1
 
 
 
-
-

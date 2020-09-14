@@ -1,2 +1,5 @@
-node_modules/
-sass/
+/node_modules/
+/sass/
+style.prefix.css
+style.comp.css
+style.concat.css
