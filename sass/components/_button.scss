@@ -57,6 +57,7 @@
 
 	&_button {
 		margin-top: 100px;
+		box-shadow: $mainShadow;
 
 		&:hover {
 			transition: .8s;

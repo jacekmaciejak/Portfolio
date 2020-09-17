@@ -98,7 +98,8 @@
 
 /*---------------------------HEADER-----------------------------*/
 .header_button {
-  margin-top: 100px; }
+  margin-top: 100px;
+  box-shadow: 0 20px 40px -10px #818181; }
   .header_button:hover {
     transition: .8s;
     opacity: 1;
@@ -898,7 +899,7 @@ footer {
     padding: 2rem;
     border-radius: 3px;
     -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 40px -10px #818181;
     background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 60%, transparent 50%), url(img/img2.jpg);
     background-position: center;
     background-size: cover; }
@@ -979,16 +980,11 @@ footer {
     align-items: center;
     grid-template-rows: 1fr 5fr;
     padding-top: 50px; }
-    @media only screen and (max-width: 1200px) {
-      .about_1, .about_2 {
-        height: auto;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: .1fr .1fr 1fr 1fr; } }
     @media only screen and (max-width: 900px) {
       .about_1, .about_2 {
         height: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: .1fr .1fr 1fr 1fr 1fr; } }
+        grid-template-rows: .5fr 5fr;
+        padding-top: 25px; } }
     .about_1-title, .about_2-title {
       width: 100%;
       height: 100%;
@@ -1004,8 +1000,8 @@ footer {
         opacity: .2; }
         @media only screen and (max-width: 900px) {
           .about_1-title h1, .about_2-title h1 {
-            font-size: calc(50px + 3.5vw);
-            margin-top: 2rem; } }
+            font-size: calc(40px + 3.5vw);
+            margin-top: 1rem; } }
       .about_1-title h2, .about_2-title h2 {
         font-size: 5vw;
         letter-spacing: 3px;
@@ -1017,7 +1013,7 @@ footer {
         animation: animateText 3s linear infinite; }
         @media only screen and (max-width: 900px) {
           .about_1-title h2, .about_2-title h2 {
-            font-size: calc(30px + 3.5vw); } }
+            font-size: calc(15px + 3.5vw); } }
         @media only screen and (max-width: 1200px) {
           .about_1-title h2, .about_2-title h2 {
             margin-bottom: 2rem; } }
@@ -1027,11 +1023,22 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       column-gap: 30px; }
+      @media only screen and (max-width: 900px) {
+        .about_1-content, .about_2-content {
+          height: auto;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          display: grid;
+          justify-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; } }
       .about_1-content .about__card, .about_2-content .about__card {
         width: 100%;
         height: 100%;
         transition: .5s;
-        position: relative; }
+        position: relative;
+        box-shadow: 0 20px 40px -10px #818181; }
         @media only screen and (max-width: 1200px) {
           .about_1-content .about__card, .about_2-content .about__card {
             height: 500px;
@@ -1172,45 +1179,20 @@ footer {
             .about_2-content .about__card:hover .content ul {
               transform: none;
               transition-delay: none; } }
-  .about_1-card_1 {
-    margin-top: -100px; }
-    @media only screen and (max-width: 1200px) {
-      .about_1-card_1 {
-        margin-top: 0; } }
-  .about_1-card_2 {
-    margin-top: 50px; }
-    @media only screen and (max-width: 1200px) {
-      .about_1-card_2 {
-        margin-top: 0; } }
-  .about_1-card_3 {
-    margin-top: -100px; }
-    @media only screen and (max-width: 1200px) {
-      .about_1-card_3 {
-        margin-top: 0;
-        width: 95%; } }
-    @media only screen and (max-width: 900px) {
-      .about_1-card_3 {
-        width: 90%; } }
-  .about_2-card_4 {
-    margin-top: -100px; }
-    @media only screen and (max-width: 1200px) {
-      .about_2-card_4 {
-        margin-top: 0; } }
-  .about_2-card_5 {
-    margin-top: 50px; }
-    @media only screen and (max-width: 1200px) {
-      .about_2-card_5 {
-        margin-top: 0; } }
-  .about_2-card_6 {
-    margin-top: -100px; }
-    @media only screen and (max-width: 1200px) {
-      .about_2-card_6 {
-        margin-top: 0;
-        width: 95%; } }
-    @media only screen and (max-width: 900px) {
-      .about_2-card_6 {
-        width: 90%; } }
+      .about_1-content .about__card--marginMin, .about_2-content .about__card--marginMin {
+        margin-top: -100px; }
+        @media only screen and (max-width: 1200px) {
+          .about_1-content .about__card--marginMin, .about_2-content .about__card--marginMin {
+            margin-top: 0; } }
+      .about_1-content .about__card--marginMax, .about_2-content .about__card--marginMax {
+        margin-top: 50px; }
+        @media only screen and (max-width: 1200px) {
+          .about_1-content .about__card--marginMax, .about_2-content .about__card--marginMax {
+            margin-top: 0; } }
 
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
 .sub_about {
   background: #000;
   color: #fff; }
