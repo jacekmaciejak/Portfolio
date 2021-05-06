@@ -60,10 +60,11 @@
 		}
 
 		&-content {
-			width: 90%;
+			width: 95%;
 			height: 100%;
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
+			justify-content: space-around;
 			column-gap: 30px;
 			row-gap: 30px;
 
@@ -72,6 +73,12 @@
 				grid-template-columns: 1fr;
 				grid-template-rows: 1fr 1fr 1fr;
 				@include gridCenter;
+
+			}
+
+			@include respond(tab-land) {
+				width: 100%;
+				column-gap: 0px;
 
 			}
 
@@ -84,8 +91,8 @@
 
 				@include respond(tab-land) {
 					height: 500px;
-					width: 90%;
-					// margin: 30px 0;
+					width: 95%;
+					margin: 0 auto;
 				}
 
 				&::before,
@@ -303,6 +310,10 @@
 					font-size: calc(50px + 3.5vw);
 					line-height: 1;
 				}
+
+				@include respond(small-phone) {
+					font-size: calc(30px + 2vw);
+				}
 			}
 
 			@include respond(tab-port) {
@@ -324,6 +335,10 @@
 
 				@include respond(tab-port) {
 					font-size: calc(30px + 3.5vw);
+				}
+
+				@include respond(small-phone) {
+					font-size: calc(15px + 2vw);
 				}
 			}
 
@@ -361,12 +376,13 @@
 	&_1 {
 		position: relative;
 
+		@include respond(small-phone) {
+			height: 120vh;
+		}
 	}
 
 	&_2 {
-		@include respond(small-phone) {
-			display: none;
-		}
+
 
 		.sub_about_panel {
 			position: relative;
@@ -625,6 +641,11 @@
 						top: 220px;
 						left: 220px;
 					}
+
+					@include respond(small-phone) {
+						top: 60px;
+						left: 300px;
+					}
 				}
 
 				.p-2 {
@@ -729,6 +750,11 @@
 					@include respond(tab-port) {
 						top: 240px;
 						left: 550px;
+					}
+
+					@include respond(small-phone) {
+						top: 60px;
+						left: 470px;
 					}
 				}
 
