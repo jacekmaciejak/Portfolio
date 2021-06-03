@@ -13,9 +13,9 @@
 
 	@include gridCenter;
 
-	@include respond(tab-port) {
-		background-position: calc(100% + 200px);
-	}
+	// @include respond(tab-port) {
+	// 	background-position: calc(100% + 200px);
+	// }
 
 	&:hover {
 		transition: .5s;
