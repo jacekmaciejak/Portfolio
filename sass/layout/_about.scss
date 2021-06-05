@@ -58,7 +58,7 @@
 
 		&-content {
 			width: 95%;
-			margin: 50px auto;
+			margin: 0 auto;
 			display: grid;
 			justify-content: center;
 			// display: flex;
@@ -316,7 +316,7 @@
 
 					ul {
 						margin-top: 20px;
-						list-style: none;
+						list-style-type: circle;
 						line-height: 1.8;
 						font-size: 23px;
 
