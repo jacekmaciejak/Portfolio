@@ -24,7 +24,6 @@
 			@include gridCenter;
 			position: relative;
 			z-index: 9999;
-			margin: 50px 0;
 
 			h1 {
 				font-size: $titleFontSize;
@@ -109,7 +108,8 @@
 					justify-content: center;
 					height: auto;
 					width: 95%;
-					margin: 0 auto;
+					margin: 50px auto;
+					border-bottom: 10px solid rgba(255, 255, 255, .4);
 				}
 
 				// &::before,
@@ -190,7 +190,7 @@
 						}
 
 						@include respond(tab-land) {
-							width: 60%;
+							width: 70%;
 						}
 
 						@include respond(tab-port) {
@@ -241,6 +241,10 @@
 						@include respond(tab-port) {
 							transform: none;
 						}
+
+						@include respond(phone) {
+							font-size: 18px;
+						}
 					}
 
 					ul {
@@ -255,6 +259,10 @@
 
 						@include respond(tab-port) {
 							transform: none;
+						}
+
+						@include respond(phone) {
+							font-size: 18px;
 						}
 					}
 
@@ -309,7 +317,7 @@
 		&-h1 {
 			position: relative;
 			z-index: 9999;
-			margin-top: 80px;
+			margin-top: 100px;
 			text-align: center;
 
 			h1 {
@@ -327,18 +335,15 @@
 			}
 
 			@include respond(tab-port) {
-				margin-top: 100px;
+				margin-top: 40px;
 			}
 		}
 
 		&-h2 {
 			position: relative;
 			z-index: 9999;
-			top: -20px;
-
-			@include respond(tab-port) {
-				top: -20px;
-			}
+			// top: -20px;
+			margin-bottom: 50px;
 
 			h2 {
 				font-size: $subtitleFontSize;
@@ -370,7 +375,7 @@
 			}
 
 			@include respond(tab-land) {
-				margin-top: -100px;
+				// margin-top: -100px;
 			}
 
 			@include respond(tab-port) {
@@ -385,14 +390,22 @@
 
 	&_1 {
 		position: relative;
-
-		@include respond(small-phone) {
-			height: 120vh;
-		}
 	}
 
 	&_2 {
 		position: relative;
+		display: grid;
+		justify-items: center;
+		align-items: center;
+		height: 100vh;
+		width: 100%;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 6fr;
+
+		@include respond(tab-port) {
+			min-height: 800px;
+		}
+
 
 		.box {
 			position: absolute;
@@ -477,7 +490,7 @@
 				}
 
 				100% {
-					transform: scale(1) translateY(-90px)rotate(360deg);
+					transform: scale(.8) translateY(-90px)rotate(360deg);
 					opacity: 0;
 				}
 			}
@@ -486,6 +499,8 @@
 		.sub_about_panel {
 			position: relative;
 			z-index: 99999;
+
+
 
 			ul {
 				position: absolute;
